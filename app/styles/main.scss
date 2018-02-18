@@ -1,0 +1,15 @@
+// bower:scss
+// endbower
+
+// SETTINGS
+@import "_settings/variables";
+@import "_settings/typography";
+@import "_settings/colors";
+
+// MIXINS
+@import "_mixins/clearfix";
+
+// ELEMENTS
+@import "_elements/global";
+@import "_elements/header";
+@import "_elements/footer";
