@@ -1,0 +1,10 @@
+.footer {
+  display: flex;
+  flex-direction: row;
+  padding: 3.75rem 4rem;
+  
+  &__logo {
+    display: block;
+    max-width: 10.9375rem;
+  }
+}

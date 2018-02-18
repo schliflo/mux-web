@@ -1,0 +1,19 @@
+body {
+  background-color: $color-black;
+  color: $color-white;
+  font-family: $font-family-default;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#main {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
