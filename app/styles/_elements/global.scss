@@ -6,6 +6,26 @@ body {
   display: flex;
   flex-direction: column;
   letter-spacing: .1337em;
+  line-height: 1.42;
+}
+
+p {
+  margin-top: .75em;
+  margin-bottom: .75em;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+address {
+  font-style: normal;
+  font-size: 1.25rem;
 }
 
 #main {
@@ -17,4 +37,21 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.text {
+  &__center {
+    text-align: center;
+  }
 }
