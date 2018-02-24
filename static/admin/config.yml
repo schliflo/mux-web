@@ -6,13 +6,24 @@ media_folder: "/static/files/"
 public_folder: "/files/"
 
 collections:
-  - name: "blog"
-    label: "Blog"
-    folder: "src/pages/blog"
+  - name: "home"
+    label: "Home"
+    folder: "src/pages/home"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      - {label: "Content Type", name: "contentType", widget: "hidden", default: "content"}
+      - {label: "Path", name: "path", widget: "hidden", default: "/"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "work"
+    label: "Work"
+    folder: "src/pages/work"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - {label: "Content Type", name: "contentType", widget: "hidden", default: "blog"}
+      - {label: "Content Type", name: "contentType", widget: "hidden", default: "work"}
       - {label: "Path", name: "path", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
@@ -26,7 +37,29 @@ collections:
     create: false
     slug: "{{slug}}"
     fields:
-      - {label: "Content Type", name: "contentType", widget: "hidden", default: "about"}
+      - {label: "Content Type", name: "contentType", widget: "hidden", default: "content"}
       - {label: "Path", name: "path", widget: "hidden", default: "/about"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "contact"
+    label: "Contact"
+    folder: "src/pages/contact"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      - {label: "Content Type", name: "contentType", widget: "hidden", default: "content"}
+      - {label: "Path", name: "path", widget: "hidden", default: "/contact"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "imprint"
+    label: "Imprint"
+    folder: "src/pages/imprint"
+    create: false
+    slug: "{{slug}}"
+    fields:
+      - {label: "Content Type", name: "contentType", widget: "hidden", default: "content"}
+      - {label: "Path", name: "path", widget: "hidden", default: "/imprint"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
