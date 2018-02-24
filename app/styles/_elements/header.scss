@@ -34,7 +34,7 @@
       &:hover {
         > a {
           > span {
-            @include textGlitch("glitch", 25, #ffffff, #000000, #00ff00, #ff00ff, 300, 57);
+            @include textGlitch("glitch", 25, $color-white, $color-black, #00ff00, #ff00ff, 150, 40);
           }
         }
       }
@@ -43,5 +43,11 @@
         margin-left: calc(.5rem + 2vw);
       }
     }
+  }
+}
+
+@media screen and (max-width: 48rem){
+  .header {
+    padding: 1.337rem;
   }
 }

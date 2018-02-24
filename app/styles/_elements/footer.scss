@@ -34,3 +34,26 @@
     }
   }
 }
+
+@media screen and (max-width: 48rem) {
+  .footer {
+    padding: 1.337rem;
+    flex-direction: column;
+
+    &__logo {
+      margin-bottom: 3.337rem;
+
+    }
+
+    &__copyright {
+      margin-right: auto;
+      margin-bottom: 1rem;
+    }
+
+    &__nav {
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 2rem;
+    }
+  }
+}
