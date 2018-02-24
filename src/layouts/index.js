@@ -51,11 +51,6 @@ const TemplateWrapper = ({children, data}) => {
                     <span className="footer__copyright">&copy; 2018 Max Neumeier</span>
                     <nav id="nav-footer" className="footer__nav">
                         <ul>
-                            {user && (
-                                <li>
-                                    <a href='/admin'>Admin</a>
-                                </li>
-                            )}
                             <li>
                                 <Link to='/imprint'>Imprint</Link>
                             </li>
