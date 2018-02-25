@@ -1,5 +1,4 @@
 import React from 'react'
-import {Container} from 'reactstrap'
 import Helmet from 'react-helmet'
 import graphql from 'graphql'
 

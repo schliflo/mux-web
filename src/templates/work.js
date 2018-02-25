@@ -1,5 +1,4 @@
 import React from 'react'
-import {Container, Card, CardTitle, CardGroup, CardBody} from 'reactstrap'
 import Helmet from 'react-helmet'
 import graphql from 'graphql'
 import {basename} from 'path'

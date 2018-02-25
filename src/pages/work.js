@@ -1,5 +1,4 @@
 import React from 'react'
-import {Container, Card, CardText, CardBody, CardTitle, CardSubtitle} from 'reactstrap'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import graphql from 'graphql'
