@@ -19,7 +19,7 @@ collections:
 
   - name: "work"
     label: "Work"
-    folder: "/pages/work"
+    folder: "/src/pages/work"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
@@ -33,7 +33,7 @@ collections:
 
   - name: "about"
     label: "About"
-    folder: "/pages/about"
+    folder: "/src/pages/about"
     create: false
     slug: "{{slug}}"
     fields:
@@ -44,7 +44,7 @@ collections:
 
   - name: "contact"
     label: "Contact"
-    folder: "/pages/contact"
+    folder: "/src/pages/contact"
     create: false
     slug: "{{slug}}"
     fields:
@@ -55,7 +55,7 @@ collections:
 
   - name: "imprint"
     label: "Imprint"
-    folder: "/pages/imprint"
+    folder: "/src/pages/imprint"
     create: false
     slug: "{{slug}}"
     fields:
