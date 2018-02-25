@@ -1,0 +1,42 @@
+.video-grid {
+    padding: 3.75rem 4rem;
+
+    .pswp-thumbnails {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        .pswp-thumbnail {
+            flex-basis: calc(33.3333% - 1.3333rem);
+            margin-bottom: 2rem;
+            cursor: pointer;
+        }
+    }
+}
+
+@media screen and (max-width: 80rem) {
+    .video-grid {
+        padding: 2rem;
+
+        .pswp-thumbnails {
+            .pswp-thumbnail {
+                flex-basis: calc(50% - 1rem);
+                margin-bottom: 2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 48rem) {
+    .video-grid {
+        padding: 1.337rem;
+
+        .pswp-thumbnails {
+            .pswp-thumbnail {
+                flex-basis: 100%;
+                margin-bottom: 1.337rem;
+            }
+        }
+    }
+}

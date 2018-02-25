@@ -1,3 +1,6 @@
+// 3RD PARTY
+@import "../../../node_modules/photoswipe/dist/photoswipe.css";
+@import "../../../node_modules/photoswipe/dist/default-skin/default-skin.css";
 // SETTINGS
 @import "_settings/variables";
 @import "_settings/typography";
@@ -11,3 +14,4 @@
 @import "_elements/container";
 @import "_elements/header";
 @import "_elements/footer";
+@import "_elements/video-grid";
