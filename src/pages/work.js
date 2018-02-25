@@ -5,18 +5,30 @@ import Link from 'gatsby-link'
 import graphql from 'graphql'
 
 const WorkPage = ({data}) => (
-    <Container>
+    <div>
         <Helmet title={`Work | ${data.site.siteMetadata.title}`}/>
         {data.allMarkdownRemark.edges.filter(post => post.node.frontmatter.contentType === 'work').map(({node: post}) => (
-            <Card style={{marginBottom: 10}} key={post.id}>
-                <CardBody>
-                    <CardTitle><Link to={post.frontmatter.path}>{post.frontmatter.title}</Link></CardTitle>
-                    <CardSubtitle style={{marginBottom: 10}}>{post.frontmatter.date}</CardSubtitle>
-                    <CardText>{post.excerpt}</CardText>
-                </CardBody>
-            </Card>
+            <div key={post.id} id={post.id}>
+                <h2>{post.frontmatter.title}</h2>
+                <h2>{post.frontmatter.subtitle}</h2>
+                <p>{post.frontmatter.videoType} /// {post.frontmatter.videoID}</p>
+                <div dangerouslySetInnerHTML={{__html: post.html}}/>
+                <img src={post.frontmatter.videoThumbnail}/>
+                <div dangerouslySetInnerHTML={{__html:
+                    (() => {
+                        switch (post.frontmatter.videoType) {
+                            case 'youtube':
+                                return '<iframe src="https://www.youtube.com/embed/' + post.frontmatter.videoID + '?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
+                            case 'vimeo':
+                                return '';
+                            default:
+                                return '';
+                        }
+                    })()
+                }}/>
+            </div>
         ))}
-    </Container>
+    </div>
 )
 
 export default WorkPage
@@ -30,9 +42,13 @@ export const pageQuery = graphql`
           id
           frontmatter {
             title
+            subtitle
             contentType
             date(formatString: "MMMM DD, YYYY")
             path
+            videoType
+            videoID
+            videoThumbnail
           }
         }
       }

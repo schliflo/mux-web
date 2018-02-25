@@ -1,5 +1,4 @@
 import React from 'react'
-import {Container} from 'reactstrap'
 import PropTypes from 'prop-types'
 import graphql from 'graphql'
 import Link from 'gatsby-link'
@@ -13,10 +12,6 @@ import 'prismjs/themes/prism-twilight.css'
 import './scss/main.scss'
 
 const TemplateWrapper = ({children, data}) => {
-    let user
-    if (typeof window !== 'undefined') {
-        user = window.netlifyIdentity && window.netlifyIdentity.currentUser()
-    }
     return (
         <div className='App'>
             <Helmet title={data.site.siteMetadata.title}/>
