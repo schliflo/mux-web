@@ -11,12 +11,9 @@ import 'prismjs/themes/prism-twilight.css'
 // main site style
 import './scss/main.scss'
 
-const navOpenClass = 'nav-open';
-const body = document.querySelector('body');
-const toggleManu = () => {
-    body.classList.toggle(navOpenClass);
+const toggleMenu = () => {
+    document.querySelector('body').classList.toggle('nav-open');
 };
-
 
 const TemplateWrapper = ({children, data}) => {
     return (
@@ -27,7 +24,7 @@ const TemplateWrapper = ({children, data}) => {
                     <Link to='/' className="header__logo">
                         <img src="/files/logos/mnv.svg" width="90" height="57"/>
                     </Link>
-                    <div className="nav-toggle" onClick={toggleManu}>
+                    <div className="nav-toggle" onClick={toggleMenu}>
                         <div className="nav-toggle__bar"/>
                         <div className="nav-toggle__bar"/>
                         <div className="nav-toggle__bar"/>
@@ -35,13 +32,13 @@ const TemplateWrapper = ({children, data}) => {
                     <nav id="nav-main" className="header__nav">
                         <ul>
                             <li>
-                                <Link to='/work' activeClassName='active' onClick={toggleManu}><span data-text="Work">Work</span></Link>
+                                <Link to='/work' activeClassName='active' onClick={toggleMenu}><span data-text="Work">Work</span></Link>
                             </li>
                             <li>
-                                <Link to='/about' activeClassName='active' onClick={toggleManu}><span data-text="About">About</span></Link>
+                                <Link to='/about' activeClassName='active' onClick={toggleMenu}><span data-text="About">About</span></Link>
                             </li>
                             <li>
-                                <Link to='/contact' activeClassName='active' onClick={toggleManu}><span data-text="Contact">Contact</span></Link>
+                                <Link to='/contact' activeClassName='active' onClick={toggleMenu}><span data-text="Contact">Contact</span></Link>
                             </li>
                         </ul>
                     </nav>
