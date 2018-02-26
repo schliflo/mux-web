@@ -39,7 +39,9 @@ export const pageQuery = graphql`
         subtitle
         videoType
         videoID
-        videoThumbnail
+        videoThumbnail {
+          filename
+        }
       }
     }
 

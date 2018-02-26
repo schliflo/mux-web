@@ -40,7 +40,7 @@ const getGalleryItems = (data) => {
         if (post.frontmatter.contentType === 'work') {
             let item = {};
 
-            item.thumbnail = post.frontmatter.videoThumbnail;
+            item.thumbnail = post.frontmatter.videoThumbnail[0].filename;
             item.w = 1920;
             item.h = 1080;
             item.title = post.frontmatter.title + ' - ' + post.frontmatter.subtitle;
@@ -56,6 +56,8 @@ const getGalleryItems = (data) => {
             items.push(item);
         }
     }
+
+    console.log(items);
 
     return items;
 }
@@ -108,7 +110,9 @@ export const pageQuery = graphql`
             path
             videoType
             videoID
-            videoThumbnail
+            videoThumbnail {
+              filename
+            }
           }
         }
       }
