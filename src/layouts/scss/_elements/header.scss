@@ -46,5 +46,93 @@
 @media screen and (max-width: 48rem) {
     .header {
         padding: 1.337rem;
+
+        &__nav {
+            left: 0;
+            top: 0;
+            position: absolute;
+            height: 100vh;
+            width: 100%;
+            background-color: $color-black;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity $transitionDefault;
+
+            > ul {
+                height: 100%;
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
+            li {
+                margin: .5rem;
+            }
+        }
+    }
+
+    .nav-toggle {
+        top: 1.2rem;
+        right: .5rem;
+        cursor: pointer;
+        width: 3.75rem;
+        height: 3.75rem;
+        position: absolute;
+        display: block;
+        z-index: 1;
+
+        &__bar {
+            position: absolute;
+            display: block;
+            width: 2rem;
+            height: .125rem;
+            background-color: $color-white;
+            left: 50%;
+            top: 50%;
+            transform-origin: 50% 50%;
+            pointer-events: none;
+            transition: transform $transitionDefault;
+
+            &:nth-child(1) {
+                transform: translate(-50%, calc(-50% - .5rem));
+            }
+
+            &:nth-child(2) {
+                transform: translate(-50%, -50%);
+            }
+
+            &:nth-child(3) {
+                transform: translate(-50%, calc(-50% + .5rem));
+            }
+        }
+    }
+
+    .nav-open {
+        .header {
+            &__nav {
+                opacity: 1;
+                pointer-events: auto;
+            }
+        }
+
+        .nav-toggle {
+            &__bar {
+                top: 50%;
+
+                &:nth-child(1) {
+                    transform: translate(-50%, -50%) rotate(45deg);
+                }
+
+                &:nth-child(2) {
+                    transform: translate(-50%, -50%) scaleX(0);
+                }
+
+                &:nth-child(3) {
+                    transform: translate(-50%, -50%) rotate(-45deg);
+                }
+            }
+        }
     }
 }
