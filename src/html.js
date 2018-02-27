@@ -29,6 +29,7 @@ module.exports = class HTML extends React.Component {
                     name='viewport'
                     content='width=device-width, initial-scale=1, shrink-to-fit=no'
                 />
+                <script src='https://identity.netlify.com/v1/netlify-identity-widget.js' rel='preload'/>
                 <script src='/admin/netlify_redirect.js' rel='preload'/>
                 {this.props.headComponents}
                 {css}
