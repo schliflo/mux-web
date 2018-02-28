@@ -58,6 +58,7 @@
             opacity: 0;
             pointer-events: none;
             transition: opacity $transitionDefault;
+            z-index: 100;
 
             > ul {
                 height: 100%;
@@ -82,7 +83,7 @@
         height: 3.75rem;
         position: absolute;
         display: block;
-        z-index: 1;
+        z-index: 101;
 
         &__bar {
             position: absolute;
