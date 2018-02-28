@@ -16,6 +16,11 @@ export default function Template({data}) {
         <div>
             <Helmet title={`${post.frontmatter.title} | ${data.site.siteMetadata.title}`}/>
             <div className="container container__flexible">
+                <div className="text__center">
+                    <h1>{post.frontmatter.title}</h1>
+                    <h2 className="text__serif">{post.frontmatter.subtitle}</h2>
+                    <p className="text__small">{post.frontmatter.date} // {post.frontmatter.label}</p>
+                </div>
                 <div className="video-embed" dangerouslySetInnerHTML={{
                     __html:
                         (() => {
@@ -32,8 +37,6 @@ export default function Template({data}) {
                         })()
                 }}/>
                 <div className="container container__narrow">
-                    <h1>{post.frontmatter.title}</h1>
-                    <h2>{post.frontmatter.subtitle}</h2>
                     <div dangerouslySetInnerHTML={{__html: post.html}}/>
                 </div>
             </div>
@@ -54,9 +57,10 @@ export const pageQuery = graphql`
       html
       frontmatter {
         path
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "MM YYYY")
         title
         subtitle
+        label
         videoType
         videoID
         videoThumbnail {

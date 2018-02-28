@@ -2,6 +2,8 @@
     position: relative;
     padding-bottom: 56.25%;
     overflow: hidden;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
 
     img,
     iframe {
@@ -15,5 +17,12 @@
     img {
         transform: scale(1.337);
         filter: blur(13.37px);
+    }
+}
+
+@media screen and (max-width: 48rem) {
+    .video-embed {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 }

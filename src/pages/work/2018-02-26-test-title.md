@@ -4,6 +4,7 @@ path: /test-xy
 title: Test title
 subtitle: a subtitle
 date: 2018-02-26T22:50:43.431Z
+label: documentary
 videoType: youtube
 videoID: wZZ7oFKsKzY
 videoThumbnail:

@@ -70,7 +70,7 @@ const WorkPage = ({data}) => (
             {data.allMarkdownRemark.edges.filter(post => post.node.frontmatter.contentType === 'work').map(({node: post}) => (
                 <Link className="video-grid__item" key={post.id} to={post.frontmatter.path} id={post.id}>
                     <h2 className="video-grid__item__title">{post.frontmatter.title}</h2>
-                    <h3 className="video-grid__item__subtitle">{post.frontmatter.subtitle}</h3>
+                    <h3 className="video-grid__item__subtitle text__serif">{post.frontmatter.subtitle}</h3>
                     <img className="video-grid__item__image" src={post.frontmatter.videoThumbnail[0].filename}/>
                 </Link>
             ))}
@@ -93,6 +93,7 @@ export const pageQuery = graphql`
             contentType
             date(formatString: "MMMM DD, YYYY")
             path
+            label
             videoType
             videoID
             videoThumbnail {
