@@ -9,10 +9,6 @@ body {
     font-family: $font-family-default;
     letter-spacing: .1337em;
     line-height: 1.42;
-
-    &.nav-open {
-        overflow: hidden;
-    }
 }
 
 #page {
@@ -87,4 +83,12 @@ img {
 iframe {
     width: 100%;
     height: 100%;
+}
+
+@media screen and (max-width: 48rem) {
+    body {
+        &.nav-open {
+            overflow: hidden;
+        }
+    }
 }

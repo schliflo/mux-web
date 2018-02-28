@@ -32,13 +32,16 @@ const TemplateWrapper = ({children, data}) => {
                     <nav id="nav-main" className="header__nav">
                         <ul>
                             <li>
-                                <Link to='/work' activeClassName='active' onClick={toggleMenu}><span data-text="Work">Work</span></Link>
+                                <Link to='/work' activeClassName='active' onClick={toggleMenu}><span
+                                    data-text="Work">Work</span></Link>
                             </li>
                             <li>
-                                <Link to='/about' activeClassName='active' onClick={toggleMenu}><span data-text="About">About</span></Link>
+                                <Link to='/about' activeClassName='active' onClick={toggleMenu}><span
+                                    data-text="About">About</span></Link>
                             </li>
                             <li>
-                                <Link to='/contact' activeClassName='active' onClick={toggleMenu}><span data-text="Contact">Contact</span></Link>
+                                <Link to='/contact' activeClassName='active' onClick={toggleMenu}><span
+                                    data-text="Contact">Contact</span></Link>
                             </li>
                         </ul>
                     </nav>
