@@ -1,3 +1,8 @@
+html {
+    $map: (8192px: 42px, 4096px: 20px, 2560px: 18px, 1920px: 17px, 1280px: 16px, 340px: 14px);
+    @include poly-fluid-sizing('font-size', $map);
+}
+
 body {
     background-color: $color-black;
     color: $color-white;
@@ -38,8 +43,12 @@ address {
 
 img {
     display: block;
-    max-width: 100%;
     height: auto;
+    width: 100%;
+
+    &:not([src$=".svg"]) {
+        max-width: 100%;
+    }
 }
 
 .sr-only {

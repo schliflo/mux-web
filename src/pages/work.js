@@ -66,30 +66,30 @@ const WorkPage = ({data}) => (
     <div>
         <Helmet title={`Work | ${data.site.siteMetadata.title}`}/>
         <div className='video-grid'>
-            <PhotoSwipeGallery items={getGalleryItems(data)} options={options} thumbnailContent={getThumbnailContent}/>
-        </div>
-        {/*{data.allMarkdownRemark.edges.filter(post => post.node.frontmatter.contentType === 'work').map(({node: post}) => (*/}
-            {/*<div key={post.id} id={post.id}>*/}
-                {/*<h2>{post.frontmatter.title}</h2>*/}
-                {/*<h2>{post.frontmatter.subtitle}</h2>*/}
-                {/*<p>{post.frontmatter.videoType} /// {post.frontmatter.videoID}</p>*/}
-                {/*<div dangerouslySetInnerHTML={{__html: post.html}}/>*/}
-                {/*<img src={post.frontmatter.videoThumbnail}/>*/}
-                {/*<div dangerouslySetInnerHTML={{*/}
+            {/*<PhotoSwipeGallery items={getGalleryItems(data)} options={options} thumbnailContent={getThumbnailContent}/>*/}
+            {data.allMarkdownRemark.edges.filter(post => post.node.frontmatter.contentType === 'work').map(({node: post}) => (
+                <Link className="video-grid__item" key={post.id} to={post.frontmatter.path} id={post.id}>
+                    <h2 className="video-grid__item__title">{post.frontmatter.title}</h2>
+                    <h3 className="video-grid__item__subtitle">{post.frontmatter.subtitle}</h3>
+                    {/*<p>{post.frontmatter.videoType} /// {post.frontmatter.videoID}</p>*/}
+                    {/*<div dangerouslySetInnerHTML={{__html: post.html}}/>*/}
+                    <img className="video-grid__item__image" src={post.frontmatter.videoThumbnail[0].filename}/>
+                    {/*<div dangerouslySetInnerHTML={{*/}
                     {/*__html:*/}
-                        {/*(() => {*/}
-                            {/*switch (post.frontmatter.videoType) {*/}
-                                {/*case 'youtube':*/}
-                                    {/*return '<iframe src="https://www.youtube.com/embed/' + post.frontmatter.videoID + '?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';*/}
-                                {/*case 'vimeo':*/}
-                                    {/*return '';*/}
-                                {/*default:*/}
-                                    {/*return '';*/}
-                            {/*}*/}
-                        {/*})()*/}
-                {/*}}/>*/}
-            {/*</div>*/}
-        {/*))}*/}
+                    {/*(() => {*/}
+                    {/*switch (post.frontmatter.videoType) {*/}
+                    {/*case 'youtube':*/}
+                    {/*return '<iframe src="https://www.youtube.com/embed/' + post.frontmatter.videoID + '?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';*/}
+                    {/*case 'vimeo':*/}
+                    {/*return '';*/}
+                    {/*default:*/}
+                    {/*return '';*/}
+                    {/*}*/}
+                    {/*})()*/}
+                    {/*}}/>*/}
+                </Link>
+            ))}
+        </div>
     </div>
 )
 

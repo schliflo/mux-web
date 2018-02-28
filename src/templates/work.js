@@ -15,7 +15,7 @@ export default function Template({data}) {
     return (
         <div>
             <Helmet title={`${post.frontmatter.title} | ${data.site.siteMetadata.title}`}/>
-            <h1 className="sr-only">${data.site.siteMetadata.title}</h1>
+            <h1>{data.site.siteMetadata.title}</h1>
             <div dangerouslySetInnerHTML={{__html: post.html}}/>
         </div>
     )
