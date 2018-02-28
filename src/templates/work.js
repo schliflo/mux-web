@@ -15,8 +15,28 @@ export default function Template({data}) {
     return (
         <div>
             <Helmet title={`${post.frontmatter.title} | ${data.site.siteMetadata.title}`}/>
-            <h1>{data.site.siteMetadata.title}</h1>
-            <div dangerouslySetInnerHTML={{__html: post.html}}/>
+            <div className="container container__flexible">
+                <div className="video-embed" dangerouslySetInnerHTML={{
+                    __html:
+                        (() => {
+                            let thumbnail = '<img class="video-grid__item__image" src="' + post.frontmatter.videoThumbnail[0].filename + '"/>';
+                            switch (post.frontmatter.videoType) {
+                                case 'youtube':
+                                    return thumbnail + '<iframe src="https://www.youtube.com/embed/' + post.frontmatter.videoID + '?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
+                                case 'vimeo':
+                                    // TODO: handle vimeo
+                                    return '';
+                                default:
+                                    return '';
+                            }
+                        })()
+                }}/>
+                <div className="container container__narrow">
+                    <h1>{post.frontmatter.title}</h1>
+                    <h2>{post.frontmatter.subtitle}</h2>
+                    <div dangerouslySetInnerHTML={{__html: post.html}}/>
+                </div>
+            </div>
         </div>
     )
 }

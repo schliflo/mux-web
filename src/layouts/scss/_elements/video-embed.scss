@@ -1,0 +1,19 @@
+.video-embed {
+    position: relative;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+
+    img,
+    iframe {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+
+    img {
+        transform: scale(1.337);
+        filter: blur(13.37px);
+    }
+}

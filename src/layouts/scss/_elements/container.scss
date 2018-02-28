@@ -6,4 +6,10 @@
     &__narrow {
         max-width: 62.5rem; // 1000px
     }
+
+    &__flexible {
+        max-width: none;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
 }

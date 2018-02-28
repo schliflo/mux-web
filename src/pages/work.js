@@ -71,22 +71,7 @@ const WorkPage = ({data}) => (
                 <Link className="video-grid__item" key={post.id} to={post.frontmatter.path} id={post.id}>
                     <h2 className="video-grid__item__title">{post.frontmatter.title}</h2>
                     <h3 className="video-grid__item__subtitle">{post.frontmatter.subtitle}</h3>
-                    {/*<p>{post.frontmatter.videoType} /// {post.frontmatter.videoID}</p>*/}
-                    {/*<div dangerouslySetInnerHTML={{__html: post.html}}/>*/}
                     <img className="video-grid__item__image" src={post.frontmatter.videoThumbnail[0].filename}/>
-                    {/*<div dangerouslySetInnerHTML={{*/}
-                    {/*__html:*/}
-                    {/*(() => {*/}
-                    {/*switch (post.frontmatter.videoType) {*/}
-                    {/*case 'youtube':*/}
-                    {/*return '<iframe src="https://www.youtube.com/embed/' + post.frontmatter.videoID + '?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';*/}
-                    {/*case 'vimeo':*/}
-                    {/*return '';*/}
-                    {/*default:*/}
-                    {/*return '';*/}
-                    {/*}*/}
-                    {/*})()*/}
-                    {/*}}/>*/}
                 </Link>
             ))}
         </div>
