@@ -8,10 +8,10 @@ import Link from 'gatsby-link'
 const findNode = (path, data) => data.allMarkdownRemark.edges
     .map(edge => edge.node.frontmatter)
     .filter(r => r.path === path)
-    .pop()
+    .pop();
 
 export default function Template({data}) {
-    const {markdownRemark: post} = data
+    const {markdownRemark: post} = data;
     return (
         <div>
             <Helmet title={`${post.frontmatter.title} | ${data.site.siteMetadata.title}`}/>
@@ -19,7 +19,7 @@ export default function Template({data}) {
                 <div className="text__center">
                     <h1>{post.frontmatter.title}</h1>
                     <h2 className="text__serif">{post.frontmatter.subtitle}</h2>
-                    <p className="text__small">{post.frontmatter.date} // {post.frontmatter.label}</p>
+                    <p className="text__small">{post.frontmatter.date} // <Link to={{pathname: '/work', hash: encodeURIComponent(post.frontmatter.label)}}>{post.frontmatter.label}</Link></p>
                 </div>
                 <div className="video-embed" dangerouslySetInnerHTML={{
                     __html:
@@ -80,4 +80,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

@@ -2,73 +2,63 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import graphql from 'graphql'
-import {PhotoSwipeGallery} from 'react-photoswipe';
 
-const options = {
-    //http://photoswipe.com/documentation/options.html
-    fullscreenEl: false,
-    zoomEl: false,
-    shareEl: false
-};
+const GLOBAL_WINDOW = typeof window !== 'undefined' && window;
+let workFilter = undefined;
 
-const getThumbnailContent = (item) => {
-    return (
-        <img src={item.thumbnail}/>
-    );
-}
-
-const getGalleryItems = (data) => {
-    let items = [
-        // {
-        //     src: 'http://lorempixel.com/1200/900/sports/1',
-        //     thumbnail: 'http://lorempixel.com/120/90/sports/1',
-        //     w: 1200,
-        //     h: 900,
-        //     title: 'Image 1'
-        // },
-        // {
-        //     src: 'http://lorempixel.com/1200/900/sports/2',
-        //     thumbnail: 'http://lorempixel.com/120/90/sports/2',
-        //     w: 1200,
-        //     h: 900,
-        //     title: 'Image 2'
-        // }
-    ];
+const uniqueTags = (data) => {
+    let uniqueTags = ['all'];
 
     for (let i = 0; i < data.allMarkdownRemark.edges.length; i++) {
         let post = data.allMarkdownRemark.edges[i].node;
-        if (post.frontmatter.contentType === 'work') {
-            let item = {};
-
-            item.thumbnail = post.frontmatter.videoThumbnail[0].filename;
-            item.w = 1920;
-            item.h = 1080;
-            item.title = post.frontmatter.title + ' - ' + post.frontmatter.subtitle;
-
-            switch (post.frontmatter.videoType) {
-                case 'youtube':
-                    item.html = '<iframe src="https://www.youtube.com/embed/' + post.frontmatter.videoID + '?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
-                    break;
-                case 'vimeo':
-                    break;
-            }
-
-            items.push(item);
+        if (post.frontmatter.label) {
+            uniqueTags.push(post.frontmatter.label);
         }
     }
 
-    console.log(items);
+    uniqueTags = uniqueTags.reverse().filter(function (e, i, arr) {
+        return arr.indexOf(e, i + 1) === -1;
+    }).reverse();
 
-    return items;
-}
+    return uniqueTags;
+};
+
+const setFilter = (value) => {
+    if (value === 'all' || workFilter === value) {
+        workFilter = undefined;
+    } else {
+        workFilter = value;
+    }
+};
+
+const getFilterFromUrl = () => {
+    if (!workFilter && GLOBAL_WINDOW.location && GLOBAL_WINDOW.location.hash) {
+        setFilter(GLOBAL_WINDOW.location.hash ? decodeURIComponent(GLOBAL_WINDOW.location.hash.substring(1)) : undefined);
+    }
+};
+
+const WorkTags = (tags) => (
+    <ul className="tag-list">
+        {tags.data.map((tag) => (
+            <li key={tag} className={(workFilter === tag || tag === 'all' && !workFilter) ? 'active' : ''}>
+                <Link to={{pathname: '/work', hash: encodeURIComponent(tag)}}
+                      onClick={setFilter.bind(this, tag)}>{tag}</Link>
+            </li>
+        ))}
+    </ul>
+);
 
 const WorkPage = ({data}) => (
     <div>
+        {getFilterFromUrl()}
         <Helmet title={`Work | ${data.site.siteMetadata.title}`}/>
+        <div className="container container__flexible text__center">
+            <WorkTags data={uniqueTags(data)}/>
+        </div>
         <div className='video-grid'>
-            {/*<PhotoSwipeGallery items={getGalleryItems(data)} options={options} thumbnailContent={getThumbnailContent}/>*/}
-            {data.allMarkdownRemark.edges.filter(post => post.node.frontmatter.contentType === 'work').map(({node: post}) => (
-                <Link className="video-grid__item" key={post.id} to={post.frontmatter.path} id={post.id}>
+            {data.allMarkdownRemark.edges.filter(post => post.node.frontmatter.contentType === 'work' && (!workFilter || post.node.frontmatter.label === workFilter)).map(({node: post}) => (
+                <Link className="video-grid__item" data-tag={post.frontmatter.label} key={post.id} id={post.id}
+                      to={post.frontmatter.path}>
                     <h2 className="video-grid__item__title">{post.frontmatter.title}</h2>
                     <h3 className="video-grid__item__subtitle text__serif">{post.frontmatter.subtitle}</h3>
                     <img className="video-grid__item__image" src={post.frontmatter.videoThumbnail[0].filename}/>
@@ -76,7 +66,7 @@ const WorkPage = ({data}) => (
             ))}
         </div>
     </div>
-)
+);
 
 export default WorkPage
 
@@ -110,4 +100,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

@@ -35,9 +35,6 @@ a {
 address {
     font-style: normal;
     font-size: 1.25rem;
-}
-
-#main {
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -77,6 +74,7 @@ img {
 
     &__small {
         font-size: .75rem;
+        letter-spacing: .2em;
     }
 }
 

@@ -24,7 +24,7 @@ const TemplateWrapper = ({children, data}) => {
                     <Link to='/' className="header__logo">
                         <img src="/files/logos/mnv.svg" width="90" height="57"/>
                     </Link>
-                    <div className="nav-toggle" onClick={toggleMenu}>
+                    <div className="nav-toggle" onClick={toggleMenu.bind(this)}>
                         <div className="nav-toggle__bar"/>
                         <div className="nav-toggle__bar"/>
                         <div className="nav-toggle__bar"/>
@@ -32,15 +32,15 @@ const TemplateWrapper = ({children, data}) => {
                     <nav id="nav-main" className="header__nav">
                         <ul>
                             <li>
-                                <Link to='/work' activeClassName='active' onClick={toggleMenu}><span
+                                <Link to='/work' activeClassName='active' onClick={toggleMenu.bind(this)}><span
                                     data-text="Work">Work</span></Link>
                             </li>
                             <li>
-                                <Link to='/about' activeClassName='active' onClick={toggleMenu}><span
+                                <Link to='/about' activeClassName='active' onClick={toggleMenu.bind(this)}><span
                                     data-text="About">About</span></Link>
                             </li>
                             <li>
-                                <Link to='/contact' activeClassName='active' onClick={toggleMenu}><span
+                                <Link to='/contact' activeClassName='active' onClick={toggleMenu.bind(this)}><span
                                     data-text="Contact">Contact</span></Link>
                             </li>
                         </ul>
