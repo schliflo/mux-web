@@ -1,4 +1,4 @@
-.tag-list {
+.category-list {
     list-style: none;
     margin: 0;
     padding: 0;
@@ -37,7 +37,7 @@
 }
 
 @media screen and (max-width: 48rem) {
-    .tag-list {
+    .category-list {
         margin-top: .5rem;
         margin-bottom: 1.5rem;
     }

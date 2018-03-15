@@ -19,7 +19,7 @@ export default function Template({data}) {
                 <div className="text__center">
                     <h1>{post.frontmatter.title}</h1>
                     <h2 className="text__serif">{post.frontmatter.subtitle}</h2>
-                    <p className="text__small">{post.frontmatter.date} // <Link to={{pathname: '/work', hash: encodeURIComponent(post.frontmatter.label)}}>{post.frontmatter.label}</Link></p>
+                    <p className="text__small">{post.frontmatter.date} // <Link to={{pathname: '/work/' + encodeURIComponent(post.frontmatter.category)}}>{post.frontmatter.category}</Link></p>
                 </div>
                 <div className="video-embed" dangerouslySetInnerHTML={{
                     __html:
@@ -44,11 +44,10 @@ export default function Template({data}) {
     )
 }
 
-export const pageQuery = graphql`
+export const workPageQuery = graphql`
   query BlogPostByPath($path: String!) {
     site {
       siteMetadata {
-        disqus
         title
       }
     }
@@ -60,7 +59,7 @@ export const pageQuery = graphql`
         date(formatString: "MM YYYY")
         title
         subtitle
-        label
+        category
         videoType
         videoID
         videoThumbnail {

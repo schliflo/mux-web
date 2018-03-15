@@ -3,16 +3,13 @@ import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
 import graphql from 'graphql'
 
-const GLOBAL_WINDOW = typeof window !== 'undefined' && window;
-let workFilter = undefined;
-
-const uniqueTags = (data) => {
-    let uniqueTags = ['all'];
+const uniqueCategories = (data) => {
+    let uniqueTags = [];
 
     for (let i = 0; i < data.allMarkdownRemark.edges.length; i++) {
         let post = data.allMarkdownRemark.edges[i].node;
-        if (post.frontmatter.label) {
-            uniqueTags.push(post.frontmatter.label);
+        if (post.frontmatter.category) {
+            uniqueTags.push(post.frontmatter.category);
         }
     }
 
@@ -23,26 +20,11 @@ const uniqueTags = (data) => {
     return uniqueTags;
 };
 
-const setFilter = (value) => {
-    if (value === 'all' || workFilter === value) {
-        workFilter = undefined;
-    } else {
-        workFilter = value;
-    }
-};
-
-const getFilterFromUrl = () => {
-    if (!workFilter && GLOBAL_WINDOW.location && GLOBAL_WINDOW.location.hash) {
-        setFilter(GLOBAL_WINDOW.location.hash ? decodeURIComponent(GLOBAL_WINDOW.location.hash.substring(1)) : undefined);
-    }
-};
-
-const WorkTags = (tags) => (
-    <ul className="tag-list">
-        {tags.data.map((tag) => (
-            <li key={tag} className={(workFilter === tag || tag === 'all' && !workFilter) ? 'active' : ''}>
-                <Link to={{pathname: '/work', hash: encodeURIComponent(tag)}}
-                      onClick={setFilter.bind(this, tag)}>{tag}</Link>
+const WorkCategories = (data) => (
+    <ul className="category-list">
+        {data['categories'].map((category) => (
+            <li key={category} className={data['current'] === category ? 'active' : ''}>
+                <Link to={{pathname: '/work/' + category + '/'}}>{category}</Link>
             </li>
         ))}
     </ul>
@@ -50,14 +32,13 @@ const WorkTags = (tags) => (
 
 const WorkPage = ({data}) => (
     <div>
-        {getFilterFromUrl()}
         <Helmet title={`Work | ${data.site.siteMetadata.title}`}/>
         <div className="container container__flexible text__center">
-            <WorkTags data={uniqueTags(data)}/>
+            <WorkCategories categories={uniqueCategories(data)} current={'featured'}/>
         </div>
         <div className='video-grid'>
-            {data.allMarkdownRemark.edges.filter(post => post.node.frontmatter.contentType === 'work' && (!workFilter || post.node.frontmatter.label === workFilter)).map(({node: post}) => (
-                <Link className="video-grid__item" data-tag={post.frontmatter.label} key={post.id} id={post.id}
+            {data.allMarkdownRemark.edges.filter(post => post.node.frontmatter.contentType === 'work').map(({node: post}) => (
+                <Link className="video-grid__item" data-tag={post.frontmatter.category} key={post.id} id={post.id}
                       to={post.frontmatter.path}>
                     <h2 className="video-grid__item__title">{post.frontmatter.title}</h2>
                     <h3 className="video-grid__item__subtitle text__serif">{post.frontmatter.subtitle}</h3>
@@ -83,7 +64,7 @@ export const pageQuery = graphql`
             contentType
             date(formatString: "MMMM DD, YYYY")
             path
-            label
+            category
             videoType
             videoID
             videoThumbnail {

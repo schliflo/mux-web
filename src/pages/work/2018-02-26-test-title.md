@@ -1,10 +1,10 @@
 ---
 contentType: work
-path: /test-xy
+path: /work/test-xy
 title: Test title
 subtitle: a subtitle
 date: 2018-02-26T22:50:43.431Z
-label: portrait
+category: portrait
 videoType: youtube
 videoID: wZZ7oFKsKzY
 videoThumbnail:
