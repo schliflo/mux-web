@@ -56,13 +56,13 @@ const TemplateWrapper = ({children, data}) => {
                         <img src="/files/logos/muxn_logo_03.svg" width="353" height="199"/>
                     </Link>
                     <span className="footer__copyright">&copy; 2018 Max Neumeier</span>
-                    <nav id="nav-footer" className="footer__nav">
-                        <ul>
-                            <li>
-                                <Link to='/imprint'>Imprint</Link>
-                            </li>
-                        </ul>
-                    </nav>
+                    {/*<nav id="nav-footer" className="footer__nav">*/}
+                        {/*<ul>*/}
+                            {/*<li>*/}
+                                {/*<Link to='/imprint'>Imprint</Link>*/}
+                            {/*</li>*/}
+                        {/*</ul>*/}
+                    {/*</nav>*/}
                 </footer>
             </div>
         </div>

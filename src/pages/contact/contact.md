@@ -6,7 +6,8 @@ title: Contact
 <div class="container container__narrow text__center">
     <p>
 Full portfolio is under construction.<br>
-In the meantime feel free to contact me at:
+In the meantime feel free to contact me at:<br>
+    <br>
     </p>
     <address>
         <p>Max Neumeier</p>
