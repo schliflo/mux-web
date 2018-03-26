@@ -32,7 +32,7 @@
 
                 &:hover {
                     > span {
-                        @include textGlitch("glitch", 25, $color-white, $color-black, #00ff00, #ff00ff, 150, 40);
+                        @include textGlitch("glitch", 25, $color-white, $color-black, #00ff00, #ff00ff, 200, 40);
                     }
                 }
             }

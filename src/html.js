@@ -1,6 +1,6 @@
 import React from 'react'
 
-let stylesStr
+let stylesStr;
 if (process.env.NODE_ENV === `production`) {
     try {
         stylesStr = require(`!raw-loader!../public/styles.css`)
@@ -11,7 +11,7 @@ if (process.env.NODE_ENV === `production`) {
 
 module.exports = class HTML extends React.Component {
     render() {
-        let css
+        let css;
         if (process.env.NODE_ENV === `production`) {
             css = (
                 <style
@@ -25,10 +25,7 @@ module.exports = class HTML extends React.Component {
             <head>
                 <meta charSet='utf-8'/>
                 <meta httpEquiv='x-ua-compatible' content='ie=edge'/>
-                <meta
-                    name='viewport'
-                    content='width=device-width, initial-scale=1, shrink-to-fit=no'
-                />
+                <meta name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no'/>
                 <script src='https://identity.netlify.com/v1/netlify-identity-widget.js' rel='preload'/>
                 <script src='/admin/netlify_redirect.js' rel='preload'/>
                 {this.props.headComponents}
@@ -46,4 +43,4 @@ module.exports = class HTML extends React.Component {
             </html>
         )
     }
-}
+};

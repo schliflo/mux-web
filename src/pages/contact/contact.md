@@ -1,6 +1,6 @@
 ---
 contentType: content
-path: /contact
+path: /
 title: Contact
 ---
 <div class="container container__narrow text__center">

@@ -2,8 +2,7 @@ module.exports = {
     siteMetadata: {
         title: 'Bewegt-Bild Manufaktur Neumeier',
         author: 'Florian Schlittenbauer',
-        authorLink: 'https://schliflo.de',
-        disqus: 'gatsby-starter-blog'// put your disqus ID here
+        authorLink: 'https://schliflo.de'
     },
     plugins: [
         {

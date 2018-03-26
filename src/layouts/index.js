@@ -31,16 +31,16 @@ const TemplateWrapper = ({children, data}) => {
                     </div>
                     <nav id="nav-main" className="header__nav">
                         <ul>
+                            {/*<li>*/}
+                                {/*<Link to='/work' activeClassName='active' onClick={toggleMenu.bind(this)}><span*/}
+                                    {/*data-text="Work">Work</span></Link>*/}
+                            {/*</li>*/}
+                            {/*<li>*/}
+                                {/*<Link to='/about' activeClassName='active' onClick={toggleMenu.bind(this)}><span*/}
+                                    {/*data-text="About">About</span></Link>*/}
+                            {/*</li>*/}
                             <li>
-                                <Link to='/work' activeClassName='active' onClick={toggleMenu.bind(this)}><span
-                                    data-text="Work">Work</span></Link>
-                            </li>
-                            <li>
-                                <Link to='/about' activeClassName='active' onClick={toggleMenu.bind(this)}><span
-                                    data-text="About">About</span></Link>
-                            </li>
-                            <li>
-                                <Link to='/contact' activeClassName='active' onClick={toggleMenu.bind(this)}><span
+                                <Link to='/' activeClassName='active' onClick={toggleMenu.bind(this)}><span
                                     data-text="Contact">Contact</span></Link>
                             </li>
                         </ul>
@@ -67,11 +67,11 @@ const TemplateWrapper = ({children, data}) => {
             </div>
         </div>
     )
-}
+};
 
 TemplateWrapper.propTypes = {
     children: PropTypes.func
-}
+};
 
 export const pageQuery = graphql`
   query LayoutIndexQuery {
@@ -81,6 +81,6 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
 
 export default TemplateWrapper
