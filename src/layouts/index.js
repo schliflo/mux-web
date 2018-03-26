@@ -52,9 +52,9 @@ const TemplateWrapper = ({children, data}) => {
                 </main>
 
                 <footer id="footer" className="footer">
-                    <Link to='/' className="footer__logo">
-                        <img src="/files/logos/muxn_logo_03.svg" width="353" height="199"/>
-                    </Link>
+                    {/*<Link to='/' className="footer__logo">*/}
+                        {/*<img src="/files/logos/muxn_logo_03.svg" width="353" height="199"/>*/}
+                    {/*</Link>*/}
                     <span className="footer__copyright">&copy; 2018 Max Neumeier</span>
                     {/*<nav id="nav-footer" className="footer__nav">*/}
                         {/*<ul>*/}
