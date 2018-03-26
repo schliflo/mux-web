@@ -15,10 +15,28 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 
     > main {
-        margin-top: auto;
-        margin-bottom: auto;
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+
+        > .pageContent {
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+
+            > div {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: auto;
+
+                &:not(.template__category):not(.page__work) {
+                    margin-top: auto;
+                }
+            }
+        }
     }
 }
 

@@ -31,7 +31,7 @@ const WorkCategories = (data) => (
 );
 
 const WorkPage = ({data}) => (
-    <div>
+    <div className="page__work">
         <Helmet title={`Work | ${data.site.siteMetadata.title}`}/>
         <div className="container container__flexible text__center">
             <WorkCategories categories={uniqueCategories(data)} current={'featured'}/>

@@ -36,7 +36,7 @@ const WorkCategories = (data) => (
 export default function Template({data}) {
     const {markdownRemark: post} = data;
     return (
-        <div>
+        <div className="template__category">
             <Helmet title={`${post.frontmatter.title} | ${data.site.siteMetadata.title}`}/>
             <div className="container container__flexible text__center">
                 <WorkCategories categories={uniqueCategories(data.allMarkdownRemark.edges)} current={post.frontmatter.title}/>

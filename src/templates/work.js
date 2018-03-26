@@ -13,9 +13,9 @@ const findNode = (path, data) => data.allMarkdownRemark.edges
 export default function Template({data}) {
     const {markdownRemark: post} = data;
     return (
-        <div>
+        <div className='template__work'>
             <Helmet title={`${post.frontmatter.title} | ${data.site.siteMetadata.title}`}/>
-            <div className="container container__flexible">
+            <div className="container">
                 <div className="text__center">
                     <h1>{post.frontmatter.title}</h1>
                     <h2 className="text__serif">{post.frontmatter.subtitle}</h2>

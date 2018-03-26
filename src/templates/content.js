@@ -5,7 +5,7 @@ import graphql from 'graphql'
 export default function Template({data}) {
     const {markdownRemark: post} = data;
     return (
-        <div className='container container__narrow'>
+        <div className='template__content container container__narrow'>
             <Helmet title={`${post.frontmatter.title} | ${data.site.siteMetadata.title}`}/>
             <h1 className="sr-only">{post.frontmatter.title}</h1>
             <div className="container" dangerouslySetInnerHTML={{__html: post.html}}/>
