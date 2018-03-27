@@ -1,6 +1,6 @@
 module.exports = {
     siteMetadata: {
-        title: 'Bewegt-Bild Manufaktur Neumeier',
+        title: 'Max Neumeier - Video Editor',
         author: 'Florian Schlittenbauer',
         authorLink: 'https://schliflo.de'
     },
@@ -25,4 +25,4 @@ module.exports = {
         'gatsby-plugin-react-helmet',
         'gatsby-plugin-sass'
     ]
-}
+};
