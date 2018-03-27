@@ -27,10 +27,9 @@ export default function Template({data}) {
                             let thumbnail = '<img class="video-grid__item__image" src="' + post.frontmatter.videoThumbnail[0].filename + '"/>';
                             switch (post.frontmatter.videoType) {
                                 case 'youtube':
-                                    return thumbnail + '<iframe src="https://www.youtube.com/embed/' + post.frontmatter.videoID + '?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>';
+                                    return thumbnail + '<iframe src="https://www.youtube.com/embed/' + post.frontmatter.videoID + '?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
                                 case 'vimeo':
-                                    // TODO: handle vimeo
-                                    return '';
+                                    return thumbnail + '<iframe src="https://player.vimeo.com/video/' + post.frontmatter.videoID + '?transparent=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
                                 default:
                                     return '';
                             }
