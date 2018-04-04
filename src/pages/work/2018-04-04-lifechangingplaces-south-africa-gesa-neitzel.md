@@ -1,6 +1,6 @@
 ---
 contentType: work
-path: work/LH-SouthAfrica
+path: /work/LH-SouthAfrica
 title: '#LifeChangingPlaces - SOUTH AFRICA - Gesa Neitzel'
 subtitle: short documentary about wildlife ranger Gesa Neitzel
 date: '2018-04-04T12:12:54+02:00'
