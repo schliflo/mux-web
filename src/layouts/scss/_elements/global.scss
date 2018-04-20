@@ -40,18 +40,50 @@ body {
     }
 }
 
-p {
-    margin-top: .75em;
-    margin-bottom: .75em;
-    line-height: 1.66;
-}
-
 a {
     color: white;
     text-decoration: none;
 
     &:hover {
         text-decoration: underline;
+    }
+}
+
+p {
+    margin-top: .75em;
+    margin-bottom: .75em;
+    line-height: 1.66;
+
+    a {
+        position: relative;
+        transition: color $transitionDefault;
+
+        &:after {
+            content: '';
+            display: block;
+            pointer-events: none;
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            z-index: -1;
+            background-color: white;
+            transform-origin: bottom;
+            transform: scaleY(.2);
+            opacity: .33;
+            transition: transform $transitionDefault, opacity $transitionDefault;
+        }
+
+        &:hover {
+            text-decoration: none;
+            color: $color-black;
+
+            &:after {
+                transform: scaleY(1);
+                opacity: 1;
+            }
+        }
     }
 }
 
