@@ -16,4 +16,4 @@ Director: Vincent Urban
 
 Position: Editor, Sounddesigner, Additional Cinematography / Drone Footage
 
-Awards: [German Advertising Film Award for Best Editing](http://www.deutscher-werbefilmpreis.de/de/preistrager/)
+Awards: [German Advertising Film Award for Best Editing](http://www.deutscher-werbefilmpreis.de/de/preistrager/), [One Club Bronze for Editing](http://www.oneclub.org/awards/theoneshow/-archive/awards/2018/42/all/Craft+[d]+Editing/select)
