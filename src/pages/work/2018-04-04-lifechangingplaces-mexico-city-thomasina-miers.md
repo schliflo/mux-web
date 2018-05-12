@@ -7,7 +7,7 @@ date: '2018-04-04T12:42:33+02:00'
 videoType: vimeo
 videoID: '244824484'
 videoThumbnail:
-  - filename: /files/work-test.jpg
+  - filename: /files/lh-mex.webp.jpg
 category: commercial
 ---
 Client: Lufthansa
