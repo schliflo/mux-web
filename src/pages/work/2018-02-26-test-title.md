@@ -1,6 +1,6 @@
 ---
 contentType: work
-path: /work/test-xy
+path: /work/stories-of-ethiopia
 title: Stories Of Ethiopia
 subtitle: a portrait series for an NGO called Menschen für Menschen
 date: 2018-02-26T22:50:43.431Z
