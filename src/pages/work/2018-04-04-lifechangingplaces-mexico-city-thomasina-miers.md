@@ -1,6 +1,6 @@
 ---
 contentType: work
-path: /work/LH-Mexico
+path: /work/lh-mexico
 title: '#LifeChangingPlaces - MEXICO CITY - Thomasina Miers'
 subtitle: Short documentary about chef Thomasina Miers
 date: '2018-04-04T12:42:33+02:00'
