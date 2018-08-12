@@ -7,8 +7,6 @@ import Link from 'gatsby-link'
 const uniqueCategories = (posts) => {
     let uniqueTags = [];
 
-    console.log(posts);
-
     for (let i = 0; i < posts.length; i++) {
         let post = posts[i].node;
         if (post.frontmatter.category) {

@@ -22,7 +22,7 @@ const TemplateWrapper = ({children, data}) => {
             <div id='page'>
                 <header id="header" className="header">
                     <Link to='/' className="header__logo">
-                        <img src="/files/logos/mnv.svg" width="90" height="57"/>
+                        <img src="/files/logos/MN_Logo_white-02.svg" width="90" height="54"/>
                     </Link>
                     <div className="nav-toggle" onClick={toggleMenu.bind(this)}>
                         <div className="nav-toggle__bar"/>
