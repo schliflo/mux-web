@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby + Netlify CMS Starter',
+    title: 'Max Neumeier - Video Editor',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
