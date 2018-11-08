@@ -14,7 +14,7 @@ export const BlogPostTemplate = ({
                                      title,
                                      helmet,
                                  }) => {
-    const PostContent = contentComponent || Content
+    const PostContent = contentComponent || Content;
 
     return (
         <section className="section">
@@ -44,7 +44,7 @@ export const BlogPostTemplate = ({
             </div>
         </section>
     )
-}
+};
 
 BlogPostTemplate.propTypes = {
     content: PropTypes.node.isRequired,
@@ -52,10 +52,10 @@ BlogPostTemplate.propTypes = {
     description: PropTypes.string,
     title: PropTypes.string,
     helmet: PropTypes.instanceOf(Helmet),
-}
+};
 
 const BlogPost = ({data}) => {
-    const {markdownRemark: post} = data
+    const {markdownRemark: post} = data;
 
     return (
         <Layout>
@@ -69,13 +69,13 @@ const BlogPost = ({data}) => {
             />
         </Layout>
     )
-}
+};
 
 BlogPost.propTypes = {
     data: PropTypes.shape({
         markdownRemark: PropTypes.object,
     }),
-}
+};
 
 export default BlogPost
 
@@ -92,4 +92,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;

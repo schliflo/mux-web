@@ -10,6 +10,6 @@ const TemplateWrapper = ({children}) => (
         <Navbar/>
         <div>{children}</div>
     </div>
-)
+);
 
 export default TemplateWrapper
