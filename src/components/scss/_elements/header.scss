@@ -32,7 +32,7 @@
 
                 &:hover {
                     > span {
-                        @include textGlitch("glitch", 25, $color-white, $color-black, #00ff00, #ff00ff, 200, 40);
+                        @include textGlitch("glitch", 25, $color-white, $color-black-bg, #00ff00, #ff00ff, 200, 40);
                     }
                 }
             }
@@ -54,7 +54,7 @@
             position: absolute;
             height: 100vh;
             width: 100%;
-            background-color: $color-black;
+            background-color: $color-black-bg;
             opacity: 0;
             pointer-events: none;
             transition: opacity $transitionDefault;

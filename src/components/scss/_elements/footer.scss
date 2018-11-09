@@ -4,20 +4,12 @@
     padding: 3.75rem 4rem;
     margin-top: auto;
 
-    &__logo {
+    &__copyright {
         display: block;
-        max-width: 10.9375rem;
         margin-right: auto;
     }
 
-    &__copyright {
-        display: block;
-        margin-left: auto;
-        align-self: flex-end;
-    }
-
     &__nav {
-        align-self: flex-end;
         margin-left: 4rem;
 
         ul {
@@ -41,16 +33,7 @@
         padding: 1.337rem;
         flex-direction: column;
 
-        &__logo {
-            margin-bottom: 3.337rem;
-
-        }
-
-        &__copyright {
-            margin-right: auto;
-            margin-bottom: 1rem;
-        }
-
+        &__copyright,
         &__nav {
             margin-left: auto;
             margin-right: auto;
