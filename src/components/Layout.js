@@ -9,7 +9,9 @@ const TemplateWrapper = ({ children }) => (
   <div id="page">
     <Helmet title="Max Neumeier - Video Editor"/>
     <Navbar/>
-    <div className="pageContent">{children}</div>
+    <main id="main">
+      <div className='pageContent'>{children}</div>
+    </main>
     <footer id="footer" className="footer">
       <span className="footer__copyright">&copy; 2018 Max Neumeier</span>
       <nav id="nav-footer" className="footer__nav">

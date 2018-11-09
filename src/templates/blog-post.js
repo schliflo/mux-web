@@ -63,7 +63,7 @@ const BlogPost = ({data}) => {
                 content={post.html}
                 contentComponent={HTMLContent}
                 description={post.frontmatter.description}
-                helmet={<Helmet title={`${post.frontmatter.title} | Blog`}/>}
+                helmet={<Helmet title={`${post.frontmatter.title} | ${data.site.siteMetadata.title}`}/>}
                 tags={post.frontmatter.tags}
                 title={post.frontmatter.title}
             />
@@ -89,6 +89,11 @@ export const pageQuery = graphql`
         title
         description
         tags
+      }
+    }
+    site {
+      siteMetadata {
+        title
       }
     }
   }
