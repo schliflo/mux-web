@@ -1,0 +1,19 @@
+---
+templateKey: work-item
+path: /work/in-panama-2017
+title: In Panama - 2017
+subtitle: A travel film for VisitPanama
+date: 2018-02-25T08:12:33.962Z
+videoType: vimeo
+videoID: '214467211'
+videoThumbnail:
+  - filename: /img/inpanama.webp.jpg
+category: commercial
+---
+Client: Visit Panama (ATP)
+
+Director: Vincent Urban
+
+Position: Second Camera
+
+Awards: Vimeo Staff Pick
