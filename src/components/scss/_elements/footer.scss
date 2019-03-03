@@ -1,0 +1,43 @@
+.footer {
+    display: flex;
+    flex-direction: row;
+    padding: 3.75rem 4rem;
+    margin-top: auto;
+
+    &__copyright {
+        display: block;
+        margin-right: auto;
+    }
+
+    &__nav {
+        margin-left: 4rem;
+
+        ul {
+            list-style: none;
+
+            a {
+                color: $color-white;
+                text-decoration: none;
+
+                &:focus,
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 48rem) {
+    .footer {
+        padding: 1.337rem;
+        flex-direction: column;
+
+        &__copyright,
+        &__nav {
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 2rem;
+        }
+    }
+}

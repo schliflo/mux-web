@@ -1,0 +1,4 @@
+$transitionDefaultEasing: ease-out;
+$transitionDefaultDuration: .25s;
+$transitionDefault: $transitionDefaultEasing $transitionDefaultDuration;
+$transitionLong: $transitionDefaultEasing $transitionDefaultDuration*2;

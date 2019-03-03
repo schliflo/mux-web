@@ -1,84 +1,60 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import github from '../img/github-icon.svg'
-import logo from '../img/logo.svg'
+import logo from "../img/logos/MN_Logo_white-02.svg";
 
 const Navbar = class extends React.Component {
-  componentDidMount() {
-    // Get all "navbar-burger" elements
-    const $navbarBurgers = Array.prototype.slice.call(
-      document.querySelectorAll('.navbar-burger'),
-      0
-    )
-    // Check if there are any navbar burgers
-    if ($navbarBurgers.length > 0) {
-      // Add a click event on each of them
-      $navbarBurgers.forEach(el => {
-        el.addEventListener('click', () => {
-          // Get the target from the "data-target" attribute
-          const target = el.dataset.target
-          const $target = document.getElementById(target)
+  constructor(props) {
+    super(props);
 
-          // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-          el.classList.toggle('is-active')
-          $target.classList.toggle('is-active')
-        })
-      })
-    }
-  }
+    this.state = {
+      'menuOpen': false,
+    };
+  };
 
   render() {
     return (
-      <nav
-        className="navbar is-transparent"
-        role="navigation"
-        aria-label="main-navigation"
-      >
-        <div className="container">
-          <div className="navbar-brand">
-            <Link to="/" className="navbar-item" title="Logo">
-              <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
-            </Link>
-            {/* Hamburger menu */}
-            <div className="navbar-burger burger" data-target="navMenu">
-              <span />
-              <span />
-              <span />
-            </div>
-          </div>
-          <div id="navMenu" className="navbar-menu">
-            <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about">
-                About
-              </Link>
-              <Link className="navbar-item" to="/products">
-                Products
-              </Link>
-              <Link className="navbar-item" to="/blog">
-                Blog
-              </Link>
-              <Link className="navbar-item" to="/contact">
-                Contact
-              </Link>
-              <Link className="navbar-item" to="/contact/examples">
-                Form Examples
-              </Link>
-            </div>
-            <div className="navbar-end has-text-centered">
-              <a
-                className="navbar-item"
-                href="https://github.com/AustinGreen/gatsby-netlify-cms-boilerplate"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <span className="icon">
-                  <img src={github} alt="Github" />
-                </span>
-              </a>
-            </div>
-          </div>
+      <header id="header" className={`header ${this.state.menuOpen ? "nav-open" : ""}`}>
+        <Link to='/' className="header__logo">
+          <img src={logo} width="90" height="54" alt="Max Neumeier - Video Editor"/>
+        </Link>
+        <div className="nav-toggle" onClick={() => {
+          this.setState({
+            'menuOpen': !this.state.menuOpen,
+          });
+        }}>
+          <div className="nav-toggle__bar"/>
+          <div className="nav-toggle__bar"/>
+          <div className="nav-toggle__bar"/>
         </div>
-      </nav>
+        <nav id="nav-main" className="header__nav">
+          <ul>
+            <li>
+              <Link to='/' activeClassName='active' onClick={() => {
+                this.setState({
+                  'menuOpen': !this.state.menuOpen,
+                });
+              }}><span
+                data-text="Work">Work</span></Link>
+            </li>
+            <li>
+              <Link to='/about' activeClassName='active' onClick={() => {
+                this.setState({
+                  'menuOpen': !this.state.menuOpen,
+                });
+              }}><span
+                data-text="About">About</span></Link>
+            </li>
+            <li>
+              <Link to='/contact' activeClassName='active' onClick={() => {
+                this.setState({
+                  'menuOpen': !this.state.menuOpen,
+                });
+              }}><span
+                data-text="Contact">Contact</span></Link>
+            </li>
+          </ul>
+        </nav>
+      </header>
     )
   }
 }
