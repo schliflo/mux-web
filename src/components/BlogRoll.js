@@ -1,37 +1,34 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
+import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
 
 class BlogRoll extends React.Component {
 
   render() {
     const { data } = this.props
     const { edges: posts } = data.allMarkdownRemark
-    
+
     return (
-      <div className="columns is-multiline">
+      <div className="video-grid">
       {posts && (posts
           .map(({ node: post }) => (
             <div
-              className="is-parent column is-6"
+              className="video-grid__item"
               key={post.id}
             >
-            <article className="tile is-child box notification">
-              <p>
-                <Link className="title has-text-primary is-size-4" to={post.fields.slug}>
-                  {post.frontmatter.title}
+            <article className="">
+                <Link className="" to={post.fields.slug}>
+                  <PreviewCompatibleImage
+                    className="video-grid__image"
+                    imageInfo={{
+                    image: post.frontmatter.image,
+                    alt: post.frontmatter.title
+                  }} />
+                  <h2 className="video-grid__title">
+                    {post.frontmatter.title}
+                  </h2>
                 </Link>
-                <span> &bull; </span>
-                <span className="subtitle is-size-5 is-block">{post.frontmatter.date}</span>
-              </p>
-              <p>
-                {post.excerpt}
-                <br />
-                <br />
-                <Link className="button" to={post.fields.slug}>
-                  Keep Reading →
-                </Link>
-              </p>
               </article>
             </div>
           )))}
@@ -67,6 +64,13 @@ export default () => (
               title
               templateKey
               date(formatString: "MMMM DD, YYYY")
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 2048, quality: 100) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
             }
           }
         }
