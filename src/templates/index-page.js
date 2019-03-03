@@ -16,7 +16,7 @@ export const IndexPageTemplate = ({
   intro,
   main,
 }) => (
-    <div>
+    <div className="container">
       <h1 className="sr-only">
         {title}
       </h1>

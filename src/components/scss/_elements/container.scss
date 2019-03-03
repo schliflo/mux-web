@@ -4,11 +4,11 @@
     width: 100%;
     max-width: 87.5rem; // 1400px
 
-    &__narrow {
+    &--narrow {
         max-width: 62.5rem; // 1000px
     }
 
-    &__flexible {
+    &--flexible {
         padding-left: 4rem;
         padding-right: 4rem;
     }
@@ -16,7 +16,7 @@
 
 @media screen and (max-width: 48rem) {
     .container {
-        &__flexible {
+        &--flexible {
             padding-left: 1.337rem;
             padding-right: 1.337rem;
         }
