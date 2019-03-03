@@ -9,9 +9,11 @@ import vimeo from '../img/social/vimeo.svg'
 
 const Footer = class extends React.Component {
   render() {
+    const year = new Date().getFullYear();
+
     return (
       <footer id="footer" className="footer">
-        <span className="footer__copyright">&copy; 2018 Max Neumeier</span>
+        <span className="footer__copyright">&copy; {year} Max Neumeier</span>
         <nav id="nav-footer" className="footer__nav">
           <ul>
             <li>
