@@ -31,10 +31,6 @@ body {
                 display: flex;
                 flex-direction: column;
                 margin-bottom: auto;
-
-                &:not(.template__category):not(.page__work) {
-                    margin-top: auto;
-                }
             }
         }
     }
@@ -49,11 +45,7 @@ a {
     }
 }
 
-p {
-    margin-top: .75em;
-    margin-bottom: .75em;
-    line-height: 1.66;
-
+#main {
     a {
         position: relative;
         transition: color $transitionDefault;
@@ -85,6 +77,12 @@ p {
             }
         }
     }
+}
+
+p {
+    margin-top: .75em;
+    margin-bottom: .75em;
+    line-height: 1.66;
 }
 
 address {

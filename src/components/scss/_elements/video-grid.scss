@@ -10,7 +10,33 @@
         margin-bottom: 2rem;
         position: relative;
         overflow: hidden;
+
+        a {
+            &:focus,
+            &:hover {
+                color: $color-white !important;
+            }
+        }
     }
+
+    &__title {
+        font-size: 1.2rem;
+        margin-top: .5em;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    &__subtitle {
+        font-size: .875rem;
+        margin-top: .75em;
+        text-align: center;
+        font-weight: 100;
+    }
+}
+
+.more-link {
+    padding: 3.75rem 4rem;
+    text-align: center;
 }
 
 @media screen and (max-width: 80rem) {
@@ -22,6 +48,10 @@
             margin-bottom: 2rem;
         }
     }
+
+    .more-link {
+        padding: 2rem;
+    }
 }
 
 @media screen and (max-width: 48rem) {
@@ -32,5 +62,9 @@
             flex-basis: 100%;
             margin-bottom: 1.337rem;
         }
+    }
+
+    .more-link {
+        padding: 0 1.337rem;
     }
 }

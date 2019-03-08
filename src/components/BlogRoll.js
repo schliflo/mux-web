@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage'
+import Img from 'gatsby-image'
 
 class BlogRoll extends React.Component {
 
@@ -11,7 +11,7 @@ class BlogRoll extends React.Component {
 
     return (
       <div className="video-grid">
-      {posts && (posts
+        {posts && (posts
           .map(({ node: post }) => (
             <div
               className="video-grid__item"
@@ -19,20 +19,18 @@ class BlogRoll extends React.Component {
             >
             <article className="">
                 <Link className="" to={post.fields.slug}>
-                  <PreviewCompatibleImage
-                    className="video-grid__image"
-                    imageInfo={{
-                    image: post.frontmatter.image,
-                    alt: post.frontmatter.title
-                  }} />
+                  <Img alt={post.frontmatter.title} fluid={{ ...post.frontmatter.image.childImageSharp.fluid, aspectRatio: 16/9 }} />
                   <h2 className="video-grid__title">
                     {post.frontmatter.title}
                   </h2>
+                  <h3 className="video-grid__subtitle">
+                    {post.frontmatter.subtitle}
+                  </h3>
                 </Link>
               </article>
             </div>
           )))}
-          </div>
+      </div>
     );
   }
 }
@@ -62,11 +60,12 @@ export default () => (
             }
             frontmatter {
               title
+              subtitle
               templateKey
               date(formatString: "MMMM DD, YYYY")
               image {
                 childImageSharp {
-                  fluid(maxWidth: 2048, quality: 100) {
+                  fluid(maxWidth: 720, quality: 82) {
                     ...GatsbyImageSharpFluid
                   }
                 }
