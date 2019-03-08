@@ -1,61 +1,76 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { kebabCase } from 'lodash'
-import Helmet from 'react-helmet'
-import { graphql, Link } from 'gatsby'
-import Layout from '../components/Layout'
-import Content, { HTMLContent } from '../components/Content'
+import React from "react";
+import PropTypes from "prop-types";
+import { kebabCase } from "lodash";
+import Helmet from "react-helmet";
+import { graphql, Link } from "gatsby";
+import Layout from "../components/Layout";
+import VideoEmbed from "../components/VideoEmbed";
+import Content, { HTMLContent } from "../components/Content";
 
 export const BlogPostTemplate = ({
-  content,
-  contentComponent,
-  description,
-  tags,
-  title,
-  helmet,
-}) => {
-  const PostContent = contentComponent || Content
+                                   content,
+                                   contentComponent,
+                                   description,
+                                   tags,
+                                   title,
+                                   subtitle,
+                                   date,
+                                   helmet,
+                                   videoType,
+                                   videoId
+                                 }) => {
+  const PostContent = contentComponent || Content;
 
   return (
     <section className="section">
-      {helmet || ''}
-      <div className="container content">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-              {title}
-            </h1>
-            <p>{description}</p>
-            <PostContent content={content} />
-            {tags && tags.length ? (
-              <div style={{ marginTop: `4rem` }}>
-                <h4>Tags</h4>
-                <ul className="taglist">
-                  {tags.map(tag => (
-                    <li key={tag + `tag`}>
-                      <Link to={`/tags/${kebabCase(tag)}/`}>{tag}</Link>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ) : null}
-          </div>
+      {helmet || ""}
+      <div className="container container--narrow">
+        <div className="text--center">
+          <h1>{title}</h1>
+          <h2>{subtitle}</h2>
+          {tags && tags.length ? (
+            <ul className="list--unstyled list--tags">
+              {tags.map(tag => (
+                <li key={tag + `tag`}>
+                  <Link to={`/tags/${kebabCase(tag)}/`}>#{tag}</Link>
+                </li>
+              ))}
+            </ul>
+          ) : null}
         </div>
       </div>
+      <div className="container container--narrow">
+        <p className="text--center text--italic">{description}</p>
+      </div>
+      <div className="container">
+        <VideoEmbed videoType={videoType} videoId={videoId}/>
+      </div>
+      <div className="container container--narrow">
+        <p className="text--small text--center">
+          {date}
+        </p>
+        <PostContent content={content} className="content"/>
+      </div>
     </section>
-  )
-}
+  );
+};
 
 BlogPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
   title: PropTypes.string,
+  subtitle: PropTypes.string,
+  date: PropTypes.string,
   helmet: PropTypes.object,
-}
+  // eslint-disable-next-line react/no-typos
+  videoType: PropTypes.videoType,
+  // eslint-disable-next-line react/no-typos
+  videoId: PropTypes.videoId,
+};
 
 const BlogPost = ({ data }) => {
-  const { markdownRemark: post } = data
+  const { markdownRemark: post } = data;
 
   return (
     <Layout>
@@ -74,18 +89,22 @@ const BlogPost = ({ data }) => {
         }
         tags={post.frontmatter.tags}
         title={post.frontmatter.title}
+        subtitle={post.frontmatter.subtitle}
+        date={post.frontmatter.date}
+        videoType={post.frontmatter.videoType}
+        videoId={post.frontmatter.videoId}
       />
     </Layout>
-  )
-}
+  );
+};
 
 BlogPost.propTypes = {
   data: PropTypes.shape({
-    markdownRemark: PropTypes.object,
-  }),
-}
+    markdownRemark: PropTypes.object
+  })
+};
 
-export default BlogPost
+export default BlogPost;
 
 export const pageQuery = graphql`
   query BlogPostByID($id: String!) {
@@ -93,11 +112,14 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
+        date(formatString: "MMMM YYYY")
         title
+        subtitle
         description
         tags
+        videoType
+        videoId
       }
     }
   }
-`
+`;

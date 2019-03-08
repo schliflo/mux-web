@@ -7,6 +7,8 @@ description: >-
   We’re proud to announce that we’ll be offering a small batch of Jamaica Blue
   Mountain coffee beans in our store next week.
 image: /img/products-grid2.jpg
+videoType: youtube
+videoId: 'CESUXaPNpK8'
 tags:
   - jamaica
   - green beans
