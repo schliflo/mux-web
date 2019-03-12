@@ -3,10 +3,17 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
+
+    &__list {
+        margin-left: -1.3333rem;
+        margin-right: -1.3333rem;
+    }
 
     &__item {
-        flex-basis: calc(33.3333% - 1.3333rem);
+        flex-basis: calc(33.3333% - 1.3333rem*2);
+        margin-left: 1.3333rem;
+        margin-right: 1.3333rem;
         margin-bottom: 2rem;
         position: relative;
         overflow: hidden;
@@ -43,8 +50,15 @@
     .video-grid {
         padding: 2rem;
 
+        &__list {
+            margin-left: -1rem;
+            margin-right: -1rem;
+        }
+
         &__item {
-            flex-basis: calc(50% - 1rem);
+            flex-basis: calc(50% - 1rem*2);
+            margin-left: 1rem;
+            margin-right: 1rem;
             margin-bottom: 2rem;
         }
     }
@@ -58,9 +72,16 @@
     .video-grid {
         padding: 0 1.337rem;
 
+        &__list {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
         &__item {
             flex-basis: 100%;
             margin-bottom: 1.337rem;
+            margin-left: 0;
+            margin-right: 0;
         }
     }
 

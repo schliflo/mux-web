@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
 
-class BlogRoll extends React.Component {
+export class BlogRoll extends React.Component {
 
   render() {
     const { data } = this.props
@@ -76,7 +76,7 @@ export default () => (
     }
     `}
     render={(data, count) => (
-      <BlogRoll data={data} count={count} />
+      <BlogRoll data={data} count={count}/>
     )}
   />
 )

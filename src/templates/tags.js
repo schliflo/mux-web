@@ -2,7 +2,7 @@ import React from 'react'
 import Helmet from 'react-helmet'
 import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
-import BlogRoll from '../components/BlogRoll'
+import { BlogRoll } from '../components/BlogRoll'
 
 class TagRoute extends React.Component {
   render() {
@@ -28,7 +28,7 @@ class TagRoute extends React.Component {
           <div className="container">
             <h1 className="text--center">#{tag}</h1>
             <p className="text--center text--small">{tagHeader}</p>
-            <BlogRoll/>
+            <BlogRoll data={this.props.data}/>
           </div>
           <div className="more-link">
             <Link className="btn" to="/tags/">Browse all tags</Link>
@@ -49,18 +49,27 @@ export const tagPageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      limit: 1000
-      sort: { fields: [frontmatter___date], order: DESC }
-      filter: { frontmatter: { tags: { in: [$tag] } } }
+      sort: { order: DESC, fields: [frontmatter___date] },
+      filter: { frontmatter: { templateKey: { eq: "blog-post" }, tags: { in: [$tag] } } }
     ) {
-      totalCount
       edges {
         node {
+          id
           fields {
             slug
           }
           frontmatter {
             title
+            subtitle
+            templateKey
+            date(formatString: "MMMM DD, YYYY")
+            image {
+              childImageSharp {
+                fluid(maxWidth: 720, quality: 82) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
           }
         }
       }

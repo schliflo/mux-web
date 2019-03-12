@@ -1,9 +1,9 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { Link, graphql } from 'gatsby'
+import { Link, graphql, StaticQuery } from "gatsby";
 
 import Layout from '../components/Layout'
-import BlogRoll from '../components/BlogRoll'
+import {BlogRoll} from '../components/BlogRoll'
 
 export const IndexPageTemplate = ({
   image,
@@ -14,7 +14,41 @@ export const IndexPageTemplate = ({
         <h1 className="sr-only">
           {title}
         </h1>
-        <BlogRoll/>
+        <StaticQuery
+          query={graphql`
+            query IndexBlogRollQuery {
+              allMarkdownRemark(
+                sort: { order: DESC, fields: [frontmatter___date] },
+                filter: { frontmatter: { templateKey: { eq: "blog-post" }, isFrontPage: { eq: true } } }
+                ) {
+                  edges {
+                    node {
+                      id
+                      fields {
+                        slug
+                      }
+                      frontmatter {
+                        title
+                        subtitle
+                        templateKey
+                        date(formatString: "MMMM DD, YYYY")
+                        image {
+                          childImageSharp {
+                            fluid(maxWidth: 720, quality: 82) {
+                              ...GatsbyImageSharpFluid
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            `}
+          render={(data, count) => (
+            <BlogRoll data={data} count={count}/>
+          )}
+        />
         <div className="more-link">
           <Link className="btn" to="/work">
             All my work
@@ -39,6 +73,7 @@ const IndexPage = ({ data }) => {
         image={frontmatter.image}
         title={frontmatter.title}
         description={frontmatter.description}
+        data={data}
       />
     </Layout>
   )
