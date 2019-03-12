@@ -43,7 +43,7 @@ export const BlogPostTemplate = ({
         <p className="text--center text--italic">{description}</p>
       </div>
       <div className="container">
-        <VideoEmbed videoType={videoType} videoId={videoId}/>
+        <VideoEmbed videoType={videoType} videoId={videoId} videoTitle={title}/>
       </div>
       <div className="container container--narrow">
         <p className="text--small text--center">
@@ -66,7 +66,7 @@ BlogPostTemplate.propTypes = {
   // eslint-disable-next-line react/no-typos
   videoType: PropTypes.videoType,
   // eslint-disable-next-line react/no-typos
-  videoId: PropTypes.videoId,
+  videoId: PropTypes.videoId
 };
 
 const BlogPost = ({ data }) => {

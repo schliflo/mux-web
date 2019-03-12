@@ -1,6 +1,5 @@
-import React from 'react'
-import { navigate } from 'gatsby-link'
-import Layout from '../../components/Layout'
+import React from "react";
+import Layout from "../../components/Layout";
 
 export default class Index extends React.Component {
   render() {
@@ -14,6 +13,6 @@ export default class Index extends React.Component {
           </div>
         </section>
       </Layout>
-    )
+    );
   }
 }
