@@ -7,6 +7,7 @@ description: The Coffee Taster’s Flavor Wheel, the official resource used by c
 image: /img/chemex.jpg
 videoType: vimeo
 videoId: '233583306'
+isFrontPage: true
 tags:
   - flavor
   - tasting

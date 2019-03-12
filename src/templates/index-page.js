@@ -10,14 +10,16 @@ export const IndexPageTemplate = ({
   title,
 }) => (
     <div className="container">
-      <h1 className="sr-only">
-        {title}
-      </h1>
-      <BlogRoll/>
-      <div className="more-link">
-        <Link className="btn" to="/work">
-          All my work
-        </Link>
+      <div className="">
+        <h1 className="sr-only">
+          {title}
+        </h1>
+        <BlogRoll/>
+        <div className="more-link">
+          <Link className="btn" to="/work">
+            All my work
+          </Link>
+        </div>
       </div>
     </div>
 )

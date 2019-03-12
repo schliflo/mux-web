@@ -9,6 +9,7 @@ description: >-
 image: /img/products-grid2.jpg
 videoType: youtube
 videoId: 'CESUXaPNpK8'
+isFrontPage: false
 tags:
   - jamaica
   - green beans
