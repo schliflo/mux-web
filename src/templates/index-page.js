@@ -6,7 +6,6 @@ import Layout from "../components/Layout";
 import BlogRollIndex from "../components/BlogRollIndex";
 
 export const IndexPageTemplate = ({
-                                    image,
                                     title
                                   }) => (
   <div className="container">
@@ -25,9 +24,7 @@ export const IndexPageTemplate = ({
 );
 
 IndexPageTemplate.propTypes = {
-  image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
-  title: PropTypes.string,
-  description: PropTypes.string
+  title: PropTypes.string
 };
 
 const IndexPage = ({ data }) => {
@@ -36,10 +33,7 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <IndexPageTemplate
-        image={frontmatter.image}
         title={frontmatter.title}
-        description={frontmatter.description}
-        data={data}
       />
     </Layout>
   );
@@ -60,7 +54,6 @@ query IndexPageTemplate {
   markdownRemark(frontmatter: {templateKey: {eq: "index-page"}}) {
       frontmatter {
         title
-        description
       }
     }
   }
