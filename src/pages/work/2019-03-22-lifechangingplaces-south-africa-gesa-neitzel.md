@@ -8,6 +8,8 @@ image: /img/lh-sa.webp.jpg
 videoType: vimeo
 videoId: '234998050'
 isFrontPage: true
+tags:
+  - commercial
 ---
 Client: Lufthansa
 
