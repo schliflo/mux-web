@@ -8,6 +8,8 @@ image: /img/uber.webp.jpg
 videoType: vimeo
 videoId: '182834698'
 isFrontPage: false
+tags:
+  - commercial
 ---
 Client: Uberfunction
 
