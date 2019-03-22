@@ -7,7 +7,7 @@ description: Trailer for a film tour showcasing the best outdoor films
 image: /img/eoft.jpg
 videoType: youtube
 videoId: KUc6ZZ3j_uc
-isFrontPage: true
+isFrontPage: false
 tags:
   - trailer
   - teaser
