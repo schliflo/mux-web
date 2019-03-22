@@ -7,7 +7,7 @@ description: short documentary about wildlife ranger Gesa Neitzel
 image: /img/lh-sa.webp.jpg
 videoType: vimeo
 videoId: '234998050'
-isFrontPage: true
+isFrontPage: false
 tags:
   - commercial
 ---
