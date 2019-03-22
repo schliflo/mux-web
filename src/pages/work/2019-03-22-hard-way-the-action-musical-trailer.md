@@ -7,7 +7,7 @@ description: Trailer for an "Action Musical" short film
 image: /img/hardway.jpg
 videoType: youtube
 videoId: E5awJiNHipg
-isFrontPage: true
+isFrontPage: false
 tags:
   - trailer
   - teaser
