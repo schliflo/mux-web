@@ -14,7 +14,7 @@ tags:
 ---
 In this commercial for Russian bank Tochka we follow an entrepeneur on his metaphorical journey in present-day Russia. He's facing obstacles like all the doors of authorities (he has to pass), his own doubts (burning "You can't do it." letters), taxes (mummies wrapped in tax forms), Russian mafia (obviously), health authorities (the guys with the cockroach) and bad staff (with their heads in the clouds)... until he succeeds.
 
-The Song is a Russian Oldie dealing with the topic of tilling ones field. 
+The song is a Russian Oldie dealing with the topic of tilling ones field. 
 
 Credits: 
 
