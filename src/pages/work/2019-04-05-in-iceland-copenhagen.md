@@ -4,8 +4,7 @@ title: IN ICELAND + COPENHAGEN
 subtitle: Travel film about a trip to Iceland and Copenhagen
 date: 2019-04-05T10:48:16.846Z
 description: '-'
-image: >-
-  https://raw.githubusercontent.com/schliflo/muxn-gatsby-starter-netlify-cms/master/static/img/721073560_1280x720.jpg?token=ACLMQSBPYJJQTMYFCQU236C4XB2XG
+image: /img/721073560_1280x720.jpg
 videoType: vimeo
 videoId: '286216759'
 isFrontPage: true

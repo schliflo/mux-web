@@ -4,8 +4,7 @@ title: Riding Thrones
 subtitle: Mini documentary about a BMX photo project
 date: 2019-03-22T16:40:29.551Z
 description: ' '
-image: >-
-  https://raw.githubusercontent.com/schliflo/muxn-gatsby-starter-netlify-cms/master/static/img/riding_hero_15-thumb.jpg?token=ACLMQSGLBU3EKF2XUFOIPW24XB2XG
+image: /img/riding_hero_15-thumb.jpg
 videoType: vimeo
 videoId: '304565718'
 isFrontPage: true

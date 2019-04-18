@@ -4,8 +4,7 @@ title: '#LifeChangingPlaces - FRANCE'
 subtitle: Commercial portrait film about Chinese Winemaker Cici
 date: 2019-04-05T12:32:12.097Z
 description: '-'
-image: >-
-  https://raw.githubusercontent.com/schliflo/muxn-gatsby-starter-netlify-cms/master/static/img/8f24cbfa-b625-4a1b-a449-9201d707a50e.jpg?token=ACLMQSHDMMFEVQ726KKINOS4XB2XG
+image: /img/8f24cbfa-b625-4a1b-a449-9201d707a50e.jpg
 videoType: vimeo
 videoId: '315667483'
 isFrontPage: true
