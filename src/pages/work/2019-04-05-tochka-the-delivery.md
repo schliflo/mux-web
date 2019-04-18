@@ -4,7 +4,8 @@ title: Tochka // The Delivery
 subtitle: Commercial for Russian bank Tochka
 date: 2019-04-05T13:08:53.982Z
 description: '-'
-image: /img/764003068_1280x720.jpg
+image: >-
+  https://raw.githubusercontent.com/schliflo/muxn-gatsby-starter-netlify-cms/master/static/img/764003068_1280x720.jpg?token=ACLMQSC7XVEF75KXSNF2KPS4XB2XG
 videoType: vimeo
 videoId: '321321798'
 isFrontPage: true
