@@ -4,7 +4,8 @@ title: '#LifeChangingPlaces - NEW YORK'
 subtitle: '-'
 date: 2019-04-05T13:01:45.100Z
 description: '-'
-image: /img/88d6d71f-6831-427f-a71e-116f464dc26c.jpg
+image: >-
+  https://raw.githubusercontent.com/schliflo/muxn-gatsby-starter-netlify-cms/master/static/img/88d6d71f-6831-427f-a71e-116f464dc26c.jpg?token=ACLMQSC7VLNA67B24O7BF624XB2XG
 videoType: vimeo
 videoId: '323831131'
 isFrontPage: false
