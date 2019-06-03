@@ -5,4 +5,4 @@ description: About Max Neumeier
 ---
 ## TODO:
 
-About Text
+About Text <-- add text here
