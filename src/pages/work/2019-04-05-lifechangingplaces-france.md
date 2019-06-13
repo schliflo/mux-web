@@ -8,6 +8,25 @@ image: /img/8f24cbfa-b625-4a1b-a449-9201d707a50e.jpg
 videoType: vimeo
 videoId: '315667483'
 isFrontPage: true
+credits:
+  - label: Director
+    text: Vincent Urban
+  - label: DP
+    text: Clemens Krüger
+  - label: 2nd Camera and drone buzzing
+    text: Tim Höddinghaus and Max Neumeier
+  - label: Edit and sound design
+    text: Max Neumeier
+  - label: AC / set comedian
+    text: Fritz Butze
+  - label: Color
+    text: Mike Bothe
+  - label: Production
+    text: 27 Kilometer / Ralf Erthle
+  - label: Agency
+    text: Kolle Rebbe
+  - label: Music
+    text: 2wei
 tags:
   - commercial
   - travel
