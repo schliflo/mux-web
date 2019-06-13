@@ -3,7 +3,7 @@ templateKey: blog-post
 title: Isenseven - Alaskan Holiday
 subtitle: The story of three pro snowboarders in Alaska
 date: 2019-03-22T08:57:41.002Z
-description: The story of three pro snowboarders in Alaska
+description: ''
 image: /img/alaskanholiday.webp.jpg
 videoType: vimeo
 videoId: '114780789'

@@ -3,7 +3,7 @@ templateKey: blog-post
 title: '#LifeChangingPlaces - NEW YORK'
 subtitle: Commercial portrait film about Indian Jazz music teacher Somnath
 date: 2019-04-05T13:01:45.100Z
-description: '-'
+description: ''
 image: /img/88d6d71f-6831-427f-a71e-116f464dc26c.jpg
 videoType: vimeo
 videoId: '323831131'

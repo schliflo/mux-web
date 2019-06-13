@@ -3,7 +3,7 @@ templateKey: blog-post
 title: '#LifeChangingPlaces - LOFOTEN - Chris Burkard'
 subtitle: short documentary / portrait film about surf photographer Chris Burkhard
 date: 2019-03-22T09:05:36.460Z
-description: short documentary / portrait film about surf photographer Chris Burkhard
+description: ''
 image: /img/lh-lof.webp.jpg
 videoType: vimeo
 videoId: '233583306'

@@ -3,7 +3,7 @@ templateKey: blog-post
 title: Japan - Where Tradition Meets The Future
 subtitle: A commercial for Japan National Tourism Organization
 date: 2019-03-22T08:59:50.892Z
-description: A commercial for Japan National Tourism Organization
+description: ''
 image: /img/jnto.jpg
 videoType: youtube
 videoId: WLIv7HnZ_fE

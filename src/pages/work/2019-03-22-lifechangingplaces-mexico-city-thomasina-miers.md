@@ -3,7 +3,7 @@ templateKey: blog-post
 title: '#LifeChangingPlaces - MEXICO CITY - Thomasina Miers'
 subtitle: Short documentary about chef Thomasina Miers
 date: 2019-03-22T09:01:49.324Z
-description: Short documentary about chef Thomasina Miers
+description: ''
 image: /img/lh-mex.webp.jpg
 videoType: vimeo
 videoId: '244824484'

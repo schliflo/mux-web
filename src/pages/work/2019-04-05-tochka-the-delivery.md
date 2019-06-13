@@ -3,7 +3,7 @@ templateKey: blog-post
 title: Tochka // The Delivery
 subtitle: Commercial for Russian bank Tochka
 date: 2019-04-05T13:08:53.982Z
-description: '-'
+description: ''
 image: /img/764003068_1280x720.jpg
 videoType: vimeo
 videoId: '321321798'
