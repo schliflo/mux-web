@@ -3,7 +3,7 @@ templateKey: blog-post
 title: '#LifeChangingPlaces - FRANCE'
 subtitle: Commercial portrait film about Chinese winemaker Cici
 date: 2019-04-05T12:32:12.097Z
-description: '-'
+description: ''
 image: /img/8f24cbfa-b625-4a1b-a449-9201d707a50e.jpg
 videoType: vimeo
 videoId: '315667483'
