@@ -7,8 +7,26 @@ description: '-'
 image: /img/88d6d71f-6831-427f-a71e-116f464dc26c.jpg
 videoType: vimeo
 videoId: '323831131'
-credits:
 isFrontPage: false
+credits:
+  - label: Director
+    text: Vincent Urban
+  - label: DP
+    text: Jakob Preischl
+  - label: 2nd Camera
+    text: Tim Höddinghaus and Max Neumeier
+  - label: Edit and sound design
+    text: Max Neumeier
+  - label: AC / set comedian
+    text: Fritz Butze
+  - label: Color
+    text: Mike Bothe
+  - label: Production
+    text: 27 Kilometer Entertainment / Ralf Erthle
+  - label: Agency
+    text: Kolle Rebbe
+  - label: Music
+    text: 2wei
 ---
 In this second episode of mini documentaries we did for Lufthansa, we traveled to New York to tell Somath's story about how he found his passion for Jazz music. While New York City is very photogenic, it's also just as overshot. We tried our best to show it in a new way, both aestetically and technically.
 
@@ -17,23 +35,3 @@ While editing I was challenged with telling Somath's story in a simple way but a
 Jazz was a new thing for us, so finding music that fit wasn't easy at all. Very jazzy and broken up at times but with an emotional twist is not something you hear often. 2wei managed to make it work very well despite our weird wishes.
 
 This project was hard for all of us on so many levels so double thanks to everyone involved.
-
-Credits: 
-
-Director: Vincent Urban
-
-DP: Jakob Preischl
-
-2nd Camera: Tim Höddinghaus and Max Neumeier
-
-Edit and sound design: Max Neumeier
-
-AC / set comedian: Fritz Butze
-
-Color: Mike Bothe
-
-Production: 27 Kilometer Entertainment / Ralf Erthle
-
-Agency: Kolle Rebbe
-
-Music: 2wei
