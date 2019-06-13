@@ -8,6 +8,7 @@ image: /img/stories-of-ethiopia.jpg
 videoType: youtube
 videoId: toB5Cl9nLW0
 isFrontPage: false
+credits:
 tags:
   - portrait
 ---

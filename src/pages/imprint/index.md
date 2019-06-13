@@ -2,6 +2,7 @@
 templateKey: 'content-page'
 path: /imprint
 title: Imprint
+centeredContent: false
 ---
 <h2>Angaben gem&auml;&szlig; &sect; 5 TMG:</h2>
 <p>

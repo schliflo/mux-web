@@ -8,6 +8,7 @@ image: /img/764003068_1280x720.jpg
 videoType: vimeo
 videoId: '321321798'
 isFrontPage: true
+credits:
 tags:
   - commercial
   - editor

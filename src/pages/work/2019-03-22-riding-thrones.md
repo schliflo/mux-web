@@ -8,6 +8,7 @@ image: /img/riding_hero_15-thumb.jpg
 videoType: vimeo
 videoId: '304565718'
 isFrontPage: true
+credits:
 tags:
   - documentary
   - onemanshow

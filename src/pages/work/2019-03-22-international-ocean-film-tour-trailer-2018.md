@@ -8,6 +8,7 @@ image: /img/ioft.jpg
 videoType: youtube
 videoId: CESUXaPNpK8
 isFrontPage: true
+credits:
 tags:
   - trailer
   - teaser

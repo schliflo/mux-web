@@ -8,6 +8,7 @@ image: /img/hardway.jpg
 videoType: youtube
 videoId: E5awJiNHipg
 isFrontPage: false
+credits:
 tags:
   - trailer
   - teaser

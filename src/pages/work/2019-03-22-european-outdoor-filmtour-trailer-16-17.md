@@ -8,6 +8,7 @@ image: /img/eoft.jpg
 videoType: youtube
 videoId: KUc6ZZ3j_uc
 isFrontPage: false
+credits:
 tags:
   - trailer
   - teaser

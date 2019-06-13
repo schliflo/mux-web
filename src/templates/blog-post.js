@@ -17,7 +17,8 @@ export const BlogPostTemplate = ({
                                    date,
                                    helmet,
                                    videoType,
-                                   videoId
+                                   videoId,
+                                   credits
                                  }) => {
   const PostContent = contentComponent || Content;
 
@@ -26,8 +27,8 @@ export const BlogPostTemplate = ({
       {helmet || ""}
       <div className="container container--narrow">
         <div className="text--center">
-          <h1>{title}</h1>
-          <h2>{subtitle}</h2>
+        <h1>{title}</h1>
+          {subtitle && <h2>{subtitle}</h2>}
           {tags && tags.length ? (
             <ul className="list--unstyled list--tags">
               {tags.map(tag => (
@@ -39,9 +40,11 @@ export const BlogPostTemplate = ({
           ) : null}
         </div>
       </div>
+      {description &&
       <div className="container container--narrow">
         <p className="text--center text--italic">{description}</p>
       </div>
+       }
       <div className="container">
         <VideoEmbed videoType={videoType} videoId={videoId} videoTitle={title}/>
       </div>
@@ -49,7 +52,19 @@ export const BlogPostTemplate = ({
         <p className="text--small text--center">
           {date}
         </p>
-        <PostContent content={content} className="content"/>
+        <div className="row">
+          <PostContent content={content} className={`content ${credits ? 'col--50' : 'col--100'}`}/>
+          {credits && <div className="content credits col--50">
+            <dl>
+                {credits.map(item => (
+                  <>
+                    <dt>{item.label}</dt>
+                    <dd>{item.text}</dd>
+                  </>
+                ))}
+            </dl>
+          </div>}
+        </div>
       </div>
     </section>
   );
@@ -59,14 +74,12 @@ BlogPostTemplate.propTypes = {
   content: PropTypes.node.isRequired,
   contentComponent: PropTypes.func,
   description: PropTypes.string,
-  title: PropTypes.string,
+  title: PropTypes.string.isRequired,
   subtitle: PropTypes.string,
-  date: PropTypes.string,
+  date: PropTypes.string.isRequired,
   helmet: PropTypes.object,
-  // eslint-disable-next-line react/no-typos
-  videoType: PropTypes.videoType,
-  // eslint-disable-next-line react/no-typos
-  videoId: PropTypes.videoId
+  videoType: PropTypes.string.isRequired,
+  videoId: PropTypes.string.isRequired
 };
 
 const BlogPost = ({ data }) => {
@@ -93,6 +106,7 @@ const BlogPost = ({ data }) => {
         date={post.frontmatter.date}
         videoType={post.frontmatter.videoType}
         videoId={post.frontmatter.videoId}
+        credits={post.frontmatter.credits}
       />
     </Layout>
   );
@@ -119,6 +133,10 @@ export const pageQuery = graphql`
         tags
         videoType
         videoId
+        credits {
+          label
+          text
+        }
       }
     }
   }

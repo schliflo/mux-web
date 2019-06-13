@@ -8,6 +8,7 @@ image: /img/lh-mex.webp.jpg
 videoType: vimeo
 videoId: '244824484'
 isFrontPage: true
+credits:
 tags:
   - commercial
 ---

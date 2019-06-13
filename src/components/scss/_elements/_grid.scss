@@ -1,0 +1,23 @@
+$gutter: 2rem;
+
+.row {
+    margin-left: -$gutter/2;
+    margin-right: -$gutter/2;
+    display: flex;
+    flex-direction: row;
+}
+
+[class*="col--"] {
+    padding-left: $gutter/2;
+    padding-right: $gutter/2;
+}
+
+.col {
+    &--50 {
+        flex-basis: 50%;
+    }
+
+    &--100 {
+        flex-basis: 100%;
+    }
+}

@@ -8,6 +8,7 @@ image: /img/721073560_1280x720.jpg
 videoType: vimeo
 videoId: '286216759'
 isFrontPage: true
+credits:
 tags:
   - travel
   - commercial

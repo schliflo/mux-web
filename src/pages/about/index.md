@@ -2,6 +2,7 @@
 templateKey: content-page
 title: About
 description: About Max Neumeier
+centeredContent: false
 ---
 ![pic](/img/bf479b7c-b960-45a1-8f89-7371ee4f98ce.jpg)
 

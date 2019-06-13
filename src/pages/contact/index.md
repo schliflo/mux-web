@@ -2,6 +2,7 @@
 templateKey: 'content-page'
 path: /contact
 title: Contact
+centeredContent: true
 ---
 <address>
     <p>

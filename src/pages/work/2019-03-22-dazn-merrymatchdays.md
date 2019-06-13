@@ -8,6 +8,7 @@ image: /img/dazn.webp.jpg
 videoType: vimeo
 videoId: '248286959'
 isFrontPage: true
+credits:
 tags:
   - commercial
 ---

@@ -8,6 +8,7 @@ image: /img/lh-lof.webp.jpg
 videoType: vimeo
 videoId: '233583306'
 isFrontPage: true
+credits:
 tags:
   - commercial
 ---

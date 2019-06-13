@@ -7,6 +7,7 @@ description: '-'
 image: /img/88d6d71f-6831-427f-a71e-116f464dc26c.jpg
 videoType: vimeo
 videoId: '323831131'
+credits:
 isFrontPage: false
 ---
 In this second episode of mini documentaries we did for Lufthansa, we traveled to New York to tell Somath's story about how he found his passion for Jazz music. While New York City is very photogenic, it's also just as overshot. We tried our best to show it in a new way, both aestetically and technically.

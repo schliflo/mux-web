@@ -8,6 +8,7 @@ image: /img/uber.webp.jpg
 videoType: vimeo
 videoId: '182834698'
 isFrontPage: false
+credits:
 tags:
   - commercial
 ---

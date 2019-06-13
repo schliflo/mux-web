@@ -8,6 +8,7 @@ image: /img/alaskanholiday.webp.jpg
 videoType: vimeo
 videoId: '114780789'
 isFrontPage: false
+credits:
 tags:
   - documentary
 ---

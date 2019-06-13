@@ -8,6 +8,7 @@ image: /img/jnto.jpg
 videoType: youtube
 videoId: WLIv7HnZ_fE
 isFrontPage: true
+credits:
 ---
 Client: Japan National Tourism Organization (JNTO)
 
