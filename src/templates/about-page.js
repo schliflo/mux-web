@@ -4,8 +4,9 @@ import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
+import Img from 'gatsby-image'
 
-export const ContentPageTemplate = ({ title, centeredContent, helmet, content, contentComponent }) => {
+export const AboutPageTemplate = ({ title, image, centeredContent, helmet, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
 
   return (
@@ -16,27 +17,37 @@ export const ContentPageTemplate = ({ title, centeredContent, helmet, content, c
           <h1>
             {title}
           </h1>
-          <PageContent className="content" content={content}/>
+          <div className="row contant">
+            <div className="col--50">
+              <p>
+                {image && <Img alt={title} fluid={{ ...image.childImageSharp.fluid }} />}
+              </p>
+            </div>
+            <div className="col--50">
+              <PageContent content={content}/>
+            </div>
+        </div>
         </div>
       </div>
     </section>
   );
 };
 
-ContentPageTemplate.propTypes = {
+AboutPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
+  image: PropTypes.any.isRequired,
   description: PropTypes.string,
   centeredContent: PropTypes.bool,
   content: PropTypes.string,
   contentComponent: PropTypes.func
 };
 
-const ContentPage = ({ data }) => {
+const AboutPage = ({ data }) => {
   const { markdownRemark: post } = data;
 
   return (
     <Layout>
-      <ContentPageTemplate
+      <AboutPageTemplate
         contentComponent={HTMLContent}        
         helmet={
           <Helmet titleTemplate="%s | Max Neumeier - Video Editor">
@@ -48,6 +59,7 @@ const ContentPage = ({ data }) => {
           </Helmet>
         }
         title={post.frontmatter.title}
+        image={post.frontmatter.image}
         centeredContent={post.frontmatter.centeredContent}
         content={post.html}
       />
@@ -55,20 +67,27 @@ const ContentPage = ({ data }) => {
   );
 };
 
-ContentPage.propTypes = {
+AboutPage.propTypes = {
   data: PropTypes.object.isRequired
 };
 
-export default ContentPage;
+export default AboutPage;
 
-export const contentPageQuery = graphql`
-  query ContentPage($id: String!) {
+export const aboutPageQuery = graphql`
+  query AboutPage($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
         title
         description
         centeredContent
+        image {
+          childImageSharp {
+            fluid(maxWidth: 720, quality: 82) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }
