@@ -9,7 +9,7 @@ videoType: vimeo
 videoId: '315667483'
 isFrontPage: true
 credits: |-
-  Director: Vincent Urban
+  **Director**: Vincent Urban
 
   DP: Clemens Krüger
 
