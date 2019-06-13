@@ -29,7 +29,6 @@ collections:
       - {label: "Video ID", name: "videoId", widget: "string"}
       - {label: "Show on Frontpage", name: "isFrontPage", widget: "boolean", default: false}
       - {label: "Body", name: "body", widget: "markdown"}
-      - {label: "Credits", name: "credits", widget: "markdown"}
       - label: "Credits"
         name: "credits"
         widget: "list"
