@@ -9,6 +9,16 @@ videoType: vimeo
 videoId: '286216759'
 isFrontPage: true
 credits:
+  - label: Directed by
+    text: Vincent Urban
+  - label: Filmed by
+    text: 'Vincent Urban, Max Neumeier, Alex Eagleton'
+  - label: 'Edit, Grading & Sounddesign by'
+    text: Vincent Urban
+  - label: Driver & grilled cheese-chef
+    text: Quirin Guggenberger
+  - label: Awards
+    text: Vimeo Staff Pick
 tags:
   - travel
   - commercial
@@ -19,15 +29,5 @@ In June 2018, we set out on a 2-week journey to Iceland & Copenhagen, enjoying t
 On the one side, the vastness, emptiness and otherworldly landscape of Iceland with it’s almost 24 hours-daylight in summer, on the other, a modern city full of life, history and exceptional architecture.
 
 This film is a collection of all the contrasting moments & memories we captured.
-
-Directed by: Vincent Urban
-
-Filmed by: Vincent Urban, Max Neumeier, Alex Eagleton
-
-Edit, Grading & Sounddesign by: Vincent Urban
-
-Driver & grilled cheese-chef: Quirin Guggenberger
-
-Awards: Vimeo Staff Pick
 
 This film was made possible by the support of Icelandair & VisitDenmark.
