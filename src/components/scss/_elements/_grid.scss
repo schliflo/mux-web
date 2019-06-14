@@ -13,11 +13,70 @@ $gutter: 2rem;
 }
 
 .col {
+    &--10 {
+        flex-basis: 10%;
+    }
+
+    &--20 {
+        flex-basis: 20%;
+    }
+
+    &--25 {
+        flex-basis: 25%;
+    }
+
+    &--33 {
+        flex-basis: 33.33333%;
+    }
+
+    &--40 {
+        flex-basis: 40%;
+    }
+
     &--50 {
         flex-basis: 50%;
     }
 
+    &--60 {
+        flex-basis: 60%;
+    }
+
+    &--66 {
+        flex-basis: 66.66666%;
+    }
+
+    &--75 {
+        flex-basis: 75%;
+    }
+
+    &--80 {
+        flex-basis: 80%;
+    }
+
+    &--90 {
+        flex-basis: 90%;
+    }
+
     &--100 {
         flex-basis: 100%;
+    }
+}
+
+@media screen and (max-width: 48rem) {
+    .col {
+        &--10,
+        &--20,
+        &--25,
+        &--33,
+        &--40,
+        &--50,
+        &--60,
+        &--66,
+        &--75,
+        &--80,
+        &--90,
+        &--100 {
+            flex-basis: 100%;
+        }
     }
 }

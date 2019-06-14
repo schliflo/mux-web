@@ -13,7 +13,7 @@ const Navbar = class extends React.Component {
 
   render() {
     return (
-      <header id="header" className={`header ${this.state.menuOpen ? "nav-open" : ""}`}>
+      <header id="header" className={`header container ${this.state.menuOpen ? "nav-open" : ""}`}>
         <Link to='/' className="header__logo">
           <img src={logo} width="90" height="54" alt="Max Neumeier - Video Editor"/>
         </Link>
