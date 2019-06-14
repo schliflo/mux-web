@@ -8,7 +8,7 @@ class TagRoute extends React.Component {
   render() {
     const tag = this.props.pageContext.tag;
     const title = this.props.data.site.siteMetadata.title;
-    const totalCount = this.props.data.allMarkdownRemark.totalCount;
+    const totalCount = this.props.data.allMarkdownRemark.edges.length;
     const tagHeader = `${totalCount} post${
       totalCount === 1 ? "" : "s"
       } tagged with “${tag}”`;
@@ -20,6 +20,7 @@ class TagRoute extends React.Component {
           <div className="container">
             <h1 className="text--center">#{tag}</h1>
             <p className="text--center text--small">{tagHeader}</p>
+            <div className="content"></div>
             <BlogRoll data={this.props.data}/>
           </div>
           <div className="more-link">

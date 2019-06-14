@@ -21,6 +21,7 @@ export default () => (
               subtitle
               templateKey
               date(formatString: "MMMM DD, YYYY")
+              isFrontPage
               image {
                 childImageSharp {
                   fluid(maxWidth: 720, quality: 82) {

@@ -14,7 +14,7 @@ export class BlogRoll extends React.Component {
         {posts && (posts
           .map(({ node: post }) => (
             <div
-              className="video-grid__item"
+              className={`video-grid__item ${post.frontmatter.isFrontPage ? 'is--featured' : ''}`}
               key={post.id}
             >
             <article className="">
@@ -62,6 +62,7 @@ export default () => (
               subtitle
               templateKey
               date(formatString: "MMMM DD, YYYY")
+              isFrontPage
               image {
                 childImageSharp {
                   fluid(maxWidth: 720, quality: 82) {
