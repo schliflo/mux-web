@@ -8,7 +8,8 @@ export default () => (
     query BlogRollIndexQuery {
       allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___date] },
-        filter: { frontmatter: { templateKey: { eq: "blog-post" }, isFrontPage: { eq: true } } }
+        filter: { frontmatter: { templateKey: { eq: "blog-post" }, isFrontPage: { eq: true } } },
+        limit: 9
       ) {
         edges {
           node {
