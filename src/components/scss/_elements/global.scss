@@ -228,6 +228,20 @@ ul {
 
 .content {
   margin-top: 1.75em;
+
+  .my-auto & {
+    margin-bottom: 2.5em;
+  }
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .sr-only {

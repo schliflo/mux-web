@@ -9,7 +9,7 @@ export const ContentPageTemplate = ({ title, centeredContent, helmet, content, c
   const PageContent = contentComponent || Content;
 
   return (
-    <section>
+    <section className={centeredContent ? 'my-auto' : ''}>
       {helmet || ""}
       <div className="container container--narrow">
         <div className={`content ${centeredContent ? 'text--center' : ''}`}>
@@ -37,7 +37,7 @@ const ContentPage = ({ data }) => {
   return (
     <Layout>
       <ContentPageTemplate
-        contentComponent={HTMLContent}        
+        contentComponent={HTMLContent}
         helmet={
           <Helmet titleTemplate="%s | Max Neumeier - Video Editor">
             <title>{`${post.frontmatter.title}`}</title>
