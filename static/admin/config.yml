@@ -36,6 +36,14 @@ collections:
           - {label: "Label", name: "label", widget: "string"}
           - {label: "Text", name: "text", widget: "text"}
       - {label: "Tags", name: "tags", widget: "list"}
+      - label: "Awards"
+        name: "awards"
+        widget: "relation"
+        collection: "awards"
+        searchFields: ["year", "grade", "title", "category"]
+        valueField: "title"
+        displayFields: ["year", "grade", "title", "category"]
+        multiple: true
 
   - name: "pages"
     label: "Pages"
@@ -78,3 +86,14 @@ collections:
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Description", name: "description", widget: "text"}
           - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "awards"
+    label: "Awards"
+    folder: "src/awards"
+    create: true
+    fields:
+      - {label: "Year", name: "year", widget: "string"}
+      - {label: "Grade", name: "grade", widget: "string"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Category", name: "category", widget: "string"}
+      - {label: "Link", name: "href", widget: "string", required: false}
