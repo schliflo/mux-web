@@ -4,7 +4,8 @@ import Helmet from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
-import Img from 'gatsby-image'
+import Img from "gatsby-image";
+import Award from "../components/Award";
 
 export const AboutPageTemplate = ({ title, image, centeredContent, helmet, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
@@ -13,20 +14,28 @@ export const AboutPageTemplate = ({ title, image, centeredContent, helmet, conte
     <section>
       {helmet || ""}
       <div className="container container--narrow">
-        <div className={`content ${centeredContent ? 'text--center' : ''}`}>
+        <div className={`content ${centeredContent ? "text--center" : ""}`}>
           <h1>
             {title}
           </h1>
           <div className="row contant">
             <div className="col--50">
               <p>
-                {image && <Img alt={title} fluid={{ ...image.childImageSharp.fluid }} />}
+                {image && <Img alt={title} fluid={{ ...image.childImageSharp.fluid }}/>}
               </p>
             </div>
             <div className="col--50">
               <PageContent content={content}/>
             </div>
+          </div>
         </div>
+        <div className="awards">
+          <Award year="2018" grade="silver" title="Art Directors Club" category="Best Editing"/>
+          <Award year="2018" grade="silver" title="Art Directors Club" category="Best Editing"/>
+          <Award year="2018" grade="silver" title="Art Directors Club" category="Best Editing"/>
+          <Award year="2018" grade="silver" title="Art Directors Club" category="Best Editing"/>
+          <Award year="2018" grade="silver" title="Art Directors Club" category="Best Editing"/>
+          <Award year="2018" grade="silver" title="Art Directors Club" category="Best Editing"/>
         </div>
       </div>
     </section>
@@ -48,13 +57,13 @@ const AboutPage = ({ data }) => {
   return (
     <Layout>
       <AboutPageTemplate
-        contentComponent={HTMLContent}        
+        contentComponent={HTMLContent}
         helmet={
           <Helmet titleTemplate="%s | Max Neumeier - Video Editor">
             <title>{`${post.frontmatter.title}`}</title>
             <meta
               name="description"
-              content={`${post.frontmatter.description && post.frontmatter.description !== '' ? post.frontmatter.description : ''}`}
+              content={`${post.frontmatter.description && post.frontmatter.description !== "" ? post.frontmatter.description : ""}`}
             />
           </Helmet>
         }

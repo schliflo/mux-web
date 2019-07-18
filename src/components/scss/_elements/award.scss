@@ -1,0 +1,61 @@
+.awards {
+    text-align: center;
+    margin-top: 3em;
+}
+
+.award {
+    text-align: center;
+    margin-bottom: 2em;
+    display: inline-block;
+    max-width: 240px;
+    padding-left: 1em;
+    padding-right: 1em;
+
+    &__icon {
+        &-wrap {
+            position: relative;
+            max-width: 110px;
+            display: inline-block;
+        }
+    }
+
+    &__year,
+    &__grade {
+        position: absolute;
+        width: 100%;
+        font-family: $font-family-mono;
+        letter-spacing: 0;
+        line-height: 1;
+        display: block;
+    }
+
+    &__year {
+        top: 34%;
+        font-weight: 400;
+        font-size: 18px;
+    }
+
+    &__grade {
+        bottom: 32%;
+        font-weight: bold;
+        font-size: 10px;
+        text-transform: uppercase;
+    }
+
+    &__title {
+        font-family: $font-family-condensed;
+        letter-spacing: 0;
+        font-size: 18px;
+        text-transform: uppercase;
+        display: block;
+    }
+
+    &__category {
+        font-family: $font-family-mono;
+        letter-spacing: 0;
+        font-weight: bold;
+        font-size: 10px;
+        text-transform: uppercase;
+        display: block;
+    }
+}
