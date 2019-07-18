@@ -8,11 +8,13 @@ image: /img/732589975_1280x720.jpg
 videoType: vimeo
 videoId: '295352790'
 isFrontPage: true
-credits:
 tags:
   - musicvideo
   - editor
   - cinematographer
+awards:
+  - Best sk8terb0i in Hof
+  - Something title something
 ---
 Client: Lucky Me
 
