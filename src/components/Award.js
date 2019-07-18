@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import icon from "../img/award.svg";
 
-const Award = ({ year, grade, title, category }) => {
+const AwardInner = ({ year, grade, title, category }) => {
   return (
     <div className="award">
       <div className="award__icon-wrap">
@@ -16,11 +16,27 @@ const Award = ({ year, grade, title, category }) => {
   );
 };
 
+const Award = ({ year, grade, title, category, href }) => {
+  if (href) {
+    return (
+      <a className="award" href={href} title={title} rel="noopener" target="_blank">
+        <AwardInner year={year} grade={grade} title={title} category={category}/>
+      </a>
+    );
+  }
+  return (
+    <div className="award">
+      <AwardInner year={year} grade={grade} title={title} category={category}/>
+    </div>
+  );
+};
+
 Award.propTypes = {
   year: PropTypes.string,
   grade: PropTypes.string,
   title: PropTypes.string,
-  category: PropTypes.string
+  category: PropTypes.string,
+  href: PropTypes.string
 };
 
 export default Award;
