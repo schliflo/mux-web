@@ -5,7 +5,7 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import Img from "gatsby-image";
-import Award from "../components/Award";
+import Awards from "../components/Awards";
 
 export const AboutPageTemplate = ({ title, image, centeredContent, helmet, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
@@ -28,14 +28,7 @@ export const AboutPageTemplate = ({ title, image, centeredContent, helmet, conte
               <PageContent content={content}/>
             </div>
           </div>
-        </div>
-        <div className="awards">
-          <Award year="2018" grade="silver" title="Art Directors Club" category="Best Editing" href="https://herznssach.de/"/>
-          <Award year="2018" grade="silver" title="Art Directors Club" category="Best Editing"/>
-          <Award year="2018" grade="silver" title="Art Directors Club" category="Best Editing"/>
-          <Award year="2018" grade="silver" title="Art Directors Club" category="Best Editing"/>
-          <Award year="2018" grade="silver" title="Art Directors Club" category="Best Editing"/>
-          <Award year="2018" grade="silver" title="Art Directors Club" category="Best Editing"/>
+          <Awards/>
         </div>
       </div>
     </section>

@@ -89,7 +89,7 @@ collections:
 
   - name: "awards"
     label: "Awards"
-    folder: "src/awards"
+    folder: "src/pages/awards"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:

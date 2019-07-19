@@ -4,7 +4,7 @@ import icon from "../img/award.svg";
 
 const AwardInner = ({ year, grade, title, category }) => {
   return (
-    <div className="award">
+    <>
       <div className="award__icon-wrap">
         <img className="award__icon" src={icon} alt="award icon"/>
         <span className="award__year">{year}</span>
@@ -12,7 +12,7 @@ const AwardInner = ({ year, grade, title, category }) => {
       </div>
       <span className="award__title">{title}</span>
       <span className="award__category">{category}</span>
-    </div>
+    </>
   );
 };
 
