@@ -91,9 +91,14 @@ collections:
     label: "Awards"
     folder: "src/awards"
     create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: false
     fields:
+      - {label: "Template Key", name: "templateKey", widget: "hidden", default: "award"}
       - {label: "Year", name: "year", widget: "string"}
       - {label: "Grade", name: "grade", widget: "string"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Category", name: "category", widget: "string"}
       - {label: "Link", name: "href", widget: "string", required: false}
+      - {label: "Date", name: "date", widget: "date", hint: "only used for ordering, newer comes first"}

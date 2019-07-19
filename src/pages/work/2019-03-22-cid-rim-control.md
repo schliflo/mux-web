@@ -12,9 +12,6 @@ tags:
   - musicvideo
   - editor
   - cinematographer
-awards:
-  - Best sk8terb0i in Hof
-  - Something title something
 ---
 Client: Lucky Me
 

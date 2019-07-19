@@ -19,7 +19,7 @@ const AwardInner = ({ year, grade, title, category }) => {
 const Award = ({ year, grade, title, category, href }) => {
   if (href) {
     return (
-      <a className="award" href={href} title={title} rel="noopener" target="_blank">
+      <a className="award" href={href} title={title} rel="noopener noreferrer" target="_blank">
         <AwardInner year={year} grade={grade} title={title} category={category}/>
       </a>
     );
