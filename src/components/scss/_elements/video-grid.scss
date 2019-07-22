@@ -19,6 +19,9 @@
         overflow: hidden;
 
         a {
+            display: block;
+            box-shadow: none !important;
+
             &:focus,
             &:hover {
                 color: $color-white !important;

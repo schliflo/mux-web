@@ -137,6 +137,7 @@ export const pageQuery = graphql`
           label
           text
         }
+        awards
       }
     }
   }
