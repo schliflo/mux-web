@@ -13,6 +13,14 @@ export const IndexPageTemplate = ({
       <h1 className="sr-only">
         {title}
       </h1>
+      <div className="featured_all">
+        <Link className="btn" activeClassName='active' to="/">
+          featured
+        </Link>
+        <Link className="btn" activeClassName='active' to="/work">
+          all
+        </Link>
+      </div>
       <BlogRollIndex/>
       <div className="more-link">
         <Link className="btn" to="/work">
