@@ -18,7 +18,7 @@ export const AboutPageTemplate = ({ title, image, centeredContent, helmet, conte
           <h1>
             {title}
           </h1>
-          <div className="row contant">
+          <div className="row content">
             <div className="col--50">
               <p>
                 {image && <Img alt={title} fluid={{ ...image.childImageSharp.fluid }}/>}
