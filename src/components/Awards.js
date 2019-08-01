@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes, { array } from "prop-types";
+import PropTypes from "prop-types";
 import { graphql, StaticQuery } from "gatsby";
 import Award from "./Award";
 
