@@ -6,6 +6,7 @@ import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
 import VideoEmbed from "../components/VideoEmbed";
 import Content, { HTMLContent } from "../components/Content";
+import Awards from "../components/Awards";
 
 export const BlogPostTemplate = ({
                                    content,
@@ -18,7 +19,8 @@ export const BlogPostTemplate = ({
                                    helmet,
                                    videoType,
                                    videoId,
-                                   credits
+                                   credits,
+                                   awards,
                                  }) => {
   const PostContent = contentComponent || Content;
 
@@ -65,6 +67,9 @@ export const BlogPostTemplate = ({
             </dl>
           </div>}
         </div>
+        <div className="row">
+          <Awards filter={awards || []}/>
+        </div>
       </div>
     </section>
   );
@@ -79,7 +84,8 @@ BlogPostTemplate.propTypes = {
   date: PropTypes.string.isRequired,
   helmet: PropTypes.object,
   videoType: PropTypes.string.isRequired,
-  videoId: PropTypes.string.isRequired
+  videoId: PropTypes.string.isRequired,
+  awards: PropTypes.object,
 };
 
 const BlogPost = ({ data }) => {
@@ -107,6 +113,7 @@ const BlogPost = ({ data }) => {
         videoType={post.frontmatter.videoType}
         videoId={post.frontmatter.videoId}
         credits={post.frontmatter.credits}
+        awards={post.frontmatter.awards}
       />
     </Layout>
   );
