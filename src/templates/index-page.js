@@ -15,7 +15,7 @@ export const IndexPageTemplate = ({
     <BlogRollIndex/>
     <div className="more-link">
       <Link className="btn" to="/work">
-        All my work
+        Show me more
       </Link>
     </div>
   </>

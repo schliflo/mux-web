@@ -9,10 +9,43 @@
         display: block;
         padding: 1rem;
         border-right: 1px solid $color-white;
+        position: relative;
+        z-index: 2;
 
-        > img{
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+            background-color: $color-white;
+            transform-origin: center bottom;
+            transform: scaleY(0);
+            z-index: -1;
+            transition: transform $transitionDefault
+        }
+
+        > img {
             width: 9rem;
             height: 5.4375rem;
+            transition: filter $transitionDefault
+        }
+
+        &:hover,
+        &:focus {
+            color: $color-black;
+
+            &:before {
+                transform: scaleY(1);
+            }
+
+            > img {
+                filter: invert(1);
+            }
         }
     }
 
@@ -35,12 +68,50 @@
             padding: .7em 1em;
             text-align: center;
             color: $color-white;
-            opacity: .8;
+            opacity: .66;
             min-width: calc(16.5rem + 1.5px);
+            position: relative;
+            z-index: 2;
+            transition: opacity $transitionDefault;
+
+            &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                height: 100%;
+                width: 100%;
+                background-color: $color-white;
+                transform-origin: center bottom;
+                transform: scaleY(0);
+                z-index: -1;
+                transition: transform $transitionDefault
+            }
+
+            &:hover,
+            &:focus {
+                opacity: 1;
+                color: $color-black;
+
+                &:before {
+                    transform: scaleY(1);
+                }
+            }
 
             &.active {
                 font-style: italic;
                 opacity: 1;
+
+                &:before {
+                    display: none;
+                }
+
+                &:hover {
+                    color: $color-white;
+                }
             }
         }
     }
@@ -70,6 +141,35 @@
                 text-align: center;
                 color: $color-white;
                 min-width: 11rem;
+                position: relative;
+                z-index: 2;
+                transition: opacity $transitionDefault;
+
+                &:before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    right: 0;
+                    bottom: 0;
+                    height: 100%;
+                    width: 100%;
+                    background-color: $color-white;
+                    transform-origin: center bottom;
+                    transform: scaleY(0);
+                    z-index: -1;
+                    transition: transform $transitionDefault
+                }
+
+                &:hover,
+                &:focus {
+                    color: $color-black;
+
+                    &:before {
+                        transform: scaleY(1);
+                    }
+                }
 
                 &.active {
                     color: $color-black;

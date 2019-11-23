@@ -17,7 +17,7 @@ class TagRoute extends React.Component {
       <Layout>
         <section className="section">
           <Helmet title={`${tag} | ${title}`}/>
-          <h1 className="text--center">#{tag}</h1>
+          <h1 className="text--center">//{tag}</h1>
           <p className="text--center text--small">{tagHeader}</p>
           <div className="content"></div>
           <BlogRoll data={this.props.data}/>
@@ -53,7 +53,8 @@ export const tagPageQuery = graphql`
             title
             subtitle
             templateKey
-            date(formatString: "MMMM DD, YYYY")
+            date(formatString: "YYYY")
+            tags
             image {
               childImageSharp {
                 fluid(maxWidth: 720, quality: 82) {
