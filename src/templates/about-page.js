@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import Helmet from "react-helmet";
-import { graphql } from "gatsby";
+import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 import Img from "gatsby-image";
@@ -38,6 +38,11 @@ export const AboutPageTemplate = ({ title, image, centeredContent, helmet, conte
         {/*<div className="row-headline">*/}
         {/*  Selected clients*/}
         {/*</div>*/}
+      </div>
+      <div className="more-link">
+        <Link className="btn" to="/contact">
+          Get in touch
+        </Link>
       </div>
     </section>
   );

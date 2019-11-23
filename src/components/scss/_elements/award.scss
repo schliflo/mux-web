@@ -69,3 +69,10 @@
         display: block;
     }
 }
+
+
+@media screen and (max-width: 48rem) {
+    .awards {
+        justify-content: center;
+    }
+}

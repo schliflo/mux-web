@@ -1,8 +1,7 @@
 ---
-templateKey: 'content-page'
+templateKey: 'contact-page'
 path: /contact
-title: Contact
-centeredContent: true
+title: Don´t be afraid and say hello. I'm available for freelance.
 ---
 <address>
     <p>

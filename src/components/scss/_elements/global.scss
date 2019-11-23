@@ -75,8 +75,6 @@ a {
 
 #main {
     font-size: 1.42rem;
-    overflow-wrap: break-word;
-    hyphens: auto;
 
     a:not(.gatsby-resp-image-link) {
         position: relative;
@@ -286,4 +284,16 @@ iframe {
             overflow: hidden;
         }
     }
+
+  h1 {
+    overflow-wrap: break-word;
+    max-width: 100%;
+    hyphens: auto;
+  }
+
+  h2 {
+    overflow-wrap: break-word;
+    max-width: 100%;
+    hyphens: auto;
+  }
 }
