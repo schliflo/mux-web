@@ -15,7 +15,7 @@ const Navbar = class extends React.Component {
     return (
       <header id="header" className={`header ${this.state.menuOpen ? "nav-open" : ""}`}>
         <Link to='/' className="header__logo">
-          <img src={logo} width="90" height="54" alt="Max Neumeier - Video Editor"/>
+          <img src={logo} width="145" alt="Max Neumeier - Video Editor"/>
         </Link>
         <div className="nav-wrap">
           <div className="nav-toggle" onClick={() => {
@@ -55,6 +55,20 @@ const Navbar = class extends React.Component {
               </li>
             </ul>
           </nav>
+          <div className="sub-nav">
+            <Link to='/' activeClassName='active' onClick={() => {
+              this.setState({
+                'menuOpen': !this.state.menuOpen,
+              });
+            }}><span
+              data-text="Work">Selected</span></Link>
+            <Link to='/work' activeClassName='active' onClick={() => {
+              this.setState({
+                'menuOpen': !this.state.menuOpen,
+              });
+            }}><span
+              data-text="Work">All</span></Link>
+          </div>
         </div>
       </header>
     )

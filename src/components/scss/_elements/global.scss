@@ -131,10 +131,6 @@ img {
   display: block;
   height: auto;
   width: 100%;
-
-  &:not([src$=".svg"]) {
-    max-width: 100%;
-  }
 }
 
 ol,
