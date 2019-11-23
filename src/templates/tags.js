@@ -17,12 +17,10 @@ class TagRoute extends React.Component {
       <Layout>
         <section className="section">
           <Helmet title={`${tag} | ${title}`}/>
-          <div className="container">
-            <h1 className="text--center">#{tag}</h1>
-            <p className="text--center text--small">{tagHeader}</p>
-            <div className="content"></div>
-            <BlogRoll data={this.props.data}/>
-          </div>
+          <h1 className="text--center">#{tag}</h1>
+          <p className="text--center text--small">{tagHeader}</p>
+          <div className="content"></div>
+          <BlogRoll data={this.props.data}/>
           <div className="more-link">
             <Link className="btn" to="/tags/">Browse all tags</Link>
           </div>

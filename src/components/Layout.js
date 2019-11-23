@@ -46,11 +46,13 @@ const TemplateWrapper = ({ children }) => (
 
           <meta name='google-site-verification' content='Z7JIZc27nAoreMmaql-DJy7JNXwV8kI7zKXnsfSdm4s' />
         </Helmet>
-        <Navbar />
-        <main id="main">
-          <div className='pageContent'>{children}</div>
-        </main>
-        <Footer />
+        <div className="container">
+          <Navbar />
+          <main id="main">
+            <div className='pageContent'>{children}</div>
+          </main>
+          <Footer />
+        </div>
       </div>
     )}
   />

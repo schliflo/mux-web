@@ -13,23 +13,21 @@ export const AboutPageTemplate = ({ title, image, centeredContent, helmet, conte
   return (
     <section>
       {helmet || ""}
-      <div className="container container--narrow">
-        <div className={`content ${centeredContent ? "text--center" : ""}`}>
-          <h1>
-            {title}
-          </h1>
-          <div className="row content">
-            <div className="col--50">
-              <p>
-                {image && <Img alt={title} fluid={{ ...image.childImageSharp.fluid }}/>}
-              </p>
-            </div>
-            <div className="col--50">
-              <PageContent content={content}/>
-            </div>
+      <div className={`content ${centeredContent ? "text--center" : ""}`}>
+        <h1>
+          {title}
+        </h1>
+        <div className="row content">
+          <div className="col--50">
+            <p>
+              {image && <Img alt={title} fluid={{ ...image.childImageSharp.fluid }}/>}
+            </p>
           </div>
-          <Awards/>
+          <div className="col--50">
+            <PageContent content={content}/>
+          </div>
         </div>
+        <Awards/>
       </div>
     </section>
   );

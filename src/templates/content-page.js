@@ -11,13 +11,11 @@ export const ContentPageTemplate = ({ title, centeredContent, helmet, content, c
   return (
     <section className={centeredContent ? 'my-auto' : ''}>
       {helmet || ""}
-      <div className="container container--narrow">
-        <div className={`content ${centeredContent ? 'text--center' : ''}`}>
-          <h1>
-            {title}
-          </h1>
-          <PageContent className="content" content={content}/>
-        </div>
+      <div className={`content ${centeredContent ? 'text--center' : ''}`}>
+        <h1>
+          {title}
+        </h1>
+        <PageContent className="content" content={content}/>
       </div>
     </section>
   );

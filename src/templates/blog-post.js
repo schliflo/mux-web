@@ -27,49 +27,41 @@ export const BlogPostTemplate = ({
   return (
     <section className="section">
       {helmet || ""}
-      <div className="container container--narrow">
-        <div className="text--center">
-        <h1>{title}</h1>
-          {subtitle && <h2>{subtitle}</h2>}
-          {tags && tags.length ? (
-            <ul className="list--unstyled list--tags">
-              {tags.map(tag => (
-                <li key={tag + `tag`}>
-                  <Link to={`/tags/${kebabCase(tag)}/`}>#{tag}</Link>
-                </li>
-              ))}
-            </ul>
-          ) : null}
-        </div>
+      <div className="text--center">
+      <h1>{title}</h1>
+        {subtitle && <h2>{subtitle}</h2>}
+        {tags && tags.length ? (
+          <ul className="list--unstyled list--tags">
+            {tags.map(tag => (
+              <li key={tag + `tag`}>
+                <Link to={`/tags/${kebabCase(tag)}/`}>#{tag}</Link>
+              </li>
+            ))}
+          </ul>
+        ) : null}
       </div>
       {description &&
-      <div className="container container--narrow">
-        <p className="text--center text--italic">{description}</p>
+      <p className="text--center text--italic">{description}</p>
+      }
+      <VideoEmbed videoType={videoType} videoId={videoId} videoTitle={title}/>
+      <p className="text--small text--center">
+        {date}
+      </p>
+      <div className="row">
+        <PostContent content={content} className={`content ${credits ? 'col--50' : 'col--100'}`}/>
+        {credits && <div className="content credits col--50">
+          <dl>
+              {credits.map(item => (
+                <>
+                  <dt>{item.label}</dt>
+                  <dd>{item.text}</dd>
+                </>
+              ))}
+          </dl>
+        </div>}
       </div>
-       }
-      <div className="container">
-        <VideoEmbed videoType={videoType} videoId={videoId} videoTitle={title}/>
-      </div>
-      <div className="container container--narrow">
-        <p className="text--small text--center">
-          {date}
-        </p>
-        <div className="row">
-          <PostContent content={content} className={`content ${credits ? 'col--50' : 'col--100'}`}/>
-          {credits && <div className="content credits col--50">
-            <dl>
-                {credits.map(item => (
-                  <>
-                    <dt>{item.label}</dt>
-                    <dd>{item.text}</dd>
-                  </>
-                ))}
-            </dl>
-          </div>}
-        </div>
-        <div className="row">
-          <Awards filter={awards || []}/>
-        </div>
+      <div className="row">
+        <Awards filter={awards || []}/>
       </div>
     </section>
   );

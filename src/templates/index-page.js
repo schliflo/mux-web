@@ -8,27 +8,25 @@ import BlogRollIndex from "../components/BlogRollIndex";
 export const IndexPageTemplate = ({
                                     title
                                   }) => (
-  <div className="container">
-    <div className="">
-      <h1 className="sr-only">
-        {title}
-      </h1>
-      <div className="featured_all">
-        <Link className="btn" activeClassName='active' to="/">
-          featured
-        </Link>
-        <Link className="btn" activeClassName='active' to="/work">
-          all
-        </Link>
-      </div>
-      <BlogRollIndex/>
-      <div className="more-link">
-        <Link className="btn" to="/work">
-          All my work
-        </Link>
-      </div>
+  <>
+    <h1 className="sr-only">
+      {title}
+    </h1>
+    <div className="featured_all">
+      <Link className="btn" activeClassName='active' to="/">
+        featured
+      </Link>
+      <Link className="btn" activeClassName='active' to="/work">
+        all
+      </Link>
     </div>
-  </div>
+    <BlogRollIndex/>
+    <div className="more-link">
+      <Link className="btn" to="/work">
+        All my work
+      </Link>
+    </div>
+  </>
 );
 
 IndexPageTemplate.propTypes = {
