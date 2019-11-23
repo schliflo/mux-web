@@ -68,17 +68,17 @@
 }
 
 .more-link {
-    margin: 3.75rem 4rem;
+    margin: 3.75rem 0;
     text-align: center;
 
     > a {
         text-transform: uppercase;
         font-family: $font-family-mono;
-        font-size: 1.125rem;
+        font-size: 1rem;
         display: inline-block;
-        padding: .33em 1em;
+        padding: .4em 1em;
         text-align: center;
-        min-width: 21.25rem;
+        min-width: 18em;
         border: 1px solid $color-white;
         box-shadow: none !important;
         position: relative;
@@ -123,7 +123,7 @@
             flex-basis: calc(50% - 1rem * 2);
             margin-left: 1rem;
             margin-right: 1rem;
-            margin-bottom: 2rem;
+            margin-bottom: 2.5rem;
         }
     }
 
@@ -139,7 +139,6 @@
 
         &__item {
             flex-basis: 100%;
-            margin-bottom: 1.337rem;
             margin-left: 0;
             margin-right: 0;
         }
