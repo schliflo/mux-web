@@ -85,6 +85,7 @@
         z-index: 2;
         transition: opacity $transitionDefault;
         opacity: .66;
+        font-weight: 300;
 
         &:before {
             content: '';

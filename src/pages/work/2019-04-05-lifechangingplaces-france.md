@@ -32,6 +32,9 @@ tags:
   - travel
   - edit
   - dop
+awards:
+  - An award
+  - Best sk8terb0i in Hof
 ---
 In this mini documentary for Lufthansa we traveled with Chinese winemaker Cici around Burgundy and Province. France really surprised me with it’s unique nature and culture. To tell her story about the way she found her passion we shot super wide drone shots, dreamy hand held movements and abstract macros. Clemens really brought this thing to life with his dynamic and unique camera techniques. 
 

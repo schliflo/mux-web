@@ -7,6 +7,7 @@ import Layout from "../components/Layout";
 import VideoEmbed from "../components/VideoEmbed";
 import Content, { HTMLContent } from "../components/Content";
 import Awards from "../components/Awards";
+import BlogRollIndex from "../components/BlogRollIndex";
 
 export const BlogPostTemplate = ({
                                    content,
@@ -27,41 +28,56 @@ export const BlogPostTemplate = ({
   return (
     <section className="section">
       {helmet || ""}
-      <div className="text--center">
-      <h1>{title}</h1>
-        {subtitle && <h2>{subtitle}</h2>}
-        {tags && tags.length ? (
-          <ul className="list--unstyled list--tags">
-            {tags.map(tag => (
-              <li key={tag + `tag`}>
-                <Link to={`/tags/${kebabCase(tag)}/`}>//{tag}</Link>
-              </li>
-            ))}
-          </ul>
-        ) : null}
-      </div>
-      {description &&
-      <p className="text--center text--italic">{description}</p>
-      }
       <VideoEmbed videoType={videoType} videoId={videoId} videoTitle={title}/>
-      <p className="text--small text--center">
-        {date}
-      </p>
       <div className="row">
-        <PostContent content={content} className={`content ${credits ? 'col--50' : 'col--100'}`}/>
-        {credits && <div className="content credits col--50">
-          <dl>
-              {credits.map(item => (
-                <>
-                  <dt>{item.label}</dt>
-                  <dd>{item.text}</dd>
-                </>
+        <div className="col--50">
+          <h1>{title}</h1>
+          {subtitle && <h2>{subtitle}</h2>}
+          {description &&
+            <p className="text--center text--italic">{description}</p>
+          }
+          <div className="date">
+            {date}
+          </div>
+          {tags && tags.length ? (
+            <ul className="list--unstyled list--tags">
+              {tags.map(tag => (
+                <li key={tag + `tag`}>
+                  <Link to={`/tags/${kebabCase(tag)}/`}>//{tag}</Link>
+                </li>
               ))}
-          </dl>
-        </div>}
+            </ul>
+          ) : null}
+        </div>
+        <div className="col--50">
+          <PostContent content={content}/>
+        </div>
       </div>
-      <div className="row">
+      {awards && awards.length && <div className="row">
+        <h3 className="row-headline">
+          Awards
+        </h3>
         <Awards filter={awards || []}/>
+      </div>}
+      {credits && <div className="row">
+        <h3 className="row-headline">
+          Crew
+        </h3>
+        <div className="credits">
+          <dl>
+            {credits.map(item => (
+              <>
+                <dt>{item.label}</dt>
+                <dd>{item.text}</dd>
+              </>
+            ))}
+          </dl>
+        </div>
+      </div>}
+      <div className="more-link">
+        <Link className="btn" to="/work">
+          See all
+        </Link>
       </div>
     </section>
   );
@@ -125,7 +141,7 @@ export const pageQuery = graphql`
       id
       html
       frontmatter {
-        date(formatString: "MMMM YYYY")
+        date(formatString: "YYYY")
         title
         subtitle
         description

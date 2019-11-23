@@ -5,6 +5,7 @@ $gutter: 2rem;
     margin-right: -$gutter/2;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 [class*="col--"] {
