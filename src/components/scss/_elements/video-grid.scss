@@ -1,20 +1,16 @@
 .video-grid {
-    padding: .5rem 2.166666rem 3.75rem 2.166666rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-
-    &__list {
-        margin-left: -1.3333rem;
-        margin-right: -1.3333rem;
-    }
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
 
     &__item {
-        flex-basis: calc(33.3333% - 1.3333rem*2);
-        margin-left: 1.3333rem;
-        margin-right: 1.3333rem;
-        margin-bottom: 2rem;
+        flex-basis: calc(33.3333% - 1.5rem * 2);
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        margin-bottom: 3rem;
         position: relative;
         overflow: hidden;
 
@@ -31,17 +27,43 @@
 
     &__title {
         font-size: 1.2rem;
-        margin-top: .5em;
-        margin-bottom: .25em;
-        text-align: center;
+        margin-top: .75em;
+        margin-bottom: .125em;
         font-weight: 500;
+        border-top: 1px solid $color-white;
+        padding-top: .5em;
+        text-transform: uppercase;
     }
 
     &__subtitle {
-        font-size: .875rem;
-        margin-top: .25em;
-        text-align: center;
+        font-size: .75rem;
+        margin-top: .125em;
         font-weight: 100;
+        border-bottom: 1px solid $color-white;
+        padding-bottom: .66em;
+    }
+
+    &__meta {
+        font-size: .625rem;
+        font-family: $font-family-mono;
+        display: flex;
+        flex-direction: row;
+        padding-top: .5em;
+    }
+
+    &__tags {
+        > li {
+            display: none !important;
+
+            &:first-child {
+                display: inline-block !important;
+            }
+        }
+    }
+
+    &__date {
+        margin-left: auto;
+        align-self: flex-end;
     }
 }
 
@@ -52,15 +74,11 @@
 
 @media screen and (max-width: 80rem) {
     .video-grid {
-        padding: .5rem 2.5rem 3.75rem 2.5rem;
-
-        &__list {
-            margin-left: -1rem;
-            margin-right: -1rem;
-        }
+        margin-left: -1rem;
+        margin-right: -1rem;
 
         &__item {
-            flex-basis: calc(50% - 1rem*2);
+            flex-basis: calc(50% - 1rem * 2);
             margin-left: 1rem;
             margin-right: 1rem;
             margin-bottom: 2rem;
@@ -74,12 +92,8 @@
 
 @media screen and (max-width: 48rem) {
     .video-grid {
-        padding: 0;
-
-        &__list {
-            margin-left: 0;
-            margin-right: 0;
-        }
+        margin-left: 0;
+        margin-right: 0;
 
         &__item {
             flex-basis: 100%;

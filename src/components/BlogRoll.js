@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
+import { kebabCase } from "lodash";
 
 export class BlogRoll extends React.Component {
 
@@ -32,6 +33,20 @@ export class BlogRoll extends React.Component {
                   <h3 className="video-grid__subtitle">
                     {post.frontmatter.subtitle}
                   </h3>
+                  <div className="video-grid__meta">
+                    {post.frontmatter.tags && post.frontmatter.tags.length ? (
+                      <ul className="list--unstyled video-grid__tags">
+                        {post.frontmatter.tags.map(tag => (
+                          <li key={tag + `tag`}>
+                            <Link to={`/tags/${kebabCase(tag)}/`}>//{tag}</Link>
+                          </li>
+                        ))}
+                      </ul>
+                    ) : null}
+                    <div className="video-grid__date">
+                      {post.frontmatter.date}
+                    </div>
+                  </div>
                 </Link>
               </article>
             </div>
@@ -67,7 +82,8 @@ export default () => (
               title
               subtitle
               templateKey
-              date(formatString: "MMMM DD, YYYY")
+              date(formatString: "YYYY")
+              tags
               isFrontPage
               image {
                 childImageSharp {

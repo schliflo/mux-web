@@ -21,7 +21,8 @@ export default () => (
               title
               subtitle
               templateKey
-              date(formatString: "MMMM DD, YYYY")
+              date(formatString: "YYYY")
+              tags
               isFrontPage
               image {
                 childImageSharp {
