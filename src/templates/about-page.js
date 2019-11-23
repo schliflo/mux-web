@@ -14,20 +14,30 @@ export const AboutPageTemplate = ({ title, image, centeredContent, helmet, conte
     <section>
       {helmet || ""}
       <div className={`content ${centeredContent ? "text--center" : ""}`}>
-        <h1>
-          {title}
-        </h1>
         <div className="row content">
           <div className="col--50">
-            <p>
-              {image && <Img alt={title} fluid={{ ...image.childImageSharp.fluid }}/>}
-            </p>
+            {image && <p>
+              <Img alt={title} fluid={{ ...image.childImageSharp.fluid }}/>
+            </p>}
+            {!image && <h1>
+              {title}
+            </h1>}
           </div>
           <div className="col--50">
+            {image && <h1>
+              {title}
+            </h1>}
             <PageContent content={content}/>
           </div>
         </div>
+        <div className="row-headline">
+          Awards
+        </div>
         <Awards/>
+        {/*TODO: selected clients*/}
+        {/*<div className="row-headline">*/}
+        {/*  Selected clients*/}
+        {/*</div>*/}
       </div>
     </section>
   );

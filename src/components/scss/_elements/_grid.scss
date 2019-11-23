@@ -1,4 +1,4 @@
-$gutter: 2rem;
+$gutter: 6rem;
 
 .row {
     margin-left: -$gutter/2;
@@ -61,6 +61,36 @@ $gutter: 2rem;
     &--100 {
         flex-basis: 100%;
     }
+}
+
+@media screen and (max-width: 118.75rem) {
+    $gutter: 5rem;
+
+    .row {
+        margin-left: -$gutter/2;
+        margin-right: -$gutter/2;
+    }
+
+    [class*="col--"] {
+        padding-left: $gutter/2;
+        padding-right: $gutter/2;
+    }
+
+}
+
+@media screen and (max-width: 75rem) {
+    $gutter: 3rem;
+
+    .row {
+        margin-left: -$gutter/2;
+        margin-right: -$gutter/2;
+    }
+
+    [class*="col--"] {
+        padding-left: $gutter/2;
+        padding-right: $gutter/2;
+    }
+
 }
 
 @media screen and (max-width: 48rem) {
