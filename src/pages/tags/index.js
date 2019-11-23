@@ -15,7 +15,7 @@ const TagsPage = ({
   <Layout>
     <section className="section">
       <Helmet title={`Tags | ${title}`} />
-      <div className="text--center">
+      <div className="">
         <h1 className="sr-only">All Tags</h1>
         <ul className="list--all-tags">
           {group.map(tag => (

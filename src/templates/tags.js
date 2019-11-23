@@ -17,8 +17,8 @@ class TagRoute extends React.Component {
       <Layout>
         <section className="section">
           <Helmet title={`${tag} | ${title}`}/>
-          <h1 className="text--center">//{tag}</h1>
-          <p className="text--center text--small">{tagHeader}</p>
+          <h1 className="text--mono">//{tag}</h1>
+          <p className="text--small">{tagHeader}</p>
           <div className="content"></div>
           <BlogRoll data={this.props.data}/>
           <div className="more-link">
