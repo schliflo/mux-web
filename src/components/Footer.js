@@ -7,14 +7,14 @@ const Footer = class extends React.Component {
 
     return (
       <footer id="footer" className="footer">
-        <span className="footer__copyright">&copy; {year} Max Neumeier</span>
-        <nav id="nav-footer" className="footer__nav">
-          <ul>
-            <li>
-              <Link to='/imprint'>Imprint</Link>
-            </li>
-          </ul>
-        </nav>
+        <div className="footer__row">
+          <span>&copy; {year}</span>
+          <Link to='/imprint'>Imprint</Link>
+        </div>
+        <div className="footer__row">
+          <span>Max Neumeier</span>
+          <a href="https://www.instagram.com/muxsux/" title="Instagram of Max Neumeier" rel="noopener" target="_blank">Instagram</a>
+        </div>
       </footer>
     );
   }
