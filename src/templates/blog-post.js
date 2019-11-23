@@ -53,13 +53,13 @@ export const BlogPostTemplate = ({
           <PostContent content={content}/>
         </div>
       </div>
-      {awards && awards.length && <div className="row">
+      {awards && awards.length && <div>
         <h3 className="row-headline">
           Awards
         </h3>
         <Awards filter={awards || []}/>
       </div>}
-      {credits && <div className="row">
+      {credits && <div>
         <h3 className="row-headline">
           Crew
         </h3>

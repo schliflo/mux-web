@@ -53,10 +53,8 @@
 
     &__tags {
         > li {
-            display: none !important;
-
-            &:first-child {
-                display: inline-block !important;
+            + li {
+                margin-left: 1em;
             }
         }
     }
