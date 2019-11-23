@@ -12,3 +12,10 @@
         padding-right: 3rem;
     }
 }
+
+@media screen and (max-width: 48rem) {
+    .container {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
