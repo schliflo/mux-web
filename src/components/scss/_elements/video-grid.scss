@@ -25,17 +25,17 @@
     }
 
     &__title {
-        font-size: 1.2rem;
-        margin-top: .75em;
+        font-size: 1.66rem;
+        margin-top: .5em;
         margin-bottom: .125em;
         font-weight: 500;
         border-top: 1px solid $color-white;
-        padding-top: .5em;
+        padding-top: .25em;
         text-transform: uppercase;
     }
 
     &__subtitle {
-        font-size: .75rem;
+        font-size: 1rem;
         margin-top: .125em;
         font-weight: 100;
         border-bottom: 1px solid $color-white;
@@ -43,7 +43,7 @@
     }
 
     &__meta {
-        font-size: .625rem;
+        font-size: .875rem;
         font-family: $font-family-mono;
         display: flex;
         flex-direction: row;

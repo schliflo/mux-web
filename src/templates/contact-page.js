@@ -4,8 +4,9 @@ import Helmet from "react-helmet";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
+import Img from "gatsby-image";
 
-export const ContactPageTemplate = ({ title, centeredContent, helmet, content, contentComponent }) => {
+export const ContactPageTemplate = ({ title, image, helmet, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
 
   return (
@@ -17,13 +18,21 @@ export const ContactPageTemplate = ({ title, centeredContent, helmet, content, c
         </div>
         <div className="row">
           <div className="col--50">
-            <p></p>
-            <h1>
-              {title}
-            </h1>
+            {image && <p>
+              <Img alt={title} fluid={{ ...image.childImageSharp.fluid }}/>
+            </p>}
+            {!image && <>
+              <p></p>
+              <h1>
+                {title}
+              </h1>
+            </>}
           </div>
           <div className="col--50">
-            <PageContent className="content" content={content}/>
+            {image && <h1>
+              {title}
+            </h1>}
+            <PageContent content={content}/>
           </div>
         </div>
       </div>
@@ -39,10 +48,9 @@ export const ContactPageTemplate = ({ title, centeredContent, helmet, content, c
 
 ContactPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
+  image: PropTypes.any,
   description: PropTypes.string,
-  centeredContent: PropTypes.bool,
   content: PropTypes.string,
-  contentComponent: PropTypes.func
 };
 
 const ContactPage = ({ data }) => {
@@ -62,7 +70,7 @@ const ContactPage = ({ data }) => {
           </Helmet>
         }
         title={post.frontmatter.title}
-        centeredContent={post.frontmatter.centeredContent}
+        image={post.frontmatter.image}
         content={post.html}
       />
     </Layout>
@@ -82,7 +90,13 @@ export const ContactPageQuery = graphql`
       frontmatter {
         title
         description
-        centeredContent
+        image {
+          childImageSharp {
+            fluid(maxWidth: 720, quality: 82) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

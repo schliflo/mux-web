@@ -1,4 +1,4 @@
-$gutter: 6rem;
+$gutter: 4rem;
 
 .row {
     margin-left: -$gutter/2;
@@ -64,7 +64,7 @@ $gutter: 6rem;
 }
 
 @media screen and (max-width: 118.75rem) {
-    $gutter: 5rem;
+    $gutter: 3rem;
 
     .row {
         margin-left: -$gutter/2;
@@ -79,7 +79,7 @@ $gutter: 6rem;
 }
 
 @media screen and (max-width: 75rem) {
-    $gutter: 3rem;
+    $gutter: 2.5rem;
 
     .row {
         margin-left: -$gutter/2;

@@ -76,8 +76,13 @@ collections:
           - {label: "Template Key", name: "templateKey", widget: "hidden", default: "content-page"}
           - {label: "Title", name: "title", widget: "string"}
           - {label: "Description", name: "description", widget: "text"}
+          - label: "Image"
+            name: "image"
+            widget: "image"
+            media_library:
+              config:
+                multiple: false
           - {label: "Body", name: "body", widget: "markdown"}
-          - {label: "Centered Content", name: "centeredContent", widget: "boolean", default: true}
       - file: "src/pages/imprint/index.md"
         label: "Imprint"
         name: "imprint"

@@ -7,21 +7,27 @@ import Content, { HTMLContent } from "../components/Content";
 import Img from "gatsby-image";
 import Awards from "../components/Awards";
 
-export const AboutPageTemplate = ({ title, image, centeredContent, helmet, content, contentComponent }) => {
+export const AboutPageTemplate = ({ title, image, helmet, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
 
   return (
     <section>
       {helmet || ""}
-      <div className={`content ${centeredContent ? "text--center" : ""}`}>
-        <div className="row content">
+      <div className={`content`}>
+        <div className="row-headline">
+          About
+        </div>
+        <div className="row">
           <div className="col--50">
             {image && <p>
               <Img alt={title} fluid={{ ...image.childImageSharp.fluid }}/>
             </p>}
-            {!image && <h1>
-              {title}
-            </h1>}
+            {!image && <>
+              <p></p>
+              <h1>
+                {title}
+              </h1>
+            </>}
           </div>
           <div className="col--50">
             {image && <h1>
@@ -50,9 +56,8 @@ export const AboutPageTemplate = ({ title, image, centeredContent, helmet, conte
 
 AboutPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
-  image: PropTypes.any.isRequired,
+  image: PropTypes.any,
   description: PropTypes.string,
-  centeredContent: PropTypes.bool,
   content: PropTypes.string,
   contentComponent: PropTypes.func
 };
@@ -75,7 +80,6 @@ const AboutPage = ({ data }) => {
         }
         title={post.frontmatter.title}
         image={post.frontmatter.image}
-        centeredContent={post.frontmatter.centeredContent}
         content={post.html}
       />
     </Layout>
@@ -95,7 +99,6 @@ export const aboutPageQuery = graphql`
       frontmatter {
         title
         description
-        centeredContent
         image {
           childImageSharp {
             fluid(maxWidth: 720, quality: 82) {

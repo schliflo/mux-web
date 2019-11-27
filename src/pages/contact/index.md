@@ -2,18 +2,11 @@
 templateKey: 'contact-page'
 path: /contact
 title: Don´t be afraid and say hello. I'm available for freelance.
+image: /img/bf479b7c-b960-45a1-8f89-7371ee4f98ce.jpg
 ---
-<address>
-    <p>
-        Max Neumeier
-    </p>
-    <p>
-        Zenettistr. 47<br />
-        80337 Munich<br />
-        Germany
-    </p>
-    <p>
-        <a href="mailto:contact@maxneumeier.com">contact@maxneumeier.com</a><br />
-        <a href="tel:+4917642047451">+49 176 42047451</a>
-    </p>
-</address>
+Max Neumeier<br />
+Zenettistr. 47, 80337 Munich<br />
+Germany
+
+[contact@maxneumeier.com](mailto:contact@maxneumeier.com)<br />
+[+49.176.4204.7451](tel:+4917642047451)
