@@ -70,6 +70,14 @@ collections:
               config:
                 multiple: false
           - {label: "Body", name: "body", widget: "markdown"}
+          - label: "Awards"
+            name: "awards"
+            widget: "relation"
+            collection: "awards"
+            searchFields: ["year", "grade", "title", "category"]
+            valueField: "title"
+            displayFields: ["year", "grade", "title", "category"]
+            multiple: true
       - file: "src/pages/contact/index.md"
         label: "Contact"
         name: "contact"

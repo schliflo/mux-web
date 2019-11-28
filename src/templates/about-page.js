@@ -7,7 +7,7 @@ import Content, { HTMLContent } from "../components/Content";
 import Img from "gatsby-image";
 import Awards from "../components/Awards";
 
-export const AboutPageTemplate = ({ title, image, helmet, content, contentComponent }) => {
+export const AboutPageTemplate = ({ title, image, helmet, content, contentComponent, awards }) => {
   const PageContent = contentComponent || Content;
 
   return (
@@ -39,7 +39,7 @@ export const AboutPageTemplate = ({ title, image, helmet, content, contentCompon
         <div className="row-headline">
           Awards
         </div>
-        <Awards/>
+        <Awards filter={awards || []}/>
         {/*TODO: selected clients*/}
         {/*<div className="row-headline">*/}
         {/*  Selected clients*/}
@@ -59,7 +59,8 @@ AboutPageTemplate.propTypes = {
   image: PropTypes.any,
   description: PropTypes.string,
   content: PropTypes.string,
-  contentComponent: PropTypes.func
+  contentComponent: PropTypes.func,
+  awards: PropTypes.object,
 };
 
 const AboutPage = ({ data }) => {
@@ -81,6 +82,7 @@ const AboutPage = ({ data }) => {
         title={post.frontmatter.title}
         image={post.frontmatter.image}
         content={post.html}
+        awards={post.frontmatter.awards}
       />
     </Layout>
   );
@@ -106,6 +108,7 @@ export const aboutPageQuery = graphql`
             }
           }
         }
+        awards
       }
     }
   }

@@ -7,7 +7,6 @@ import Layout from "../components/Layout";
 import VideoEmbed from "../components/VideoEmbed";
 import Content, { HTMLContent } from "../components/Content";
 import Awards from "../components/Awards";
-import BlogRollIndex from "../components/BlogRollIndex";
 
 export const BlogPostTemplate = ({
                                    content,
