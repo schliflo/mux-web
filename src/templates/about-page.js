@@ -101,6 +101,7 @@ export const aboutPageQuery = graphql`
       frontmatter {
         title
         description
+        awards
         image {
           childImageSharp {
             fluid(maxWidth: 720, quality: 82) {
@@ -108,7 +109,6 @@ export const aboutPageQuery = graphql`
             }
           }
         }
-        awards
       }
     }
   }
