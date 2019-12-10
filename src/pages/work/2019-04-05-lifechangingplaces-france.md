@@ -7,7 +7,7 @@ description: ''
 image: /img/8f24cbfa-b625-4a1b-a449-9201d707a50e.jpg
 videoType: vimeo
 videoId: '315667483'
-isFrontPage: true
+isFrontPage: false
 credits:
   - label: Director
     text: Vincent Urban
