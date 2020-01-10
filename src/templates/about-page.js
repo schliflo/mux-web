@@ -60,7 +60,7 @@ AboutPageTemplate.propTypes = {
   description: PropTypes.string,
   content: PropTypes.string,
   contentComponent: PropTypes.func,
-  awards: PropTypes.object,
+  awards: PropTypes.array,
 };
 
 const AboutPage = ({ data }) => {
