@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/no-static-element-interactions, jsx-a11y/click-events-have-key-events */
+
 import React from 'react'
 import { Link } from 'gatsby'
 import logo from "../img/logos/MN_Logo_white-02.svg";
