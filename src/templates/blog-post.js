@@ -77,7 +77,7 @@ export const BlogPostTemplate = ({
       </div>}
       <div className="more-link">
         <Link className="btn" to="/work">
-          See all
+          See all work
         </Link>
       </div>
     </section>
