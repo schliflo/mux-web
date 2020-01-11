@@ -113,7 +113,7 @@ collections:
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "award"}
       - {label: "Year", name: "year", widget: "string"}
-      - {label: "Grade", name: "grade", widget: "string"}
+      - {label: "Grade", name: "grade", widget: "string", required: false}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Category", name: "category", widget: "string"}
       - {label: "Link", name: "href", widget: "string", required: false}

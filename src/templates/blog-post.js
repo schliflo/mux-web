@@ -54,12 +54,6 @@ export const BlogPostTemplate = ({
           <PostContent content={content}/>
         </div>
       </div>
-      {awards && awards.length && <div>
-        <h3 className="row-headline">
-          Awards
-        </h3>
-        <Awards filter={awards || []}/>
-      </div>}
       {credits && <div>
         <h3 className="row-headline">
           Crew
@@ -74,6 +68,12 @@ export const BlogPostTemplate = ({
             ))}
           </dl>
         </div>
+      </div>}
+      {awards && awards.length && <div>
+        <h3 className="row-headline">
+          Awards
+        </h3>
+        <Awards filter={awards || []}/>
       </div>}
       <div className="more-link">
         <Link className="btn" to="/work">
