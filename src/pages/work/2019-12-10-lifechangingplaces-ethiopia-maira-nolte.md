@@ -6,7 +6,7 @@ date: 2019-12-10T11:27:05.325Z
 description: ''
 image: /img/823280278_1280x720.jpg
 videoType: vimeo
-videoId: 'https://vimeo.com/367034011'
+videoId: '367034011'
 isFrontPage: true
 credits:
   - label: Director
