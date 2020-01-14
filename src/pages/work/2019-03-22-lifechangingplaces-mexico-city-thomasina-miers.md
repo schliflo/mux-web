@@ -10,11 +10,12 @@ videoId: '244824484'
 isFrontPage: true
 tags:
   - commercial
+awards:
+  - One Club Award
+  - Deutscher Werbefilmpreis
 ---
 Client: Lufthansa
 
 Director: Vincent Urban
 
 Position: Editor, Sounddesigner, Additional Cinematography / Drone Footage
-
-Awards: [German Advertising Film Award for Best Editing](http://www.deutscher-werbefilmpreis.de/de/preistrager/), [One Club Bronze for Editing](http://www.oneclub.org/awards/theoneshow/-archive/awards/2018/42/all/Craft+[d]+Editing/select)
