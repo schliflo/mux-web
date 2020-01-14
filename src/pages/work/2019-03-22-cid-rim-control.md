@@ -8,6 +8,19 @@ image: /img/732589975_1280x720.jpg
 videoType: vimeo
 videoId: '295352790'
 isFrontPage: true
+credits:
+  - label: Director
+    text: Jess Lowe
+  - label: DOP
+    text: Michael Ormiston
+  - label: Editor and additional Cinematography
+    text: Max Neumeier
+  - label: Colorist
+    text: Tim Masick at Company 3
+  - label: Dancer
+    text: Martin Durov
+  - label: Production Assistant
+    text: Charley Landes
 tags:
   - musicvideo
   - editor
