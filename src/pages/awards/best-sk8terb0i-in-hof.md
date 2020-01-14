@@ -1,9 +1,10 @@
 ---
 templateKey: award
 year: '2018'
-grade: gold
-title: Best sk8terb0i in Hof
-category: videomensch
+grade: Silver Nail
+title: Art Directors Club / ADC
+category: Editing
+href: 'https://www.adc.de/'
 date: 2019-07-19T07:45:47.273Z
 ---
 
