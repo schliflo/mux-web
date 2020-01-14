@@ -10,11 +10,11 @@ videoId: '234998050'
 isFrontPage: false
 tags:
   - commercial
+awards:
+  - One Club Award
 ---
 Client: Lufthansa
 
 Director: Vincent Urban
 
 Position: Editor, Sounddesigner, Additional Cinematography / Drone Footage
-
-Awards: [One Club Award Bronze for Best Editing](http://www.oneclub.org/awards/theoneshow/-archive/awards/2018/42/all/Craft+[d]+Editing/select)
