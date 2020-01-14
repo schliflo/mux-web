@@ -1,7 +1,7 @@
 ---
 templateKey: award
 year: '2018'
-grade: Honorable Mention
+grade: Mention
 title: Art Directors Club
 category: Sound Design
 href: 'https://www.adc.de/'
