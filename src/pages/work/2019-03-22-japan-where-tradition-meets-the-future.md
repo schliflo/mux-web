@@ -8,7 +8,11 @@ image: /img/jnto.jpg
 videoType: youtube
 videoId: WLIv7HnZ_fE
 isFrontPage: true
-credits:
+tags:
+  - editor
+  - sounddesigner
+awards:
+  - Spikes Asia
 ---
 Client: Japan National Tourism Organization (JNTO)
 
