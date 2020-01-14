@@ -17,6 +17,7 @@ awards:
   - D & AD
   - Eurobest Award
   - New York Festival
+  - One Club Award
 ---
 Client: Lufthansa
 
