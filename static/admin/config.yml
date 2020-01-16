@@ -27,6 +27,7 @@ collections:
             multiple: false
       - {label: "Video Type", name: "videoType", widget: "select", options: ["vimeo", "youtube"]}
       - {label: "Video ID", name: "videoId", widget: "string"}
+      - {label: "Video Aspect Ratio", name: "ratio", widget: "number", valueType: "float", min: 0, default: 1.778}
       - {label: "Show on Frontpage", name: "isFrontPage", widget: "boolean", default: false}
       - {label: "Body", name: "body", widget: "markdown"}
       - label: "Credits"

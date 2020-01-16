@@ -1,36 +1,29 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const VideoEmbed = ({ videoId, videoType, videoTitle }) => {
+const VideoEmbed = ({ videoId, videoType, videoTitle, ratio }) => {
+  let videoUrl = '';
+
+  ratio = ratio || 1.778;
+
   if (videoType === "vimeo") {
-    return (
-      <div className="video-embed">
-        <iframe src={"https://player.vimeo.com/video/" + videoId + "?color=ededed"}
-                frameBorder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                title={videoTitle}
-                webkitallowfullscreen
-                mozallowfullscreen
-                allowFullScreen/>
-      </div>
-    );
+    videoUrl = `https://player.vimeo.com/video/${videoId}?color=ededed`;
   }
-
   if (videoType === "youtube") {
-    return (
-      <div className="video-embed">
-        <iframe src={"https://www.youtube-nocookie.com/embed/" + videoId + "?rel=0&amp;controls=0&amp;showinfo=0"}
-                frameBorder="0"
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                title={videoTitle}
-                webkitallowfullscreen
-                mozallowfullscreen
-                allowFullScreen/>
-      </div>
-    );
+    videoUrl = `https://www.youtube-nocookie.com/embed/${videoId}?rel=0&amp;controls=0&amp;showinfo=0`;
   }
 
-  return null;
+  return (
+    <div className="video-embed" style={{"padding-bottom": `${100/parseFloat(ratio)}%`}}>
+      <iframe src={videoUrl}
+              frameBorder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              title={videoTitle}
+              webkitallowfullscreen
+              mozallowfullscreen
+              allowFullScreen/>
+    </div>
+  );
 };
 
 VideoEmbed.propTypes = {

@@ -23,6 +23,7 @@ export const BlogPostTemplate = ({
                                    videoId,
                                    credits,
                                    awards,
+                                   ratio,
                                  }) => {
   const PostContent = contentComponent || Content;
   const yourArray = credits;
@@ -34,7 +35,7 @@ export const BlogPostTemplate = ({
   return (
     <section className="section">
       {helmet || ""}
-      <VideoEmbed videoType={videoType} videoId={videoId} videoTitle={title}/>
+      <VideoEmbed videoType={videoType} videoId={videoId} videoTitle={title} ratio={ratio}/>
       <div className="row">
         <div className="col--50">
           <h1>{title}</h1>
@@ -111,6 +112,7 @@ BlogPostTemplate.propTypes = {
   videoType: PropTypes.string.isRequired,
   videoId: PropTypes.string.isRequired,
   awards: PropTypes.object,
+  ratio: PropTypes.number,
 };
 
 const BlogPost = ({ data }) => {
@@ -139,6 +141,7 @@ const BlogPost = ({ data }) => {
         videoId={post.frontmatter.videoId}
         credits={post.frontmatter.credits}
         awards={post.frontmatter.awards}
+        ratio={post.frontmatter.ratio}
       />
     </Layout>
   );
@@ -170,6 +173,7 @@ export const pageQuery = graphql`
           text
         }
         awards
+        ratio
       }
     }
   }
