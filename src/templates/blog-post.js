@@ -26,7 +26,7 @@ export const BlogPostTemplate = ({
                                    ratio,
                                  }) => {
   const PostContent = contentComponent || Content;
-  const yourArray = credits;
+  const yourArray = credits || [];
   const halfwayThrough = Math.ceil(yourArray.length / 2);
   // or instead of floor you can use ceil depending on what side gets the extra data
   const credits1 = yourArray.slice(0, halfwayThrough);
