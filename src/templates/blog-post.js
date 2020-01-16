@@ -114,10 +114,13 @@ BlogPostTemplate.propTypes = {
   awards: PropTypes.object,
   credits: PropTypes.object,
   ratio: PropTypes.number,
+  image: PropTypes.string,
 };
 
 const BlogPost = ({ data }) => {
   const { markdownRemark: post } = data;
+
+  console.log(post.frontmatter.image);
 
   return (
     <Layout>
@@ -132,6 +135,7 @@ const BlogPost = ({ data }) => {
               name="description"
               content={`${post.frontmatter.description && post.frontmatter.description !== '' ? post.frontmatter.description : post.frontmatter.subtitle}`}
             />
+            <meta property='og:image' content={ post.frontmatter.image.childImageSharp.fixed.src } />
           </Helmet>
         }
         tags={post.frontmatter.tags}
@@ -167,6 +171,13 @@ export const pageQuery = graphql`
         subtitle
         description
         tags
+        image {
+          childImageSharp {
+            fixed(width: 720, quality: 82) {
+              ...GatsbyImageSharpFixed
+            }
+          }
+        }
         videoType
         videoId
         credits {

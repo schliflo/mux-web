@@ -67,6 +67,7 @@ const ContactPage = ({ data }) => {
               name="description"
               content={`${post.frontmatter.description && post.frontmatter.description !== '' ? post.frontmatter.description : ''}`}
             />
+            <meta property='og:image' content={ post.frontmatter.image.childImageSharp.fixed.src } />
           </Helmet>
         }
         title={post.frontmatter.title}
@@ -94,6 +95,9 @@ export const ContactPageQuery = graphql`
           childImageSharp {
             fluid(maxWidth: 720, quality: 82) {
               ...GatsbyImageSharpFluid
+            }
+            fixed(width: 720, quality: 82) {
+              ...GatsbyImageSharpFixed
             }
           }
         }
