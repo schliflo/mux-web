@@ -7,6 +7,7 @@ description: ''
 image: /img/lh-lof.webp.jpg
 videoType: vimeo
 videoId: '233583306'
+ratio: 1.778
 isFrontPage: true
 tags:
   - commercial
@@ -22,7 +23,6 @@ awards:
   - '"2020-01-14T10:23:53.183Z"'
   - '"2020-01-14T10:20:09.160Z"'
   - '"2020-01-14T10:22:12.717Z"'
-ratio: 1.778
 ---
 Client: Lufthansa
 
