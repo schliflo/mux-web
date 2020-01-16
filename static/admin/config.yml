@@ -42,7 +42,7 @@ collections:
         widget: "relation"
         collection: "awards"
         searchFields: ["year", "grade", "title", "category"]
-        valueField: "title"
+        valueField: "slug"
         displayFields: ["year", "grade", "title", "category"]
         multiple: true
         required: false
