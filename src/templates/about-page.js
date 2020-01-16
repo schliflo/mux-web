@@ -135,7 +135,7 @@ export const aboutPageQuery = graphql`
         description
         awards
         selectedClients {
-          name
+          label
         }
         image {
           childImageSharp {
