@@ -55,6 +55,7 @@ export default ({ filter }) => (
               grade
               category
               href
+              timestamp(formatString: "x")
             }
           }
         }
@@ -69,7 +70,7 @@ export default ({ filter }) => (
       } else {
         const result = {
           allMarkdownRemark: {
-            edges: data.allMarkdownRemark.edges.filter(item => filter.includes(item.node.frontmatter.title))
+            edges: data.allMarkdownRemark.edges.filter(item => filter.includes(item.node.frontmatter.timestamp))
           }
         };
         return <Awards data={result} count={result.allMarkdownRemark.edges.length}/>;

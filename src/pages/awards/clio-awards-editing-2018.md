@@ -7,5 +7,6 @@ category: Editing
 href: >-
   https://clios.com/awards/winner/film-technique-editing/deutsche-lufthansa-ag/lufthansa-lifechangingplaces-lofoten-39525
 date: 2020-01-14T10:22:50.144Z
+timestamp: 2020-01-14T10:22:50.144Z
 ---
 

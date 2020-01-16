@@ -11,7 +11,8 @@ isFrontPage: false
 tags:
   - commercial
 awards:
-  - One Club Award
+  - 2020-01-14T10:20:09.160Z
+  - 2020-01-14T10:22:12.717Z
 ratio: 1.778
 ---
 Client: Lufthansa

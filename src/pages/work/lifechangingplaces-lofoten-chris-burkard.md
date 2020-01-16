@@ -11,13 +11,17 @@ isFrontPage: true
 tags:
   - commercial
 awards:
-  - Vimeo Staff Pick
-  - Art Directors Club
-  - Clio Awards
-  - D & AD
-  - Eurobest Award
-  - New York Festival
-  - One Club Award
+  - 2020-01-14T10:38:05.110Z
+  - 2019-07-19T07:45:59.190Z
+  - 2019-07-19T07:45:47.273Z
+  - 2020-01-14T10:22:50.144Z
+  - 2020-01-14T10:27:20.104Z
+  - 2020-01-14T10:17:29.584Z
+  - 2020-01-14T10:18:40.534Z
+  - 2020-01-14T10:26:50.346Z
+  - 2020-01-14T10:23:53.183Z
+  - 2020-01-14T10:20:09.160Z
+  - 2020-01-14T10:22:12.717Z
 ratio: 1.778
 ---
 Client: Lufthansa

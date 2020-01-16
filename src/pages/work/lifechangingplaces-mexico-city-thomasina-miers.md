@@ -11,8 +11,9 @@ isFrontPage: true
 tags:
   - commercial
 awards:
-  - One Club Award
-  - Deutscher Werbefilmpreis
+  - 2020-01-14T10:22:12.717Z
+  - 2020-01-14T10:20:09.160Z
+  - 2019-07-19T07:43:04.501Z
 ratio: 1.778
 ---
 Client: Lufthansa

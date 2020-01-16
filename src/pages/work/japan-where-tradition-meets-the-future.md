@@ -12,7 +12,8 @@ tags:
   - editor
   - sounddesigner
 awards:
-  - Spikes Asia
+  - 2020-01-14T10:39:05.110Z
+  - 2020-01-14T10:37:13.177Z
 ratio: 1.778
 ---
 Client: Japan National Tourism Organization (JNTO)
