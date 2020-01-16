@@ -12,6 +12,7 @@ tags:
   - commercial
 awards:
   - One Club Award
+ratio: 1.778
 ---
 Client: Lufthansa
 

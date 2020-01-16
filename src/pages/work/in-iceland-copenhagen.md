@@ -23,6 +23,7 @@ tags:
   - travel
   - commercial
   - dop
+ratio: 1.778
 ---
 In June 2018, we set out on a 2-week journey to Iceland & Copenhagen, enjoying two very different experiences on just one trip.
 

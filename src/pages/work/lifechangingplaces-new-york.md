@@ -27,10 +27,11 @@ credits:
     text: Kolle Rebbe
   - label: Music
     text: 2wei
+ratio: 1.778
 ---
 In this second episode of mini documentaries we did for Lufthansa, we traveled to New York to tell Somath's story about how he found his passion for Jazz music. While New York City is very photogenic, it's also just as overshot. We tried our best to show it in a new way, both aestetically and technically.
 
-While editing I was challenged with telling Somath's story in a simple way but also transport the dynamic and rough way of New York City. 
+While editing I was challenged with telling Somath's story in a simple way but also transport the dynamic and rough way of New York City.
 
 Jazz was a new thing for us, so finding music that fit wasn't easy at all. Very jazzy and broken up at times but with an emotional twist is not something you hear often. 2wei managed to make it work very well despite our weird wishes.
 

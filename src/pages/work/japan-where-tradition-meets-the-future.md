@@ -13,6 +13,7 @@ tags:
   - sounddesigner
 awards:
   - Spikes Asia
+ratio: 1.778
 ---
 Client: Japan National Tourism Organization (JNTO)
 

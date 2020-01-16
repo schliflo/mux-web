@@ -11,6 +11,7 @@ isFrontPage: false
 credits:
 tags:
   - documentary
+ratio: 1.778
 ---
 Client: Isenseven
 

@@ -12,6 +12,7 @@ credits:
 tags:
   - documentary
   - onemanshow
+ratio: 1.778
 ---
 Client: F-Stop / PhaseOne / Red Bull Photography
 

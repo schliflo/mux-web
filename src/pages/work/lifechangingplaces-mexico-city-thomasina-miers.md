@@ -13,6 +13,7 @@ tags:
 awards:
   - One Club Award
   - Deutscher Werbefilmpreis
+ratio: 1.778
 ---
 Client: Lufthansa
 

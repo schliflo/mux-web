@@ -11,6 +11,7 @@ isFrontPage: true
 credits:
 tags:
   - commercial
+ratio: 1.778
 ---
 Client: DAZN
 

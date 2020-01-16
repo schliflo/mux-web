@@ -12,6 +12,7 @@ credits:
 tags:
   - trailer
   - teaser
+ratio: 1.778
 ---
 Client: fireapple
 

@@ -18,6 +18,7 @@ awards:
   - Eurobest Award
   - New York Festival
   - One Club Award
+ratio: 1.778
 ---
 Client: Lufthansa
 

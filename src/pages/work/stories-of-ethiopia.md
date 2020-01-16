@@ -11,6 +11,7 @@ isFrontPage: false
 credits:
 tags:
   - portrait
+ratio: 1.778
 ---
 Client: Menschen Für Menschen
 
