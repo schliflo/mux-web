@@ -56,21 +56,21 @@ export const AboutPageTemplate = ({ title, image, helmet, content, contentCompon
             {selectedClients1 && selectedClients1.length > 0 &&
             <ul className="col--33">
               {selectedClients1.map(item => (
-                  <li>{item.name}</li>
+                  <li>{item.label}</li>
               ))}
             </ul>
             }
             {selectedClients2 && selectedClients2.length > 0 &&
             <ul className="col--33">
               {selectedClients2.map(item => (
-                <li>{item.name}</li>
+                <li>{item.label}</li>
               ))}
             </ul>
             }
             {selectedClients3 && selectedClients3.length > 0 &&
             <ul className="col--33">
               {selectedClients3.map(item => (
-                <li>{item.name}</li>
+                <li>{item.label}</li>
               ))}
             </ul>
             }

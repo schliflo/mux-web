@@ -77,7 +77,7 @@ collections:
             name: "selectedClients"
             widget: "list"
             fields:
-              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Name", name: "label", widget: "string"}
       - file: "src/pages/contact/index.md"
         label: "Contact"
         name: "contact"
