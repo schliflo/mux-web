@@ -7,6 +7,7 @@ description: ''
 image: /img/jnto.jpg
 videoType: youtube
 videoId: WLIv7HnZ_fE
+ratio: 1.778
 isFrontPage: true
 tags:
   - editor
@@ -14,7 +15,6 @@ tags:
 awards:
   - '"2020-01-14T10:39:05.110Z"'
   - '"2020-01-14T10:37:13.177Z"'
-ratio: 1.778
 ---
 Client: Japan National Tourism Organization (JNTO)
 
