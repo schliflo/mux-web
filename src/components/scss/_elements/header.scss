@@ -189,6 +189,11 @@
                 }
             }
         }
+
+        a.active + li > .active-if-active-item-before {
+            color: $color-black;
+            background-color: $color-white;
+        }
     }
 }
 
@@ -244,6 +249,11 @@
                         border-top: 1px solid $color-white;
                     }
                 }
+            }
+
+            a.active + li > .active-if-active-item-before {
+                color: $color-white;
+                background-color: transparent;
             }
         }
 

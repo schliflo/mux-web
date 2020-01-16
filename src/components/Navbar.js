@@ -31,8 +31,14 @@ const Navbar = class extends React.Component {
           </div>
           <nav id="nav-main" className="header__nav">
             <ul>
+              <Link to='/' className="sr-only" activeClassName='active' onClick={() => {
+                this.setState({
+                  'menuOpen': !this.state.menuOpen,
+                });
+              }}><span
+                data-text="Home">Home</span></Link>
               <li>
-                <Link to='/work' activeClassName='active' onClick={() => {
+                <Link to='/work' className="active-if-active-item-before" activeClassName='active' onClick={() => {
                   this.setState({
                     'menuOpen': !this.state.menuOpen,
                   });
