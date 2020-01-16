@@ -25,6 +25,11 @@ export const BlogPostTemplate = ({
                                    awards,
                                  }) => {
   const PostContent = contentComponent || Content;
+  const yourArray = credits;
+  const halfwayThrough = Math.ceil(yourArray.length / 2);
+  // or instead of floor you can use ceil depending on what side gets the extra data
+  const credits1 = yourArray.slice(0, halfwayThrough);
+  const credits2 = yourArray.slice(halfwayThrough, yourArray.length);
 
   return (
     <section className="section">
@@ -54,19 +59,30 @@ export const BlogPostTemplate = ({
           <PostContent content={content}/>
         </div>
       </div>
-      {credits && <div>
+      {credits && credits.length > 0 && <div>
         <h3 className="row-headline">
           Crew
         </h3>
-        <div className="credits">
-          <dl>
-            {credits.map(item => (
+        <div className="credits row">
+          {credits1 && credits1.length > 0 &&
+            <dl className="col--50">
+              {credits1.map(item => (
+                <>
+                  <dt>{item.label}</dt>
+                  <dd>{item.text}</dd>
+                </>
+              ))}
+            </dl>
+          }{credits2 && credits2.length > 0 &&
+          <dl className="col--50">
+            {credits2.map(item => (
               <>
                 <dt>{item.label}</dt>
                 <dd>{item.text}</dd>
               </>
             ))}
           </dl>
+          }
         </div>
       </div>}
       {awards && awards.length > 0 && <div>

@@ -122,7 +122,7 @@ dl {
         &:after {
             content: "";
             display: block;
-            margin-bottom: .5em;
+            margin-bottom: .75em;
         }
     }
 }
@@ -293,5 +293,9 @@ iframe {
         overflow-wrap: break-word;
         max-width: 100%;
         hyphens: auto;
+    }
+
+    dl + dl {
+        margin-top: -1em;
     }
 }
