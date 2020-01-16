@@ -7,13 +7,13 @@ description: ''
 image: /img/lh-sa.webp.jpg
 videoType: vimeo
 videoId: '234998050'
+ratio: 1.778
 isFrontPage: false
 tags:
   - commercial
 awards:
   - '"2020-01-14T10:20:09.160Z"'
   - '"2020-01-14T10:22:12.717Z"'
-ratio: 1.778
 ---
 Client: Lufthansa
 
