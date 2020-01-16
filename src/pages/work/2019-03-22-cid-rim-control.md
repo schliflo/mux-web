@@ -25,8 +25,5 @@ tags:
   - musicvideo
   - editor
   - cinematographer
-awards:
-  - An award
-  - Best sk8terb0i in Hof
 ---
 In 2016 I was in New York for the first time and found myself shooting a lot of metro footage. I never knew what to do with it until this project came along. Jess and her DP Michael Ormiston took these beautiful shots of dancer Martin Durov that matched perfectly with my blurry subway footage, so I went on to edit this vertigo-inducing metro ride.

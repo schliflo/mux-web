@@ -69,7 +69,7 @@ export const BlogPostTemplate = ({
           </dl>
         </div>
       </div>}
-      {awards && awards.length && <div>
+      {awards && awards.length > 0 && <div>
         <h3 className="row-headline">
           Awards
         </h3>
