@@ -65,7 +65,7 @@ const ContactPage = ({ data }) => {
             <title>{`${post.frontmatter.title}`}</title>
             <meta name="description" content={`${post.frontmatter.description && post.frontmatter.description !== '' ? post.frontmatter.description : post.frontmatter.subtitle}`}/>
             <meta property='og:title' content={`${post.frontmatter.title} | Work | Max Neumeier - Video Editor`} />
-            <meta property='og:image' content={ post.frontmatter.image.childImageSharp.fixed.src } />
+            <meta property='og:image' content={`https://maxneumeier.com${post.frontmatter.image.childImageSharp.fixed.src}`} />
           </Helmet>
         }
         title={post.frontmatter.title}
