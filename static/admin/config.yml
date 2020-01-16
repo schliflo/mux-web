@@ -73,6 +73,11 @@ collections:
             valueField: "date"
             displayFields: ["year", "grade", "title", "category"]
             multiple: true
+          - label: "Selected Clients"
+            name: "selectedClients"
+            widget: "list"
+            fields:
+              - {label: "Name", name: "name", widget: "string"}
       - file: "src/pages/contact/index.md"
         label: "Contact"
         name: "contact"

@@ -267,8 +267,17 @@ ul {
     }
 }
 
-.credits {
+.credits,
+.selected-clients {
     margin-bottom: 1.75em;
+
+    ul {
+        list-style: none;
+
+        li + li {
+            margin-top: .333em;
+        }
+    }
 }
 
 iframe {

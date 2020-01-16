@@ -7,8 +7,14 @@ import Content, { HTMLContent } from "../components/Content";
 import Img from "gatsby-image";
 import Awards from "../components/Awards";
 
-export const AboutPageTemplate = ({ title, image, helmet, content, contentComponent, awards }) => {
+export const AboutPageTemplate = ({ title, image, helmet, content, contentComponent, awards, selectedClients }) => {
   const PageContent = contentComponent || Content;
+  const yourArray = selectedClients || [];
+  const thirdwayThrough = Math.ceil(yourArray.length / 3);
+  // or instead of floor you can use ceil depending on what side gets the extra data
+  const selectedClients1 = yourArray.slice(0, thirdwayThrough);
+  const selectedClients2 = yourArray.slice(thirdwayThrough, thirdwayThrough*2);
+  const selectedClients3 = yourArray.slice(thirdwayThrough*2, yourArray.length);
 
   return (
     <section>
@@ -36,14 +42,40 @@ export const AboutPageTemplate = ({ title, image, helmet, content, contentCompon
             <PageContent content={content}/>
           </div>
         </div>
-        <div className="row-headline">
-          Awards
-        </div>
-        <Awards filter={awards || []}/>
-        {/*TODO: selected clients*/}
-        {/*<div className="row-headline">*/}
-        {/*  Selected clients*/}
-        {/*</div>*/}
+        {awards && awards.length > 0 && <>
+          <h3 className="row-headline">
+            Awards
+          </h3>
+          <Awards filter={awards || []}/>
+        </>}
+        {selectedClients && selectedClients.length > 0 && <>
+          <h3 className="row-headline">
+            Selected clients
+          </h3>
+          <div className="selected-clients row">
+            {selectedClients1 && selectedClients1.length > 0 &&
+            <ul className="col--33">
+              {selectedClients1.map(item => (
+                  <li>{item.name}</li>
+              ))}
+            </ul>
+            }
+            {selectedClients2 && selectedClients2.length > 0 &&
+            <ul className="col--33">
+              {selectedClients2.map(item => (
+                <li>{item.name}</li>
+              ))}
+            </ul>
+            }
+            {selectedClients3 && selectedClients3.length > 0 &&
+            <ul className="col--33">
+              {selectedClients3.map(item => (
+                <li>{item.name}</li>
+              ))}
+            </ul>
+            }
+          </div>
+        </>}
       </div>
       <div className="more-link">
         <Link className="btn" to="/contact">
@@ -61,6 +93,7 @@ AboutPageTemplate.propTypes = {
   content: PropTypes.string,
   contentComponent: PropTypes.func,
   awards: PropTypes.array,
+  selectedClients: PropTypes.array,
 };
 
 const AboutPage = ({ data }) => {
@@ -83,6 +116,7 @@ const AboutPage = ({ data }) => {
         image={post.frontmatter.image}
         content={post.html}
         awards={post.frontmatter.awards}
+        selectedClients={post.frontmatter.selectedClients}
       />
     </Layout>
   );
@@ -102,6 +136,9 @@ export const aboutPageQuery = graphql`
         title
         description
         awards
+        selectedClients {
+          name
+        }
         image {
           childImageSharp {
             fluid(maxWidth: 720, quality: 82) {

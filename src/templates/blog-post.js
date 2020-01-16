@@ -60,7 +60,7 @@ export const BlogPostTemplate = ({
           <PostContent content={content}/>
         </div>
       </div>
-      {credits && credits.length > 0 && <div>
+      {credits && credits.length > 0 && <>
         <h3 className="row-headline">
           Crew
         </h3>
@@ -85,13 +85,13 @@ export const BlogPostTemplate = ({
           </dl>
           }
         </div>
-      </div>}
-      {awards && awards.length > 0 && <div>
+      </>}
+      {awards && awards.length > 0 && <>
         <h3 className="row-headline">
           Awards
         </h3>
         <Awards filter={awards || []}/>
-      </div>}
+      </>}
       <div className="more-link">
         <Link className="btn" to="/work">
           See all work
@@ -112,6 +112,7 @@ BlogPostTemplate.propTypes = {
   videoType: PropTypes.string.isRequired,
   videoId: PropTypes.string.isRequired,
   awards: PropTypes.object,
+  credits: PropTypes.object,
   ratio: PropTypes.number,
 };
 
