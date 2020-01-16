@@ -71,7 +71,8 @@ export default ({ filter }) => (
         // make sure we have an array
         filter = [...filter];
         // convert timestamps to unix milliseconds
-        filter = filter.map(item => `${parseInt((new Date(item).getTime()).toFixed(0))}`);
+        filter = filter.map(item => `${parseInt((new Date(item.replace(/"/gi, '')).getTime()).toFixed(0))}`);
+        console.log(filter);
         const result = {
           allMarkdownRemark: {
             edges: data.allMarkdownRemark.edges.filter(item => filter.includes(item.node.frontmatter.timestamp))
