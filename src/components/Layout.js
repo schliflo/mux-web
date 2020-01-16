@@ -36,7 +36,7 @@ const TemplateWrapper = ({ children }) => (
           <meta name="theme-color" content="#1a1a1a"/>
           <meta property="og:type" content="business.business" />
           <meta property="og:title" content={`${data.site.siteMetadata.title}`} />
-          <meta property="og:image" content="/img/og-image.jpg" />
+          <meta property="og:image" content="https://maxneumeier.com/img/og-image.jpg" />
           <meta name='google-site-verification' content='Z7JIZc27nAoreMmaql-DJy7JNXwV8kI7zKXnsfSdm4s' />
         </Helmet>
         <div className="container">
