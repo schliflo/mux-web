@@ -24,11 +24,7 @@ const TemplateWrapper = ({ children }) => (
         <Helmet>
           <html lang="en" />
           <title>{data.site.siteMetadata.title}</title>
-          <meta
-            name="description"
-            content={data.site.siteMetadata.description}
-          />
-
+          <meta name="description" content={data.site.siteMetadata.description}/>
           <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png"/>
           <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png"/>
           <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png"/>
@@ -38,12 +34,9 @@ const TemplateWrapper = ({ children }) => (
           <meta name="msapplication-TileColor" content="#1a1a1a"/>
           <meta name="msapplication-config" content="/img/browserconfig.xml"/>
           <meta name="theme-color" content="#1a1a1a"/>
-
           <meta property="og:type" content="business.business" />
-          <meta property="og:title" content={data.site.siteMetadata.title} />
-          <meta property="og:url" content="/" />
+          <meta property="og:title" content={`${data.site.siteMetadata.title}`} />
           <meta property="og:image" content="/img/og-image.jpg" />
-
           <meta name='google-site-verification' content='Z7JIZc27nAoreMmaql-DJy7JNXwV8kI7zKXnsfSdm4s' />
         </Helmet>
         <div className="container">

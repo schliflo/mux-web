@@ -63,10 +63,8 @@ const ContactPage = ({ data }) => {
         helmet={
           <Helmet titleTemplate="%s | Max Neumeier - Video Editor">
             <title>{`${post.frontmatter.title}`}</title>
-            <meta
-              name="description"
-              content={`${post.frontmatter.description && post.frontmatter.description !== '' ? post.frontmatter.description : ''}`}
-            />
+            <meta name="description" content={`${post.frontmatter.description && post.frontmatter.description !== '' ? post.frontmatter.description : post.frontmatter.subtitle}`}/>
+            <meta property='og:title' content={`${post.frontmatter.title} | Work | Max Neumeier - Video Editor`} />
             <meta property='og:image' content={ post.frontmatter.image.childImageSharp.fixed.src } />
           </Helmet>
         }
