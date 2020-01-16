@@ -111,6 +111,7 @@ collections:
     slug: "{{slug}}-{{category}}-{{year}}"
     editor:
       preview: false
+    summary: "{{title}} {{category}} {{year}} {{grade}}"
     fields:
       - {label: "Template Key", name: "templateKey", widget: "hidden", default: "award"}
       - {label: "Year", name: "year", widget: "string"}
