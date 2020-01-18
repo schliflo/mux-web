@@ -7,6 +7,7 @@ description: ''
 image: /img/732589975_1280x720.jpg
 videoType: vimeo
 videoId: '295352790'
+ratio: 2
 isFrontPage: true
 credits:
   - label: Director
@@ -23,8 +24,5 @@ credits:
     text: Charley Landes
 tags:
   - musicvideo
-  - editor
-  - cinematographer
-ratio: 1.778
 ---
 In 2016 I was in New York for the first time and found myself shooting a lot of metro footage. I never knew what to do with it until this project came along. Jess and her DP Michael Ormiston took these beautiful shots of dancer Martin Durov that matched perfectly with my blurry subway footage, so I went on to edit this vertigo-inducing metro ride.
