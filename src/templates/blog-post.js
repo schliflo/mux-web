@@ -37,24 +37,26 @@ export const BlogPostTemplate = ({
       {helmet || ""}
       <VideoEmbed videoType={videoType} videoId={videoId} videoTitle={title} ratio={ratio}/>
       <div className="row">
-        <div className="col--50">
+        <div className="col--50 col--flex">
           <h1>{title}</h1>
           {subtitle && <h2>{subtitle}</h2>}
           {description &&
             <p className="text--center text--italic">{description}</p>
           }
-          <div className="date">
-            {date}
-          </div>
-          {tags && tags.length ? (
-            <ul className="list--unstyled list--tags">
-              {tags.map(tag => (
-                <li key={tag + `tag`}>
-                  <Link to={`/tags/${kebabCase(tag)}/`}>//{tag}</Link>
-                </li>
-              ))}
-            </ul>
-          ) : null}
+          <p className="mt-auto">
+            <div className="date">
+              {date}
+            </div>
+            {tags && tags.length ? (
+              <ul className="list--unstyled list--tags">
+                {tags.map(tag => (
+                  <li key={tag + `tag`}>
+                    <Link to={`/tags/${kebabCase(tag)}/`}>//{tag}</Link>
+                  </li>
+                ))}
+              </ul>
+            ) : null}
+          </p>
         </div>
         <div className="col--50">
           <PostContent content={content}/>

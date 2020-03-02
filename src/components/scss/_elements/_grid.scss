@@ -61,6 +61,27 @@ $gutter: 4rem;
     &--100 {
         flex-basis: 100%;
     }
+
+    &--flex {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.mt-auto {
+    margin-top: auto;
+}
+
+.mr-auto {
+    margin-right: auto;
+}
+
+.ml-auto {
+    margin-left: auto;
+}
+
+.mb-auto {
+    margin-bottom: auto;
 }
 
 @media screen and (max-width: 118.75rem) {
