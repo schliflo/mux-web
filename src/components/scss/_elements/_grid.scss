@@ -66,6 +66,11 @@ $gutter: 4rem;
         display: flex;
         flex-direction: column;
     }
+
+    &--centered {
+        justify-content: center;
+        text-align: center;
+    }
 }
 
 .mt-auto {

@@ -43,7 +43,7 @@ body {
 }
 
 h1 {
-    font-size: calc(2.5rem + 1vw);
+    font-size: calc(2rem + 1vw);
     font-weight: 500;
     margin-bottom: 0.25em;
 
@@ -53,13 +53,13 @@ h1 {
 }
 
 h2 {
-    font-size: calc(1.75rem + .5vw);
+    font-size: calc(1.15rem + .5vw);
     margin-bottom: 0.5em;
     font-weight: 500;
 }
 
 .date {
-    font-size: calc(1.5rem + 1vw);
+    font-size: 0.875rem;
     font-weight: 300;
     font-family: $font-family-mono;
     margin-top: auto;
@@ -75,7 +75,7 @@ a {
 }
 
 #main {
-    font-size: 1.5rem;
+    font-size: 1.45rem;
 
     a:not(.gatsby-resp-image-link) {
         position: relative;

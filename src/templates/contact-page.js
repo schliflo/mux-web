@@ -28,7 +28,7 @@ export const ContactPageTemplate = ({ title, image, helmet, content, contentComp
               </h1>
             </>}
           </div>
-          <div className="col--50">
+          <div className="col--50 col--flex col--centered">
             {image && <h1>
               {title}
             </h1>}
