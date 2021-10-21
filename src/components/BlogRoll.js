@@ -22,11 +22,7 @@ export class BlogRoll extends React.Component {
             >
             <article className="">
                 <Link className="" to={post.fields.slug}>
-                  <div className="glitch">
-                    <Img alt={post.frontmatter.title} fluid={{ ...post.frontmatter.image.childImageSharp.fluid, aspectRatio: 16/9 }} />
-                    <Img alt={post.frontmatter.title} fluid={{ ...post.frontmatter.image.childImageSharp.fluid, aspectRatio: 16/9 }} />
-                    <Img alt={post.frontmatter.title} fluid={{ ...post.frontmatter.image.childImageSharp.fluid, aspectRatio: 16/9 }} />
-                    <Img alt={post.frontmatter.title} fluid={{ ...post.frontmatter.image.childImageSharp.fluid, aspectRatio: 16/9 }} />
+                  <div className="video-grid__img">
                     <Img alt={post.frontmatter.title} fluid={{ ...post.frontmatter.image.childImageSharp.fluid, aspectRatio: 16/9 }} />
                   </div>
                   <h2 className="video-grid__title">
