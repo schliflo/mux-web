@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: Adidas x FC Bayern // Ready for the Mission
 subtitle: Short documentary for Adidas about German footbal club FC Bayern
-date: 2021-10-22T13:40:15.367Z
+date: 2020-09-16T13:40:15.367Z
 image: >-
   /img/939725613-558cd7fd5a706deb80e4ddf0a491223b97205fe7ae3ebdd5cda66f21669d44d8-d_1920x1080.jpg
 videoType: vimeo
