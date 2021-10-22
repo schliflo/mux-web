@@ -7,7 +7,8 @@ description: ''
 image: /img/764003068_1280x720.jpg
 videoType: vimeo
 videoId: '321321798'
-isFrontPage: true
+ratio: 2.333333333
+isFrontPage: false
 credits:
   - label: Directors
     text: KRONCK
@@ -32,7 +33,6 @@ credits:
 tags:
   - commercial
   - editor
-ratio: 2.333333333
 ---
 In this commercial for Russian bank Tochka we follow an entrepeneur on his metaphorical journey in present-day Russia. He's facing obstacles like all the doors of authorities (he has to pass), his own doubts (burning "You can't do it." letters), taxes (mummies wrapped in tax forms), Russian mafia (obviously), health authorities (the guys with the cockroach) and bad staff (with their heads in the clouds)... until he succeeds.
 
