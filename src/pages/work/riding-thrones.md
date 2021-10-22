@@ -7,12 +7,11 @@ description: ''
 image: /img/riding_hero_15-thumb.jpg
 videoType: vimeo
 videoId: '304565718'
-isFrontPage: true
-credits:
+ratio: 1.778
+isFrontPage: false
 tags:
   - documentary
   - onemanshow
-ratio: 1.778
 ---
 Client: F-Stop / PhaseOne / Red Bull Photography
 
