@@ -8,7 +8,7 @@ image: /img/dazn.webp.jpg
 videoType: vimeo
 videoId: '248286959'
 ratio: 2.35
-isFrontPage: true
+isFrontPage: false
 credits:
   - label: Director
     text: Bram Coppens
