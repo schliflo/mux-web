@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: In Russia - в России
 subtitle: 'Experimental short film about Russia''s culture, landscapes and history'
-date: 2021-10-22T12:49:33.313Z
+date: 2020-10-15T12:49:33.313Z
 image: >-
   /img/997561595-0ecf8a30b3973f6958f97db049290290de8d0d7917bd89774fc0eee0b1701c76-d_1920x1080.jpg
 videoType: vimeo
