@@ -8,7 +8,7 @@ image: /img/jnto.jpg
 videoType: youtube
 videoId: WLIv7HnZ_fE
 ratio: 1.778
-isFrontPage: true
+isFrontPage: false
 credits:
   - label: Director / DP
     text: Vincent Urban
