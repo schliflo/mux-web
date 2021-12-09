@@ -13,7 +13,8 @@ isFrontPage: true
 credits: []
 tags:
   - editor
-awards: []
+awards:
+  - '"2021-12-09T10:57:54.515Z"'
 ---
 Our reality is a dance between delusion and truth. Where does the dream stop and the memory start?
 
