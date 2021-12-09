@@ -7,7 +7,7 @@ image: >-
   /img/1125183422-b2e479b7382d61a0945de1c53f4892352e0562abfc1dfb6b42e50af54e014a08-d_1920x1080.jpg
 videoType: vimeo
 videoId: '543561509'
-ratio: 6
+ratio: 2.35
 isFrontPage: true
 credits: []
 tags:
