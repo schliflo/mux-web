@@ -8,7 +8,7 @@ image: /img/721073560_1280x720.jpg
 videoType: vimeo
 videoId: '286216759'
 ratio: 1.778
-isFrontPage: true
+isFrontPage: false
 credits:
   - label: Director
     text: Vincent Urban
