@@ -14,6 +14,8 @@ credits:
     text: Vincent Urban
 tags:
   - shortfilm
+awards:
+  - '"2021-12-09T10:57:54.515Z"'
 ---
 A landmass so vast it’s hard to wrap your head around, spanning over 11 timezones and 2 continents, filled with otherworldly landscapes, countless discrete cultures and crowded cities with rather turbulent histories.\
 On the one side, this film shows a slice of this relentless diversity of a place rarely visited by tourists - and on the other, it is an exploration of all the different lenses, viewpoints and expectations one can apply in a travel film about a mysterious country riddled with stereotypes.
