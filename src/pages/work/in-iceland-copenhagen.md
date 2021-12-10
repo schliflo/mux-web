@@ -30,5 +30,3 @@ In June 2018, we set out on a 2-week journey to Iceland & Copenhagen, enjoying t
 On the one side, the vastness, emptiness and otherworldly landscape of Iceland with it’s almost 24 hours-daylight in summer, on the other, a modern city full of life, history and exceptional architecture.
 
 This film is a collection of all the contrasting moments & memories we captured.
-
-This film was made possible by the support of Icelandair & VisitDenmark.
