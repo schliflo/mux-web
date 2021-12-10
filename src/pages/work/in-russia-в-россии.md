@@ -12,6 +12,34 @@ isFrontPage: true
 credits:
   - label: Director
     text: Vincent Urban
+  - label: DP
+    text: Tim David Höddinghaus
+  - label: Producer
+    text: 'Lars Doehring, 27 Kilometer Entertainment GmbH'
+  - label: Local producer
+    text: Andrey Manirko & Vadim Makhorov
+  - label: Additional Camera
+    text: Max Neumeier
+  - label: Additional Drone
+    text: Vadim Makhorov
+  - label: Edit
+    text: Vincent Urban & Max Neumeier
+  - label: Colorist
+    text: 'Lutz Forster, C.S.I.'
+  - label: Sound Design
+    text: Max Neumeier
+  - label: VFX
+    text: Hans Hartmann
+  - label: Title Design
+    text: Moril Gnoyke
+  - label: Sound Mixing
+    text: Nepomuk Heller
+  - label: Executive Producer
+    text: Pacco Nitsche
+  - label: Research
+    text: 'Manuel Iljitsch, Annegret Feistl & Sophia Stoltenberg'
+  - label: Postproduction assistance
+    text: 'Daniel Kremser, Jona Winkler and Tim Hilmer'
 tags:
   - shortfilm
 awards:
