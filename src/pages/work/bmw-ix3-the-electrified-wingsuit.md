@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: BMW iX3 - The Electrified Wingsuit
+title: BMW - The Electrified Wingsuit
 subtitle: Commercial film about building an electrified wingsuit for BMW
 date: 2021-10-22T13:34:55.919Z
 image: >-
