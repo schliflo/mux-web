@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: '#LifeChangingPlaces - LOFOTEN'
-subtitle: short documentary / portrait film about surf photographer Chris Burkhard
+subtitle: Mini doc about surf photographer Chris Burkhard
 date: 2019-03-22T09:05:36.460Z
 description: ''
 image: /img/lh-lof.webp.jpg
