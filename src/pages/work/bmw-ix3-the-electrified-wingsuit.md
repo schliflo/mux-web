@@ -8,7 +8,7 @@ image: >-
 videoType: vimeo
 videoId: '552835156'
 ratio: 1.778
-isFrontPage: true
+isFrontPage: false
 tags:
   - commercial
   - editor
