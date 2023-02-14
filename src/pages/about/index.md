@@ -1,8 +1,8 @@
 ---
 templateKey: about-page
 title: >-
-  I'm Max Neumeier, a filmmaker, commercial video editor and sound designer from
-  Munich, Germany.
+  I'm Max Neumeier, a filmmaker, video editor and sound designer based in
+  Hamburg and Munich, Germany.
 description: About Max Neumeier
 awards:
   - '"2019-07-19T07:45:47.273Z"'
