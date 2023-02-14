@@ -1,8 +1,7 @@
 ---
-templateKey: 'content-page'
-path: /imprint
+templateKey: content-page
 title: Imprint
-centeredContent: false
+description: ' '
 ---
 <h2>Angaben gem&auml;&szlig; &sect; 5 TMG:</h2>
 <p>
@@ -12,10 +11,10 @@ centeredContent: false
 </p>
 <h2>Postadresse:</h2>
 <p>
-    Sinzenetti<br/>
-    Maximilian Neumeier<br/>
-    Zenettistr. 47 <br/>
-    80337 M&uuml;nchen<br/>
+    Off Paradise <br/>
+    Max Neumeier<br/>
+    Davidstr. 23 <br/>
+    20359 Hamburg <br/>
 </p>
 <h2>Kontakt:</h2>
 <p>
