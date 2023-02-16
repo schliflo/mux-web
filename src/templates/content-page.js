@@ -5,13 +5,13 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Content, { HTMLContent } from "../components/Content";
 
-export const ContentPageTemplate = ({ title, centeredContent, helmet, content, contentComponent }) => {
+export const ContentPageTemplate = ({ title, helmet, content, contentComponent }) => {
   const PageContent = contentComponent || Content;
 
   return (
-    <section className={centeredContent ? 'my-auto' : ''}>
+    <section>
       {helmet || ""}
-      <div className={`content ${centeredContent ? 'text--center' : ''}`}>
+      <div className={`content`}>
         <h1>
           {title}
         </h1>
@@ -24,7 +24,6 @@ export const ContentPageTemplate = ({ title, centeredContent, helmet, content, c
 ContentPageTemplate.propTypes = {
   title: PropTypes.string.isRequired,
   description: PropTypes.string,
-  centeredContent: PropTypes.bool,
   content: PropTypes.string,
   contentComponent: PropTypes.func
 };
@@ -44,7 +43,6 @@ const ContentPage = ({ data }) => {
           </Helmet>
         }
         title={post.frontmatter.title}
-        centeredContent={post.frontmatter.centeredContent}
         content={post.html}
       />
     </Layout>
@@ -64,7 +62,6 @@ export const contentPageQuery = graphql`
       frontmatter {
         title
         description
-        centeredContent
       }
     }
   }
