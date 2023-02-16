@@ -7,8 +7,8 @@ export default () => (
     query={graphql`
     query BlogRollIndexQuery {
       allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] },
-        filter: { frontmatter: { templateKey: { eq: "blog-post" }, isFrontPage: { eq: true } } },
+        sort: {frontmatter: {date: DESC}}
+        filter: {frontmatter: {templateKey: {eq: "blog-post"}, isFrontPage: {eq: true}}}
         limit: 9
       ) {
         edges {

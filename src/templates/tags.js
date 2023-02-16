@@ -46,8 +46,8 @@ export const tagPageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      sort: { order: DESC, fields: [frontmatter___date] },
-      filter: { frontmatter: { templateKey: { eq: "blog-post" }, tags: { in: [$tag] } } }
+      sort: {frontmatter: {date: DESC}}
+      filter: {frontmatter: {templateKey: {eq: "blog-post"}, tags: {in: [$tag]}}}
     ) {
       edges {
         node {
