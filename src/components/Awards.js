@@ -38,8 +38,8 @@ export default ({ filter }) => (
     query={graphql`
     query AwardsQuery {
       allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] },
-        filter: { frontmatter: { templateKey: { eq: "award" } } }
+        sort: {frontmatter: {date: DESC}}
+        filter: {frontmatter: {templateKey: {eq: "award"}}}
       ) {
         edges {
           node {
