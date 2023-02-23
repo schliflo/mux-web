@@ -113,7 +113,7 @@ BlogPostTemplate.propTypes = {
   helmet: PropTypes.object,
   videoType: PropTypes.string.isRequired,
   videoId: PropTypes.string.isRequired,
-  awards: PropTypes.object,
+  awards: PropTypes.array,
   credits: PropTypes.object,
   ratio: PropTypes.number,
   image: PropTypes.string,

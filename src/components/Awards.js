@@ -71,8 +71,10 @@ export default ({ filter }) => (
         // make sure we have an array
         filter = [...filter];
         // convert timestamps to unix milliseconds
-        filter = filter.map(item => `${parseInt((new Date(item.replace(/"/gi, '')).getTime()).toFixed(0))}`);
-        console.log(filter);
+        filter = filter.map(item => {
+          const fromDate = (new Date(`${item}`.replace(/"/gi, '')).getTime()).toFixed(0);
+          return fromDate !== 'NaN' ? fromDate : item;
+        });
         const result = {
           allMarkdownRemark: {
             edges: data.allMarkdownRemark.edges.filter(item => filter.includes(item.node.frontmatter.timestamp))
