@@ -1,12 +1,12 @@
 ---
 templateKey: blog-post
-title: '#LifeChangingPlaces - NEW YORK'
+title: "#LifeChangingPlaces - NEW YORK"
 subtitle: Commercial portrait film about Indian Jazz music teacher Somnath
 date: 2019-04-05T13:01:45.100Z
-description: ''
+description: ""
 image: /img/88d6d71f-6831-427f-a71e-116f464dc26c.jpg
 videoType: vimeo
-videoId: '323831131'
+videoId: "323831131"
 ratio: 1.778
 isFrontPage: false
 credits:
@@ -33,7 +33,7 @@ tags:
   - dp
   - editor
 awards:
-  - '"2021-12-09T11:26:20.310Z"'
+  - 2021-12-09T11:26:20.310Z
 ---
 In this second episode of mini documentaries we did for Lufthansa, we traveled to New York to tell Somath's story about how he found his passion for Jazz music. While New York City is very photogenic, it's also just as overshot. We tried our best to show it in a new way, both aestetically and technically.
 
