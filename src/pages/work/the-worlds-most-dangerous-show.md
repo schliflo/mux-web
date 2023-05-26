@@ -9,33 +9,52 @@ videoType: vimeo
 videoId: "830162298"
 ratio: 1.778
 isFrontPage: true
-credits: []
+credits:
+  - label: Production
+    text: 27 Kilometer, K2H, Florida.TV
+  - label: D﻿irector
+    text: Vincent Urban
+  - label: DOP
+    text: Tim Höddinghaus
+  - label: Creative Producers
+    text: Greta Buschhaus, Ann-Catrin Malessa, Johanna Maria Knothe
+  - label: Producers
+    text: Lydia Lohse, Tom Wendt
+  - label: Additional Camera
+    text: Jaqueline Hochmuth, Paul-David Sträter, Max Neumeier
+  - label: AC
+    text: Fritz Butze
+  - label: Editor
+    text: Max Neumeier, Hans Hartmann
+  - label: Head Of Post Production
+    text: Malte Schlieker
+  - label: Music
+    text: 2wei Music, Thomas Muis
+  - label: Color Grading
+    text: Manuel Portschy
+  - label: Sound
+    text: Tim Stephan
+  - label: Post Art Direction
+    text: Johannes Blümel
+  - label: Voice Over Lead
+    text: Manuel Iljitsch
+  - label: Executive Producers
+    text: Pacco Nitsche, Thomas Schmitt, Thorsten Berrar, Moritz Hohenfeld, Arne
+      Kreutzfeld
+  - label: Senior Producer
+    text: Ralf Erthle
+  - label: Additional Production
+    text: Alexander Gluschkowskij, Tara Hagemann, Lara Rosenhagen
+  - label: Additional Editing
+    text: Daniel Kremser, Maxi Willmann, Yannis Panther
+  - label: Post Production
+    text: Lilja Häfele, Jannis Gasser, Sandra Eikel, Mika Puri
+  - label: Studio production
+    text: "Director: Benjamin Brettschneider, DP: Mathias Schöningh, Producer: Lisa
+      Hadeler"
 tags:
   - editor
 ---
 A 6-part documentary series about the biggest issue of our generation. 
 In “The World’s Most Dangerous Show”, German TV host Joko Winterscheidt is searching for answers in the midst of the climate crisis - 
 Out worldwide on Amazon Prime Video, June 07th 2023
-
-Production: 27 Kilometer, K2H, Florida.TV\
-DOP: Tim Höddinghaus\
-Creative Producers: Greta Buschhaus, Ann-Catrin Malessa, Johanna Maria Knothe\
-Producers: Lydia Lohse, Tom Wendt\
-Additional Camera: Jaqueline Hochmuth, Paul-David Sträter, Max Neumeier\
-AC: Fritz Butze\
-Edited by: Max Neumeier, Hans Hartmann\
-Head Of Post Production: Malte Schlieker\
-Music by: 2wei Music, Thomas Muis\
-Color Grading: Manuel Portschy\
-Sound: Tim Stephan\
-Post Art Direction: Johannes Blümel\
-Voice Over Lead: Manuel Iljitsch
-
-Executive Producers: Pacco Nitsche, Thomas Schmitt, Thorsten Berrar, Moritz Hohenfeld, Arne Kreutzfeld\
-Senior Producer: Ralf Erthle\
-Additional Production: Alexander Gluschkowskij, Tara Hagemann, Lara Rosenhagen\
-Additional Editing: Daniel Kremser, Maxi Willmann, Yannis Panther\
-Post Production: Lilja Häfele, Jannis Gasser, Sandra Eikel, Mika Puri\
-Studio production: Director: Benjamin Brettschneider, Mathias Schöningh, Producer: Lisa Hadeler
-
-And many many others, thank you so much!
