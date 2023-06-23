@@ -56,5 +56,7 @@ tags:
   - editor
 ---
 A 6-part documentary series about the biggest issue of our generation. 
-In “The World’s Most Dangerous Show”, German TV host Joko Winterscheidt is searching for answers in the midst of the climate crisis - 
-Out worldwide on Amazon Prime Video, June 07th 2023
+In “The World’s Most Dangerous Show”, German TV host Joko Winterscheidt is searching for answers in the midst of the climate crisis.
+Out worldwide on Amazon Prime Video, June 07th 2023 
+
+W﻿atch the full series here: https://www.primevideo.com/detail/Joko-Winterscheidt-Presents---The-Worlds-Most-Dangerous-Show/0IFFO6VX2YV3Y13BC79AK5D6JS
