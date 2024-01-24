@@ -55,8 +55,9 @@ credits:
 tags:
   - editor
 awards:
-  - 2023-12-01T14:35:30.228Z
+  - 2024-01-24T16:51:01.191Z
   - 2023-12-01T14:37:12.537Z
+  - 2023-12-01T14:35:30.228Z
 ---
 A 6-part documentary series about the biggest issue of our generation. 
 In “The World’s Most Dangerous Show”, German TV host Joko Winterscheidt is searching for answers in the midst of the climate crisis.
