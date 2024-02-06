@@ -19,4 +19,4 @@ awards:
   - 2021-12-09T11:05:52.863Z
   - 2021-12-09T11:01:58.105Z
 ---
-In midst of a very harsh winter we drove north for three whole days to the northern tip of Sweden. In the almost three weeks there we put the cars and us through a lot of challenges. Almost -30° C (-22 F) is not good for cameras, cars, camera cars, and my face. It makes for some dramatic shots though so Tim Höddinghaus and me had a lot fun capturing shots from snow mobiles, dog sleds, drones, buried in snow and Russian Arms.
+In midst of a very harsh winter we drove north for three whole days to the northern tip of Sweden. In the almost three weeks there we put the cars and us through a lot of challenges. Almost -30° C (-22 F) is not good for cameras, cars, camera cars, and my face. It makes for some dramatic shots though so Tim Höddinghaus and me had a lot fun capturing shots from snow mobiles, dog sleds, drones, buried in snow and U-Cranes.
