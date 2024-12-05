@@ -6,7 +6,7 @@ title: Clio Awards
 category: Film Technique (Editing)
 href: >-
   https://clios.com/awards/winner/film-craft-editing/lufthansa/lifechangingplaces-ethiopia-83521
-date: 2021-12-09T11:05:52.859Z
-timestamp: 2021-12-09T11:05:52.863Z
+date: 2021-12-09T13:37:42.859Z
+timestamp: 2021-12-09T13:37:42.863Z
 ---
 
