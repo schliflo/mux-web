@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: Audi - A Way To Inspire
-subtitle: Film documenting the Audi Summer Tour 2023
+subtitle: Film documenting FC Bayern's Audi Summer Tour 2023
 date: 2025-02-03T09:15:20.922Z
 description: ""
 image: /img/screenshot-2025-02-03-at-10.17.40.png
