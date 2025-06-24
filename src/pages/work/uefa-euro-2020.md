@@ -3,12 +3,11 @@ templateKey: blog-post
 title: UEFA EURO 2020
 subtitle: Promotional films for the European championships in football
 date: 2021-10-22T13:17:10.288Z
-image: >-
-  /img/1161376594-4c4da5502203c219a17dd2f9e3c6caae6fa6b75a97de370bd91b9c5656e574bc-d_1920x1080.jpg
+image: /img/1161376594-4c4da5502203c219a17dd2f9e3c6caae6fa6b75a97de370bd91b9c5656e574bc-d_1920x1080.jpg
 videoType: vimeo
-videoId: '561884395'
+videoId: "561884395"
 ratio: 1.778
-isFrontPage: true
+isFrontPage: false
 tags:
   - commercial
   - edit
