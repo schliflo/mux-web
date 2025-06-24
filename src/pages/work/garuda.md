@@ -9,6 +9,8 @@ videoType: vimeo
 videoId: "1095630419"
 ratio: 1.778
 isFrontPage: true
+tags:
+  - editor
 ---
 The sun bird. Come as you are, as a new beginning. We are small in the rhythm of it all. The leaves grow, until fall. A new season awaits.
 
