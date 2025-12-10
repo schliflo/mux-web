@@ -5,7 +5,7 @@ subtitle: Car commercial featuring Leo Neugebauer
 date: 2025-12-10T15:35:13.317Z
 image: /img/ld2xmaygyhe-hd.jpg
 videoType: youtube
-videoId: https://www.youtube.com/watch?v=ld2xMAYGYhE
+videoId: ld2xMAYGYhE
 ratio: 1.778
 isFrontPage: false
 ---
