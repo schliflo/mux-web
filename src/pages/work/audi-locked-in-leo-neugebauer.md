@@ -8,6 +8,8 @@ videoType: youtube
 videoId: ld2xMAYGYhE
 ratio: 1.778
 isFrontPage: false
+tags:
+  - editor
 ---
 agency: @thjnk @roman.geoffrey @vitaviktoria
 
