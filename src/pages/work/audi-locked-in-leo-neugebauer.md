@@ -1,11 +1,11 @@
 ---
 templateKey: blog-post
 title: "Audi -  Locked In: Leo Neugebauer"
-subtitle: car commercial featuring Leo Neugebauer
+subtitle: Car commercial featuring Leo Neugebauer
 date: 2025-12-10T15:35:13.317Z
 image: /img/ld2xmaygyhe-hd.jpg
 videoType: youtube
-videoId: ld2xMAYGYhE
+videoId: https://www.youtube.com/watch?v=ld2xMAYGYhE
 ratio: 1.778
 isFrontPage: false
 ---
