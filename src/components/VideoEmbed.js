@@ -17,6 +17,7 @@ const VideoEmbed = ({ videoId, videoType, videoTitle, ratio }) => {
     <div className="video-embed" style={{"padding-bottom": `${100/parseFloat(ratio)}%`}}>
       <iframe src={videoUrl}
               frameBorder="0"
+              referrerPolicy="strict-origin-when-cross-origin"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               title={videoTitle}
               webkitallowfullscreen

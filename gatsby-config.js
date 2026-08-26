@@ -78,6 +78,16 @@ module.exports = {
         purgeOnly: ['/scss/main.scss'], // applies purging only on the main css file
       },
     }, // must be after other CSS plugins
-    'gatsby-plugin-netlify', // make sure to keep it last in the array
+    {
+      resolve: 'gatsby-plugin-netlify', // make sure to keep it last in the array
+      options: {
+        headers: {
+          // Override the plugin's default "Referrer-Policy: same-origin", which
+          // strips the Referer on cross-origin requests and breaks YouTube
+          // embeds (error 153 - YouTube requires at least the origin).
+          '/*': ['Referrer-Policy: strict-origin-when-cross-origin'],
+        },
+      },
+    },
   ],
 }
